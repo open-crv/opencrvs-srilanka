@@ -14,14 +14,14 @@ all:
       # If you need to remove access from someone, do not remove them from this list, but instead set their state: absent
       - name: provision
         ssh_keys:
-          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPBt8phtO8CEZbzXRDMZi3vTwkHEyUAR34/7aTgTM010qYIqBq0aFZODk6FPFi2xWpJQJYlz5+te9uVsb9PjvMJDIRaafgMMo1QlcYhYWdloQnqi4/pP5g7Fs/s9duwOwAE4SCAzxpYQTPXUupbwv9XlM5ulHyvoUSeGR4Q3q4iqTSXDdNuAHiHNTi7BAqFHjFma+om2/Wgb+RANT9bgL1RPF5sZlbGjRqrXMu+Q4nDv+mmLTwmdvOZVYvE71Jnlefkp1UzifCpiFTHZW5CMFFnxNFHJk49LFSntspt4am5KFOHfqbNaYA42dEupgK/RPY0Qev/w0GMB1bpP6EzGE6t7KP95AUXfjZoZOfOkE3Y03tBBX7+yzjVj3kiP3XASZCLqKxfUL1VZvjQ3sip/0ydagnpzu42qqft2S1VUq5bZfgotoJt/tWe0YkOfR8p3uRLBXNyn6rAQjxBZl8/p3uwdF2ttddUjfSHizf4eW+8kh9HFOyCvj9SKt1bnwbaNU= provision@crvs
+          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhoiMxKjhH5VjpGMo0Bf0NJHjbEpS8Xdtad6afIQvjW provision@open-crv-poc.asia-southeast1-c.c.research-team-403006.internal
         state: present
         sudoer: true
     enable_backups: false
 docker-manager-first:
   hosts:
-    crvs: # @todo set this to be the hostname of your target server
-      ansible_host: '124.43.177.246' # @todo set this to be the IP address of your server
+    open-crv-poc.asia-southeast1-c.c.research-team-403006.internal: # @todo set this to be the hostname of your target server
+      ansible_host: '35.213.189.32' # @todo set this to be the IP address of your server
       data_label: data1 # for manager machines, this should always be "data1"
 
 # Development servers are not configured to use workers.
