@@ -33,14 +33,14 @@ all:
       # If you need to remove access from someone, do not remove them from this list, but instead set their state: absent
       - name: provision
         ssh_keys:
-          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC3JCprOsaVb11ZZEDosQz71dWVb6aLKfIkCPijiU4rK provision@opencrvs-prod.asia-southeast1-c.c.research-team-403006.internal
+          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHE/rxAuIkqIzJFEswGdxcIjfr4EHLukB4T1Fr8rAfTm provision@super
         state: present
         sudoer: true
 
 docker-manager-first:
   hosts:
-    opencrvs-prod.asia-southeast1-c.c.research-team-403006.internal: # @todo set this to be the hostname of your target server
-      ansible_host: '35.247.174.196' # @todo set this to be the hostname of your target server
+    super: # @todo set this to be the hostname of your target server
+      ansible_host: '124.43.177.246' # @todo set this to be the hostname of your target server
       data_label: data1
       # If you are using a jump server to access this environment, enter other SSH args here.
       # ansible_ssh_common_args: '-J jump@55.55.55.55 -o StrictHostKeyChecking=no' # @todo set this to be the IP address of your jump server

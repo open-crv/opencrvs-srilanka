@@ -351,6 +351,9 @@ for compose_file in ${COMPOSE_FILES_DOWNLOADED_FROM_CORE[@]}; do
   if [ ! -f $compose_file ]; then
     echo "Downloading $compose_file from https://raw.githubusercontent.com/opencrvs/opencrvs-core/$VERSION/$(basename $compose_file)"
     curl -o $compose_file https://raw.githubusercontent.com/opencrvs/opencrvs-core/$VERSION/$(basename $compose_file)
+
+    sed -i 's|docker.io/bitnami/redis:8.0|docker.io/bitnamilegacy/redis:8.0|g' /tmp/docker-compose.deps.yml
+
   fi
 done
 

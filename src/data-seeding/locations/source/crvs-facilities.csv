@@ -1,18 +1,340 @@
 id,name,partOf,locationType
-2OKicPQMNI,HQ Office,Location/BxrIbNW7f3K,CRVS_OFFICE
-JEhYJ82xRI,Isamba District Office,Location/ntoX1PkiWri,CRVS_OFFICE
-JWMRGwDBXK,Ibombo District Office,Location/oEBf29y8JP8,CRVS_OFFICE
-HKASqwkASD,Itambo District Office,Location/QTtxiWj8ONP,CRVS_OFFICE
-eaBXhNiLMp,Ezhi District Office,Location/ydyJb1RAy4U,CRVS_OFFICE
-okQp4uKCz0,Ilanga District Office,Location/HPGiE9Jjh2r,CRVS_OFFICE
-R5n2eHaSpB,Irundu District Office,Location/SvFNQpplnch,CRVS_OFFICE
-GzanivmNaP,Zobwe District Office,Location/Oapn6R4rt3D,CRVS_OFFICE
-2stAtvOCwl,Afue District Office,Location/nO68NTtcdw2,CRVS_OFFICE
-p9TC08l373,Embe District Office,Location/BxrIbNW7f3K,CRVS_OFFICE
-Hal1YwlBw7,Ienge District Office,Location/NLjvK1QsrN3,CRVS_OFFICE
-OgMqVlKHoN,Funabuli District Office,Location/idR0pJWLqcR,CRVS_OFFICE
-FHTLilSEgD,Pili District Office,Location/FuvOOwvBw0p,CRVS_OFFICE
-jMEPmtRKQ9,Ama District Office,Location/SQT8xjbvWwf,CRVS_OFFICE
-hfFdA2JI3T,Nsali District Office,Location/hywxVKv48Xp,CRVS_OFFICE
-mNCAv7oKj8,Soka District Office,Location/jCJxK8sFH40,CRVS_OFFICE
-H0EaOnzz0a,Chibiya District Office,Location/R22tRIhdm5Y,CRVS_OFFICE
+A991CCDE,Colombo Divisional Secretariat,Location/LK11,CRVS_OFFICE
+2D7A13E9,Dehiwala Divisional Secretariat,Location/LK11,CRVS_OFFICE
+F2E08D00,Homagama Divisional Secretariat,Location/LK11,CRVS_OFFICE
+91F119BE,Kaduwela Divisional Secretariat,Location/LK11,CRVS_OFFICE
+ABE59341,Kesbewa Divisional Secretariat,Location/LK11,CRVS_OFFICE
+F7782DB5,Kolonnawa Divisional Secretariat,Location/LK11,CRVS_OFFICE
+FB19C2B1,Maharagama Divisional Secretariat,Location/LK11,CRVS_OFFICE
+EEB2681B,Moratuwa Divisional Secretariat,Location/LK11,CRVS_OFFICE
+CB130431,Padukka Divisional Secretariat,Location/LK11,CRVS_OFFICE
+C13186EB,Ratmalana Divisional Secretariat,Location/LK11,CRVS_OFFICE
+CEE8C47A,Seethawaka Divisional Secretariat,Location/LK11,CRVS_OFFICE
+A0F675F8,Sri Jayawardanapura Kotte Divisional Secretariat,Location/LK11,CRVS_OFFICE
+C78DF4AF,Thimbirigasyaya Divisional Secretariat,Location/LK11,CRVS_OFFICE
+5F8E2D17,Attanagalla Divisional Secretariat,Location/LK12,CRVS_OFFICE
+6930D379,Biyagama Divisional Secretariat,Location/LK12,CRVS_OFFICE
+EC5921B7,Divulapitiya Divisional Secretariat,Location/LK12,CRVS_OFFICE
+0BF07841,Dompe Divisional Secretariat,Location/LK12,CRVS_OFFICE
+57C26A44,Gampaha Divisional Secretariat,Location/LK12,CRVS_OFFICE
+4FCF9C59,Ja Ela Divisional Secretariat,Location/LK12,CRVS_OFFICE
+545C3658,Katana Divisional Secretariat,Location/LK12,CRVS_OFFICE
+C96BB555,Kelaniya Divisional Secretariat,Location/LK12,CRVS_OFFICE
+557004F5,Mahara Divisional Secretariat,Location/LK12,CRVS_OFFICE
+A5C75166,Minuwangoda Divisional Secretariat,Location/LK12,CRVS_OFFICE
+5C3248B7,Mirigama Divisional Secretariat,Location/LK12,CRVS_OFFICE
+EE4ACEF4,Negombo Divisional Secretariat,Location/LK12,CRVS_OFFICE
+8EC96275,Wattala Divisional Secretariat,Location/LK12,CRVS_OFFICE
+0C39083B,Agalawatta Divisional Secretariat,Location/LK13,CRVS_OFFICE
+2743011F,Bandaragama Divisional Secretariat,Location/LK13,CRVS_OFFICE
+5FE8FA44,Beruwala Divisional Secretariat,Location/LK13,CRVS_OFFICE
+13F97196,Bulathsinhala Divisional Secretariat,Location/LK13,CRVS_OFFICE
+99E6B545,Dodangoda Divisional Secretariat,Location/LK13,CRVS_OFFICE
+27AC4EFF,Horana Divisional Secretariat,Location/LK13,CRVS_OFFICE
+E855E7B3,Ingiriya Divisional Secretariat,Location/LK13,CRVS_OFFICE
+4FC8F367,Kalutara Divisional Secretariat,Location/LK13,CRVS_OFFICE
+CDAD2278,Madurawala Divisional Secretariat,Location/LK13,CRVS_OFFICE
+C74FBF2A,Matugama Divisional Secretariat,Location/LK13,CRVS_OFFICE
+0512D3CA,Millaniya Divisional Secretariat,Location/LK13,CRVS_OFFICE
+8397D740,Palindanuwara Divisional Secretariat,Location/LK13,CRVS_OFFICE
+FFA4D2EC,Panadura Divisional Secretariat,Location/LK13,CRVS_OFFICE
+D525E400,Walallawita Divisional Secretariat,Location/LK13,CRVS_OFFICE
+B0260764,Akurana Divisional Secretariat,Location/LK21,CRVS_OFFICE
+5851D6F9,Deltota Divisional Secretariat,Location/LK21,CRVS_OFFICE
+08C5E0FE,Doluwa Divisional Secretariat,Location/LK21,CRVS_OFFICE
+79146ACE,Ganga Ihala Korale Divisional Secretariat,Location/LK21,CRVS_OFFICE
+0FB9AA8F,Gangawata Korale Divisional Secretariat,Location/LK21,CRVS_OFFICE
+6FFB1945,Harispattuwa Divisional Secretariat,Location/LK21,CRVS_OFFICE
+26D4DC8F,Hatharaliyadda Divisional Secretariat,Location/LK21,CRVS_OFFICE
+7E846F2F,Kundasale Divisional Secretariat,Location/LK21,CRVS_OFFICE
+0246E307,Medadumbara Divisional Secretariat,Location/LK21,CRVS_OFFICE
+8D089118,Minipe Divisional Secretariat,Location/LK21,CRVS_OFFICE
+304F97A1,Panvila Divisional Secretariat,Location/LK21,CRVS_OFFICE
+6EC9C314,Pasbagekorale Divisional Secretariat,Location/LK21,CRVS_OFFICE
+31A050B3,Pathadumbara Divisional Secretariat,Location/LK21,CRVS_OFFICE
+44E9F8CD,Pathahewaheta Divisional Secretariat,Location/LK21,CRVS_OFFICE
+4E6CAF1A,Poojapitiya Divisional Secretariat,Location/LK21,CRVS_OFFICE
+462DBA56,Tumpane Divisional Secretariat,Location/LK21,CRVS_OFFICE
+2D05BDEE,Udapalatha Divisional Secretariat,Location/LK21,CRVS_OFFICE
+08F845EB,Ududumbara Divisional Secretariat,Location/LK21,CRVS_OFFICE
+E1F67221,Udunuwara Divisional Secretariat,Location/LK21,CRVS_OFFICE
+CC4A720D,Yatinuwara Divisional Secretariat,Location/LK21,CRVS_OFFICE
+990C57A2,Ambanganga Divisional Secretariat,Location/LK22,CRVS_OFFICE
+B163CF61,Dambulla Divisional Secretariat,Location/LK22,CRVS_OFFICE
+BE84A094,Galewela Divisional Secretariat,Location/LK22,CRVS_OFFICE
+D47F5392,Laggala Divisional Secretariat,Location/LK22,CRVS_OFFICE
+F20C9237,Matale Divisional Secretariat,Location/LK22,CRVS_OFFICE
+EF1A4517,Naula Divisional Secretariat,Location/LK22,CRVS_OFFICE
+63BD138F,Pallepola Divisional Secretariat,Location/LK22,CRVS_OFFICE
+38DA28A4,Rattota Divisional Secretariat,Location/LK22,CRVS_OFFICE
+F97A5A2B,Ukuwela Divisional Secretariat,Location/LK22,CRVS_OFFICE
+FE5B1955,Wilgamuwa Divisional Secretariat,Location/LK22,CRVS_OFFICE
+ECC1A623,Yatawatta Divisional Secretariat,Location/LK22,CRVS_OFFICE
+B94F4299,Ambagamuwa Korale Divisional Secretariat,Location/LK23,CRVS_OFFICE
+D41A2BC7,Hanguranketa Divisional Secretariat,Location/LK23,CRVS_OFFICE
+0D828BF4,Kothmale East Divisional Secretariat,Location/LK23,CRVS_OFFICE
+32591D51,Kothmale West Divisional Secretariat,Location/LK23,CRVS_OFFICE
+8E948CEF,Mathurata Divisional Secretariat,Location/LK23,CRVS_OFFICE
+1F16F04C,Nildandahinna Divisional Secretariat,Location/LK23,CRVS_OFFICE
+F8A3E5D5,Norwood Divisional Secretariat,Location/LK23,CRVS_OFFICE
+5B2546D3,Nuwara Eliya Divisional Secretariat,Location/LK23,CRVS_OFFICE
+3B85C7A1,Thalawakele Divisional Secretariat,Location/LK23,CRVS_OFFICE
+97678C98,Walapane Divisional Secretariat,Location/LK23,CRVS_OFFICE
+8F96A321,Akmeemana Divisional Secretariat,Location/LK31,CRVS_OFFICE
+7CC735D3,Ambalangoda Divisional Secretariat,Location/LK31,CRVS_OFFICE
+A2E0908A,Baddegama Divisional Secretariat,Location/LK31,CRVS_OFFICE
+441D7B40,Balapitiya Divisional Secretariat,Location/LK31,CRVS_OFFICE
+B6A6F824,Bentota Divisional Secretariat,Location/LK31,CRVS_OFFICE
+820E186A,Bope-Poddala Divisional Secretariat,Location/LK31,CRVS_OFFICE
+166EFBC9,Elpitiya Divisional Secretariat,Location/LK31,CRVS_OFFICE
+D1F0C079,Galle 4 Gravets Divisional Secretariat,Location/LK31,CRVS_OFFICE
+35AC7341,Gonapinuwala Divisional Secretariat,Location/LK31,CRVS_OFFICE
+57482070,Habaraduwa Divisional Secretariat,Location/LK31,CRVS_OFFICE
+719B2B5A,Hikkaduwa Divisional Secretariat,Location/LK31,CRVS_OFFICE
+3AFF73BC,Imaduwa Divisional Secretariat,Location/LK31,CRVS_OFFICE
+6C9E69AE,Karandeniya Divisional Secretariat,Location/LK31,CRVS_OFFICE
+32CACB5E,Madampagama Divisional Secretariat,Location/LK31,CRVS_OFFICE
+172B7197,Nagoda Divisional Secretariat,Location/LK31,CRVS_OFFICE
+78125F05,Neluwa Divisional Secretariat,Location/LK31,CRVS_OFFICE
+7303B7A5,Niyagama Divisional Secretariat,Location/LK31,CRVS_OFFICE
+1875C5F0,Rathgama Divisional Secretariat,Location/LK31,CRVS_OFFICE
+983AE978,Thawalama Divisional Secretariat,Location/LK31,CRVS_OFFICE
+DE09D7C6,Wanduramba Divisional Secretariat,Location/LK31,CRVS_OFFICE
+25CE9D7E,Welivitiya-Divitura Divisional Secretariat,Location/LK31,CRVS_OFFICE
+B6395E12,Yakkalamulla Divisional Secretariat,Location/LK31,CRVS_OFFICE
+DA71B7DE,Akuressa Divisional Secretariat,Location/LK32,CRVS_OFFICE
+45FC71A1,Athuraliya Divisional Secretariat,Location/LK32,CRVS_OFFICE
+BF0DD33D,Devinuwara Divisional Secretariat,Location/LK32,CRVS_OFFICE
+EDC8DA57,Dikwella Divisional Secretariat,Location/LK32,CRVS_OFFICE
+35877872,Hakmana Divisional Secretariat,Location/LK32,CRVS_OFFICE
+7B499AA9,Kaburupitiya Divisional Secretariat,Location/LK32,CRVS_OFFICE
+3E013EA3,Kirinda Puhulwella Divisional Secretariat,Location/LK32,CRVS_OFFICE
+4464DFB3,Kotapola Divisional Secretariat,Location/LK32,CRVS_OFFICE
+B3C65A89,Malimbada Divisional Secretariat,Location/LK32,CRVS_OFFICE
+E72AA2EA,Matara Four Gravets Divisional Secretariat,Location/LK32,CRVS_OFFICE
+082C852F,Mulatiyana Divisional Secretariat,Location/LK32,CRVS_OFFICE
+D985EA9B,Pasgoda Divisional Secretariat,Location/LK32,CRVS_OFFICE
+0481563D,Pitabaddara Divisional Secretariat,Location/LK32,CRVS_OFFICE
+80AA12D1,Thihagoda Divisional Secretariat,Location/LK32,CRVS_OFFICE
+0E84B8D4,Weligama Divisional Secretariat,Location/LK32,CRVS_OFFICE
+0FF7A7D2,Welipitiya Divisional Secretariat,Location/LK32,CRVS_OFFICE
+511515F9,Ambalantota Divisional Secretariat,Location/LK33,CRVS_OFFICE
+204867ED,Angunakolapelessa Divisional Secretariat,Location/LK33,CRVS_OFFICE
+62935AB6,Beliatta Divisional Secretariat,Location/LK33,CRVS_OFFICE
+6AC039F0,Hambantota Divisional Secretariat,Location/LK33,CRVS_OFFICE
+94117028,Katuwana Divisional Secretariat,Location/LK33,CRVS_OFFICE
+035DF712,Lunugamwehera Divisional Secretariat,Location/LK33,CRVS_OFFICE
+E7E8EBC6,Okewela Divisional Secretariat,Location/LK33,CRVS_OFFICE
+329D33FF,Sooriyawewa Divisional Secretariat,Location/LK33,CRVS_OFFICE
+F8F49BB7,Tangalle Divisional Secretariat,Location/LK33,CRVS_OFFICE
+940579C0,Thissamaharama Divisional Secretariat,Location/LK33,CRVS_OFFICE
+034C44C5,Walasmulla Divisional Secretariat,Location/LK33,CRVS_OFFICE
+8C5B2830,Weeraketiya Divisional Secretariat,Location/LK33,CRVS_OFFICE
+C3956C91,Delft Divisional Secretariat,Location/LK41,CRVS_OFFICE
+D55090A1,Islands North (Kayts) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+C45EF34A,Islands South (Velanai) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+E567EA56,Jaffna Divisional Secretariat,Location/LK41,CRVS_OFFICE
+A3C7DBF3,Karainagar Divisional Secretariat,Location/LK41,CRVS_OFFICE
+F759B437,Nallur Divisional Secretariat,Location/LK41,CRVS_OFFICE
+DD93E991,Thenmaradchi (Chavakachcheri) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+54580792,Vadamaradchchi East Divisional Secretariat,Location/LK41,CRVS_OFFICE
+84FC03C1,Vadamaradchchi South-West (Karaveddy) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+81E460BA,Vadamaradchi North (Point Pedro) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+B3A193D5,Valikamam East (Kopay) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+C5DFD01C,Valikamam North (Thllippalai) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+EB4FE9DD,Valikamam South (Uduvil) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+9B364C11,Valikamam South West (Sandilipay) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+D04A2DB5,Valikamam West (Chankanai) Divisional Secretariat,Location/LK41,CRVS_OFFICE
+C37D420F,Madhu Divisional Secretariat,Location/LK42,CRVS_OFFICE
+A4218381,Mannar Town Divisional Secretariat,Location/LK42,CRVS_OFFICE
+1C5289A9,Manthai West Divisional Secretariat,Location/LK42,CRVS_OFFICE
+2A45636F,Musali Divisional Secretariat,Location/LK42,CRVS_OFFICE
+7449C86A,Nanaddan Divisional Secretariat,Location/LK42,CRVS_OFFICE
+05D4FA17,Vavuniya Divisional Secretariat,Location/LK43,CRVS_OFFICE
+76413B60,Vavuniya North Divisional Secretariat,Location/LK43,CRVS_OFFICE
+6F64E6D6,Vavuniya South Divisional Secretariat,Location/LK43,CRVS_OFFICE
+81CCB9F7,Vengalacheddikulam Divisional Secretariat,Location/LK43,CRVS_OFFICE
+0615205D,Manthai East Divisional Secretariat,Location/LK44,CRVS_OFFICE
+8448F34F,Maritimepattu Divisional Secretariat,Location/LK44,CRVS_OFFICE
+7817E842,Oddusuddan Divisional Secretariat,Location/LK44,CRVS_OFFICE
+72D026B6,Puthukkudiyiruppu Divisional Secretariat,Location/LK44,CRVS_OFFICE
+4353A28E,Thunukkai Divisional Secretariat,Location/LK44,CRVS_OFFICE
+AA4195AC,Welioya Divisional Secretariat,Location/LK44,CRVS_OFFICE
+388C90B7,Kandavalai Divisional Secretariat,Location/LK45,CRVS_OFFICE
+E6996D50,Karachchi Divisional Secretariat,Location/LK45,CRVS_OFFICE
+4C033061,Pachchilaipalli Divisional Secretariat,Location/LK45,CRVS_OFFICE
+B77F9460,Poonakary Divisional Secretariat,Location/LK45,CRVS_OFFICE
+25908E4B,Eravur Pattu Divisional Secretariat,Location/LK51,CRVS_OFFICE
+DA05856B,Eravur Town Divisional Secretariat,Location/LK51,CRVS_OFFICE
+9E7E666A,Kattankudy Divisional Secretariat,Location/LK51,CRVS_OFFICE
+9269491A,Koralai Pattu Central Divisional Secretariat,Location/LK51,CRVS_OFFICE
+AA2CB755,Koralai Pattu Divisional Secretariat,Location/LK51,CRVS_OFFICE
+7246A59E,Koralai Pattu North Divisional Secretariat,Location/LK51,CRVS_OFFICE
+89674D50,Koralai Pattu South Divisional Secretariat,Location/LK51,CRVS_OFFICE
+C013697C,Koralai Pattu West Divisional Secretariat,Location/LK51,CRVS_OFFICE
+B6AFEEE3,Manmunai North Divisional Secretariat,Location/LK51,CRVS_OFFICE
+1ACDA66A,Manmunai Pattu Divisional Secretariat,Location/LK51,CRVS_OFFICE
+F585113E,Manmunai South & Eruvil Pattu Divisional Secretariat,Location/LK51,CRVS_OFFICE
+2E46BC25,Manmunai South West Divisional Secretariat,Location/LK51,CRVS_OFFICE
+1E91B655,Manmunai West Divisional Secretariat,Location/LK51,CRVS_OFFICE
+DEC1762D,Porativu Pattu Divisional Secretariat,Location/LK51,CRVS_OFFICE
+92467A1D,Addalaichenai Divisional Secretariat,Location/LK52,CRVS_OFFICE
+4888A85B,Akkaraipattu Divisional Secretariat,Location/LK52,CRVS_OFFICE
+0C0C016F,Alayadivembu Divisional Secretariat,Location/LK52,CRVS_OFFICE
+75A40C57,Ampara Divisional Secretariat,Location/LK52,CRVS_OFFICE
+14B349D5,Damana Divisional Secretariat,Location/LK52,CRVS_OFFICE
+251B0C43,Dehiattakandiya Divisional Secretariat,Location/LK52,CRVS_OFFICE
+30C11F1A,Irakkamam Divisional Secretariat,Location/LK52,CRVS_OFFICE
+31FB142D,Kalmunai Divisional Secretariat,Location/LK52,CRVS_OFFICE
+E2A48727,Karaitivu Divisional Secretariat,Location/LK52,CRVS_OFFICE
+BDA5C21E,Lahugala Divisional Secretariat,Location/LK52,CRVS_OFFICE
+1FCB55BB,Mahaoya Divisional Secretariat,Location/LK52,CRVS_OFFICE
+4F82F23C,Navithanveli Divisional Secretariat,Location/LK52,CRVS_OFFICE
+EAB5EDD7,Nintavur Divisional Secretariat,Location/LK52,CRVS_OFFICE
+613FFA50,Padiyathalawa Divisional Secretariat,Location/LK52,CRVS_OFFICE
+026D9C7A,Pottuvil Divisional Secretariat,Location/LK52,CRVS_OFFICE
+A009E9AD,Sainthamaruthu Divisional Secretariat,Location/LK52,CRVS_OFFICE
+E510C7B2,Sammanthurai Divisional Secretariat,Location/LK52,CRVS_OFFICE
+8EBD00A0,Tirukkovil Divisional Secretariat,Location/LK52,CRVS_OFFICE
+803E8EDD,Uhana Divisional Secretariat,Location/LK52,CRVS_OFFICE
+AA154B11,Gomarankadawala Divisional Secretariat,Location/LK53,CRVS_OFFICE
+55C54EFC,Kantale Divisional Secretariat,Location/LK53,CRVS_OFFICE
+E015F3A8,Kinniya Divisional Secretariat,Location/LK53,CRVS_OFFICE
+E77F114B,Kuchchaweli Divisional Secretariat,Location/LK53,CRVS_OFFICE
+4101C11A,Morawewa Divisional Secretariat,Location/LK53,CRVS_OFFICE
+24A10315,Muthur Divisional Secretariat,Location/LK53,CRVS_OFFICE
+B8E5C168,Padavi Sri Pura Divisional Secretariat,Location/LK53,CRVS_OFFICE
+59D05243,Seruvila Divisional Secretariat,Location/LK53,CRVS_OFFICE
+5091DC2E,Thambalagamuwa Divisional Secretariat,Location/LK53,CRVS_OFFICE
+6CF73272,Town & Gravets Divisional Secretariat,Location/LK53,CRVS_OFFICE
+E316A027,Verugal Divisional Secretariat,Location/LK53,CRVS_OFFICE
+9F586AB6,Alawwa Divisional Secretariat,Location/LK61,CRVS_OFFICE
+1AE1C281,Ambanpola Divisional Secretariat,Location/LK61,CRVS_OFFICE
+59C42E50,Bamunakotuwa Divisional Secretariat,Location/LK61,CRVS_OFFICE
+425767FE,Bingiriya Divisional Secretariat,Location/LK61,CRVS_OFFICE
+510C7EC7,Ehetuwewa Divisional Secretariat,Location/LK61,CRVS_OFFICE
+C79466D8,Galgamuwa Divisional Secretariat,Location/LK61,CRVS_OFFICE
+06568EE0,Ganewatta Divisional Secretariat,Location/LK61,CRVS_OFFICE
+E390A125,Giribawa Divisional Secretariat,Location/LK61,CRVS_OFFICE
+813FDBCB,Ibbagamuwa Divisional Secretariat,Location/LK61,CRVS_OFFICE
+830B7D1F,Kobeigane Divisional Secretariat,Location/LK61,CRVS_OFFICE
+307E7EC0,Kotawehera Divisional Secretariat,Location/LK61,CRVS_OFFICE
+8E776B2E,Kuliyapitiya East Divisional Secretariat,Location/LK61,CRVS_OFFICE
+7252F8EC,Kuliyapitiya West Divisional Secretariat,Location/LK61,CRVS_OFFICE
+DE55A4B2,Kurunegala Divisional Secretariat,Location/LK61,CRVS_OFFICE
+D3585B19,Maho Divisional Secretariat,Location/LK61,CRVS_OFFICE
+44F5BE05,Mallawapitiya Divisional Secretariat,Location/LK61,CRVS_OFFICE
+09D9B3BD,Maspotha Divisional Secretariat,Location/LK61,CRVS_OFFICE
+779BF679,Mawathagama Divisional Secretariat,Location/LK61,CRVS_OFFICE
+AE54B55F,Narammala Divisional Secretariat,Location/LK61,CRVS_OFFICE
+5A11F486,Nikaweratiya Divisional Secretariat,Location/LK61,CRVS_OFFICE
+61B2668D,Panduwasnuwara East Divisional Secretariat,Location/LK61,CRVS_OFFICE
+3018F4B5,Panduwasnuwara West Divisional Secretariat,Location/LK61,CRVS_OFFICE
+2C7F1681,Pannala Divisional Secretariat,Location/LK61,CRVS_OFFICE
+9A0FC40F,Polgahawela Divisional Secretariat,Location/LK61,CRVS_OFFICE
+C10BBC68,Polpitigama Divisional Secretariat,Location/LK61,CRVS_OFFICE
+0F737CEF,Rasnayakapura Divisional Secretariat,Location/LK61,CRVS_OFFICE
+F7869FBC,Rideegama Divisional Secretariat,Location/LK61,CRVS_OFFICE
+1E18F474,Udubaddawa Divisional Secretariat,Location/LK61,CRVS_OFFICE
+5F201EC8,Wariyapola Divisional Secretariat,Location/LK61,CRVS_OFFICE
+054B25F8,Weerabugedara Divisional Secretariat,Location/LK61,CRVS_OFFICE
+F38DC93B,Anamaduwa Divisional Secretariat,Location/LK62,CRVS_OFFICE
+BE1CB021,Arachchikattuwa Divisional Secretariat,Location/LK62,CRVS_OFFICE
+717240E9,Chilaw Divisional Secretariat,Location/LK62,CRVS_OFFICE
+A18BE771,Dankotuwa Divisional Secretariat,Location/LK62,CRVS_OFFICE
+9F0B7033,Kalpitiya Divisional Secretariat,Location/LK62,CRVS_OFFICE
+2BC3A64E,Karuwalagaswewa Divisional Secretariat,Location/LK62,CRVS_OFFICE
+9812CC7D,Madampe Divisional Secretariat,Location/LK62,CRVS_OFFICE
+52D2ABFB,Mahakumbukkadawala Divisional Secretariat,Location/LK62,CRVS_OFFICE
+71A4151E,Mahawewa Divisional Secretariat,Location/LK62,CRVS_OFFICE
+EFA2EF30,Mundel Divisional Secretariat,Location/LK62,CRVS_OFFICE
+EC0AE08F,Nattandiya Divisional Secretariat,Location/LK62,CRVS_OFFICE
+3E9A1DB2,Nawagattegama Divisional Secretariat,Location/LK62,CRVS_OFFICE
+218E4461,Pallama Divisional Secretariat,Location/LK62,CRVS_OFFICE
+B17450A9,Puttalam Divisional Secretariat,Location/LK62,CRVS_OFFICE
+75A37493,Vanathavilluwa Divisional Secretariat,Location/LK62,CRVS_OFFICE
+02913251,Wennappuwa Divisional Secretariat,Location/LK62,CRVS_OFFICE
+88AF028F,Galenbidunuwewa Divisional Secretariat,Location/LK71,CRVS_OFFICE
+2A6FC7DC,Galnewa Divisional Secretariat,Location/LK71,CRVS_OFFICE
+AF08133E,Horowpathana Divisional Secretariat,Location/LK71,CRVS_OFFICE
+85BF3F30,Ipalogama Divisional Secretariat,Location/LK71,CRVS_OFFICE
+C0A1133F,Kahatagasdigiliya Divisional Secretariat,Location/LK71,CRVS_OFFICE
+6F6419C8,Kebithigollewa Divisional Secretariat,Location/LK71,CRVS_OFFICE
+CFE3AA28,Kekirawa Divisional Secretariat,Location/LK71,CRVS_OFFICE
+604DA075,Mahawilachchiya Divisional Secretariat,Location/LK71,CRVS_OFFICE
+81E2F879,Medawachchiya Divisional Secretariat,Location/LK71,CRVS_OFFICE
+2E1BD493,Mihinthale Divisional Secretariat,Location/LK71,CRVS_OFFICE
+A927754A,Nachchaduwa Divisional Secretariat,Location/LK71,CRVS_OFFICE
+380C2CEE,Nochchiyagama Divisional Secretariat,Location/LK71,CRVS_OFFICE
+E2E7374C,Nuwaragam Palatha Central Divisional Secretariat,Location/LK71,CRVS_OFFICE
+A7A65DD6,Nuwaragam Palatha East Divisional Secretariat,Location/LK71,CRVS_OFFICE
+ABEF05C5,Padaviya Divisional Secretariat,Location/LK71,CRVS_OFFICE
+307512D6,Palagala Divisional Secretariat,Location/LK71,CRVS_OFFICE
+0F893E3F,Palugaswewa Divisional Secretariat,Location/LK71,CRVS_OFFICE
+A30A6E6E,Rajanganaya Divisional Secretariat,Location/LK71,CRVS_OFFICE
+8BC3A282,Rambewa Divisional Secretariat,Location/LK71,CRVS_OFFICE
+FC60E241,Thalawa Divisional Secretariat,Location/LK71,CRVS_OFFICE
+89E2B34E,Thambuththegama Divisional Secretariat,Location/LK71,CRVS_OFFICE
+E8D5A8D5,Thirappane Divisional Secretariat,Location/LK71,CRVS_OFFICE
+FD7D3DF4,Dimbulagala Divisional Secretariat,Location/LK72,CRVS_OFFICE
+A178E43A,Elahera Divisional Secretariat,Location/LK72,CRVS_OFFICE
+A702C06F,Higurakgoda Divisional Secretariat,Location/LK72,CRVS_OFFICE
+9E87E284,Lankapura Divisional Secretariat,Location/LK72,CRVS_OFFICE
+80789BE7,Medirigiriya Divisional Secretariat,Location/LK72,CRVS_OFFICE
+77335E81,Thamankaduwa Divisional Secretariat,Location/LK72,CRVS_OFFICE
+860509C0,Welikanda Divisional Secretariat,Location/LK72,CRVS_OFFICE
+E3A55F0D,Badulla Divisional Secretariat,Location/LK81,CRVS_OFFICE
+F4B10818,Bandarawela Divisional Secretariat,Location/LK81,CRVS_OFFICE
+06BC81A7,Ella Divisional Secretariat,Location/LK81,CRVS_OFFICE
+FC040F1F,Haldummulla Divisional Secretariat,Location/LK81,CRVS_OFFICE
+C633A226,Hali-Ela Divisional Secretariat,Location/LK81,CRVS_OFFICE
+54C97988,Haputale Divisional Secretariat,Location/LK81,CRVS_OFFICE
+35B353C6,Kandeketiya Divisional Secretariat,Location/LK81,CRVS_OFFICE
+ADBBAC65,Lunugala Divisional Secretariat,Location/LK81,CRVS_OFFICE
+ECDADD27,Mahiyanganaya Divisional Secretariat,Location/LK81,CRVS_OFFICE
+500E8730,Meegahakiula Divisional Secretariat,Location/LK81,CRVS_OFFICE
+105BEB24,Passara Divisional Secretariat,Location/LK81,CRVS_OFFICE
+260B8E1D,Rideemaliyadda Divisional Secretariat,Location/LK81,CRVS_OFFICE
+5D4A09B4,Soranathota Divisional Secretariat,Location/LK81,CRVS_OFFICE
+9E15C5A0,Uvaparanagama Divisional Secretariat,Location/LK81,CRVS_OFFICE
+DE050662,Welimada Divisional Secretariat,Location/LK81,CRVS_OFFICE
+4E0EC05E,Badalkumbura Divisional Secretariat,Location/LK82,CRVS_OFFICE
+33DC615A,Bibile Divisional Secretariat,Location/LK82,CRVS_OFFICE
+C8011B36,Buttala Divisional Secretariat,Location/LK82,CRVS_OFFICE
+F394C500,Katharagama Divisional Secretariat,Location/LK82,CRVS_OFFICE
+0AE876F4,Madulla Divisional Secretariat,Location/LK82,CRVS_OFFICE
+45C69936,Medagama Divisional Secretariat,Location/LK82,CRVS_OFFICE
+FBD37DC7,Monaragala Divisional Secretariat,Location/LK82,CRVS_OFFICE
+80EEC27C,Sevanagala Divisional Secretariat,Location/LK82,CRVS_OFFICE
+8A637E5A,Siyambalanduwa Divisional Secretariat,Location/LK82,CRVS_OFFICE
+815A1E95,Thanamalwila Divisional Secretariat,Location/LK82,CRVS_OFFICE
+671A23F2,Wellawaya Divisional Secretariat,Location/LK82,CRVS_OFFICE
+0CB0EAE5,Ayagama Divisional Secretariat,Location/LK91,CRVS_OFFICE
+00E7F1A6,Balangoda Divisional Secretariat,Location/LK91,CRVS_OFFICE
+E0643F5B,Eheliyagoda Divisional Secretariat,Location/LK91,CRVS_OFFICE
+1A8CD9CA,Elapatha Divisional Secretariat,Location/LK91,CRVS_OFFICE
+7AB18383,Embilipitiya Divisional Secretariat,Location/LK91,CRVS_OFFICE
+450D45BA,Godakawela Divisional Secretariat,Location/LK91,CRVS_OFFICE
+E4C24B37,Imbulpe Divisional Secretariat,Location/LK91,CRVS_OFFICE
+9336B8A0,Kahawattha Divisional Secretariat,Location/LK91,CRVS_OFFICE
+4EA852A8,Kalawana Divisional Secretariat,Location/LK91,CRVS_OFFICE
+B0515621,Kalthota Divisional Secretariat,Location/LK91,CRVS_OFFICE
+5A2DBA8D,Kiriella Divisional Secretariat,Location/LK91,CRVS_OFFICE
+BC6F972B,Kolonna Divisional Secretariat,Location/LK91,CRVS_OFFICE
+29C8F4DF,Kuruvita Divisional Secretariat,Location/LK91,CRVS_OFFICE
+FABC8E8E,Nivithigala Divisional Secretariat,Location/LK91,CRVS_OFFICE
+940AB905,Opanayake Divisional Secretariat,Location/LK91,CRVS_OFFICE
+B8854873,Pelmadulla Divisional Secretariat,Location/LK91,CRVS_OFFICE
+CE9AF3AB,Ratnapura Divisional Secretariat,Location/LK91,CRVS_OFFICE
+EC9C3698,Weligepola Divisional Secretariat,Location/LK91,CRVS_OFFICE
+1F6463B5,Aranayake Divisional Secretariat,Location/LK92,CRVS_OFFICE
+8171D6E9,Bulathkohipitiya Divisional Secretariat,Location/LK92,CRVS_OFFICE
+028E5BAE,Dehiowita Divisional Secretariat,Location/LK92,CRVS_OFFICE
+06C64961,Deraniyagala Divisional Secretariat,Location/LK92,CRVS_OFFICE
+71F7F1B7,Galigamuwa Divisional Secretariat,Location/LK92,CRVS_OFFICE
+6C507CE5,Kegalle Divisional Secretariat,Location/LK92,CRVS_OFFICE
+ACB91A85,Mawanella Divisional Secretariat,Location/LK92,CRVS_OFFICE
+D4E62945,Rambukkana Divisional Secretariat,Location/LK92,CRVS_OFFICE
+0CE35C91,Ruwanwella Divisional Secretariat,Location/LK92,CRVS_OFFICE
+F286A4DF,Warakapola Divisional Secretariat,Location/LK92,CRVS_OFFICE
+E74BF2C3,Yatiyantota Divisional Secretariat,Location/LK92,CRVS_OFFICE

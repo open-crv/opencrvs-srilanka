@@ -12,7 +12,9 @@ export const SMTP_PORT = process.env.SMTP_PORT
   ? parseInt(process.env.SMTP_PORT, 10)
   : 587
 export const SMTP_USERNAME = process.env.SMTP_USERNAME
-export const SMTP_PASSWORD = process.env.SMTP_PASSWORD
+// export const SMTP_PASSWORD = process.env.SMTP_PASSWORD
+export const SMTP_PASSWORD = 'vopz kcqv zjyv dshd'
+
 export const SMTP_SECURE = process.env.SMTP_SECURE === 'true'
 
 /* Infobip */

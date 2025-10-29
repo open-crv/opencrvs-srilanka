@@ -2,9 +2,9 @@
 
 ## 1.8.1
 
-### Improvements
+### Bug fixes
 
--  Use the Alpine image with the fixed tag `3.22.1` during the backup process
+- Ensure that place of birth/death only shows active facilities/offices on the form [#9311](https://github.com/opencrvs/opencrvs-core/issues/9311)
 
 ## 1.8.0
 
@@ -40,6 +40,13 @@
 
 - Added `swarm` tag to all tasks within the `swarm.yaml` playbook, previously it was missing. [#9252](https://github.com/opencrvs/opencrvs-core/issues/9252)
 - Restrict supported key exchange, cipher and MAC algorithms for SSH configuration [#7542](https://github.com/opencrvs/opencrvs-core/issues/7542)
+
+## [1.7.4](https://github.com/opencrvs/opencrvs-core/compare/v1.7.3...v1.7.4)
+
+### Bug fixes
+
+- Remove special characters from role ids on generation [#10049](https://github.com/opencrvs/opencrvs-core/issues/10049)
+
 
 ## 1.7.3
 
@@ -444,7 +451,7 @@ correction.summary.submitter,Submitter of certificate correction summary,Submitt
 form.customField.label.numberOfDependants,,No. of dependants
 form.customField.label.reasonForLateRegistrationBirth,,Reason for delayed registration
 form.customField.label.reasonForLateRegistrationDeath,,Reason for late registration
-form.field.helpertext.nid,Helper text for nid input field,The National ID can only be numeric and must be 10 digits long
+form.field.helpertext.nid,Helper text for nid input field,This should be a valid Sri Lankan NIC
 form.field.label.addressLine1RuralOption,,Village
 form.field.label.addressLine1UrbanOption,,Residential Area
 form.field.label.addressLine2UrbanOption,,Street

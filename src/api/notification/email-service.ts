@@ -73,6 +73,12 @@ export const sendEmail = async (params: {
     : formattedParams
 
   try {
+    logger.info(`SMTP_HOST ${SMTP_HOST}`)
+    logger.info(`SMTP_PORT ${SMTP_PORT}`)
+    logger.info(`SMTP_USERNAME ${SMTP_USERNAME}`)
+    logger.info(`SMTP_PASSWORD ${SMTP_PASSWORD}`)
+    logger.info(`SMTP_SECURE ${SMTP_SECURE}`)
+
     await emailTransport.sendMail(mailOptions)
   } catch (error) {
     if (params.bcc) {

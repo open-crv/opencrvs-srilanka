@@ -897,14 +897,12 @@ export const formMessageDescriptors = {
     id: 'form.field.label.iDTypeOther'
   },
   helperTextNID: {
-    defaultMessage:
-      'The National ID can only be numeric and must be 10 digits long',
+    defaultMessage: 'This should be a valid Sri Lankan NIC',
     description: 'Helper text for nid input field',
     id: 'form.field.helpertext.nid'
   },
   tooltipNationalID: {
-    defaultMessage:
-      'The National ID can only be numeric and must be 10 digits long',
+    defaultMessage: 'This should be a valid Sri Lankan NIC',
     description: 'Tooltip for form field: iD number',
     id: 'form.field.tooltip.tooltipNationalID'
   },

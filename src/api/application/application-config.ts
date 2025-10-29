@@ -1,7 +1,9 @@
 import { countryLogo } from '@countryconfig/api/application/country-logo'
+import * as fs from 'fs'
+import { join } from 'path'
 
 export const applicationConfig = {
-  APPLICATION_NAME: 'Farajaland CRS',
+  APPLICATION_NAME: 'SriLanka CRVS',
   BIRTH: {
     REGISTRATION_TARGET: 30,
     LATE_REGISTRATION_TARGET: 365,
@@ -14,8 +16,8 @@ export const applicationConfig = {
   },
   COUNTRY_LOGO: countryLogo,
   CURRENCY: {
-    languagesAndCountry: ['en-US'],
-    isoCode: 'USD'
+    languagesAndCountry: ['en-LK'],
+    isoCode: 'LKR'
   },
   DEATH: {
     REGISTRATION_TARGET: 45,
@@ -26,9 +28,12 @@ export const applicationConfig = {
     PRINT_IN_ADVANCE: true
   },
   PHONE_NUMBER_PATTERN: '^0(7|9)[0-9]{8}$',
-  NID_NUMBER_PATTERN: '^[0-9]{10}$',
+  NID_NUMBER_PATTERN: '^([0-9]{9}[vV]?|[0-9]{12})$',
   LOGIN_BACKGROUND: {
-    backgroundColor: '36304E'
+    backgroundImage: `data:image/jpg;base64,${fs
+      .readFileSync(join(__dirname, 'sigiriya.jpg'))
+      .toString('base64')}`,
+    imageFit: 'FILL'
   },
   MARRIAGE: {
     REGISTRATION_TARGET: 45,
