@@ -57,10 +57,10 @@ services:
       - SMTP_USERNAME=${SMTP_USERNAME}
       - SMTP_PASSWORD=${SMTP_PASSWORD}
       - SMTP_SECURE=${SMTP_SECURE}
-      - ESIGNET_REDIRECT_URL=${ESIGNET_REDIRECT_URL}
-      - OPENID_PROVIDER_CLIENT_ID=${OPENID_PROVIDER_CLIENT_ID:-}
-      - OPENID_PROVIDER_CLAIMS=${OPENID_PROVIDER_CLAIMS:-}
-      - MOSIP_API_USERINFO_URL=${MOSIP_API_USERINFO_URL}
+      - ESIGNET_REDIRECT_URL=https://esignet-mock.{{hostname}}/authorize
+      - OPENID_PROVIDER_CLIENT_ID=mock-client_id
+      - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
+      - MOSIP_API_USERINFO_URL=https://mosip-api.{{hostname}}/esignet/get-oidp-user-info
     deploy:
       replicas: 1
     networks:
@@ -151,7 +151,7 @@ services:
       - SMTP_SECURE=${SMTP_SECURE:-}
       - MOSIP_WEBSUB_CALLBACK_URL=http://mosip-api:2024/websub/callback
       - ISSUER_URL=http://mosip-mock:20240
-      - MOSIP_WEBSUB_TOPIC=${MOSIP_WEBSUB_TOPIC}
+      - MOSIP_WEBSUB_TOPIC=CREDENTIAL_ISSUED
     networks:
       - overlay_net
     logging:
@@ -161,7 +161,7 @@ services:
         tag: 'mosip-mock'
 
   esignet-mock:
-    image: ghcr.io/opencrvs/esignet-mock:${MOSIP_API_VERSION}
+    image: ghcr.io/opencrvs/esignet-mock:1.8.0
     volumes:
       - /certs:/certs:ro 
     environment:

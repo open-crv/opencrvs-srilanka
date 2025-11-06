@@ -593,10 +593,10 @@ services:
       - INFOBIP_API_KEY=${INFOBIP_API_KEY:-}
       - INFOBIP_SENDER_ID=${INFOBIP_SENDER_ID:-}
       - DOMAIN={{hostname}}
-      - ESIGNET_REDIRECT_URL=${ESIGNET_REDIRECT_URL}
-      - OPENID_PROVIDER_CLIENT_ID=${OPENID_PROVIDER_CLIENT_ID:-}
-      - OPENID_PROVIDER_CLAIMS=${OPENID_PROVIDER_CLAIMS:-}
-      - MOSIP_API_USERINFO_URL=${MOSIP_API_USERINFO_URL:-}
+      - ESIGNET_REDIRECT_URL=https://esignet-mock.{{hostname}}/authorize
+      - OPENID_PROVIDER_CLIENT_ID=mock-client_id
+      - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
+      - MOSIP_API_USERINFO_URL=https://mosip-api.{{hostname}}/esignet/get-oidp-user-info
       - LOCALE=en
     networks:
       - overlay_net
