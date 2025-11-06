@@ -137,7 +137,7 @@ services:
       - /certs:/certs:ro 
 
   mosip-mock:
-    image: ghcr.io/opencrvs/mosip-mock:${MOSIP_API_VERSION}
+    image: ghcr.io/opencrvs/mosip-mock:1.8.0
     depends_on:
       - mosip-api
     environment:
