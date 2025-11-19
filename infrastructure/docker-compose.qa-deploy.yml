@@ -133,6 +133,7 @@ services:
   mosip-api:
     volumes:
       - '/data/sqlite:/data/sqlite'
+      - '/certs:/certs:ro'
     image: ghcr.io/opencrvs/mosip-api:1.8.0
     environment:
       - NODE_ENV=production
