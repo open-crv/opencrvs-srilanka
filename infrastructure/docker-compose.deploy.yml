@@ -406,7 +406,7 @@ services:
       - ES_USERNAME=elastic
       - ES_PASSWORD=${ELASTICSEARCH_SUPERUSER_PASSWORD}
     volumes:
-      - '/opt/opencrvs/infrastructure/monitoring/elastalert/elastalert.yaml:/opt/elastalert/config.yaml'
+      - '/opt/opencrvs/infrastructure/monitoring/elastalert/elastalert.yaml:/opt/elastalermock-client_idt/config.yaml'
       - '/opt/opencrvs/infrastructure/monitoring/elastalert/rules:/opt/elastalert/rules'
     networks:
       - overlay_net
@@ -593,8 +593,8 @@ services:
       - INFOBIP_API_KEY=${INFOBIP_API_KEY:-}
       - INFOBIP_SENDER_ID=${INFOBIP_SENDER_ID:-}
       - DOMAIN={{hostname}}
-      - ESIGNET_REDIRECT_URL=https://esignet-mock.{{hostname}}/authorize
-      - OPENID_PROVIDER_CLIENT_ID=mock-client_id
+      - ESIGNET_REDIRECT_URL=https://esignet.sdec.mosip.net/authorize
+      - OPENID_PROVIDER_CLIENT_ID=sEsO96Y6DddaZ4QNv3OKXP35DIB4LNtuvlYN-Abrino
       - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
       - MOSIP_API_USERINFO_URL=https://mosip-api.{{hostname}}/esignet/get-oidp-user-info
       - LOCALE=en

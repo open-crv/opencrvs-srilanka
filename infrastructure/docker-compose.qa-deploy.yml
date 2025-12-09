@@ -58,7 +58,7 @@ services:
       - SMTP_PASSWORD=${SMTP_PASSWORD}
       - SMTP_SECURE=${SMTP_SECURE}
       - ESIGNET_REDIRECT_URL=https://esignet-mock.{{hostname}}/authorize
-      - OPENID_PROVIDER_CLIENT_ID=mock-client_id
+      - OPENID_PROVIDER_CLIENT_ID= sEsO96Y6DddaZ4QNv3OKXP35DIB4LNtuvlYN-Abrino
       - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
       - MOSIP_API_USERINFO_URL=https://mosip-api.{{hostname}}/esignet/get-oidp-user-info
     deploy:
