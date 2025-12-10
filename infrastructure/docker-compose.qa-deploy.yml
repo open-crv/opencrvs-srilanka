@@ -58,9 +58,9 @@ services:
       - SMTP_PASSWORD=${SMTP_PASSWORD}
       - SMTP_SECURE=${SMTP_SECURE}
       - ESIGNET_REDIRECT_URL=https://esignet.sdec.mosip.net/authorize
-      - OPENID_PROVIDER_CLIENT_ID= sEsO96Y6DddaZ4QNv3OKXP35DIB4LNtuvlYN-Abrino
+      - OPENID_PROVIDER_CLIENT_ID=sEsO96Y6DddaZ4QNv3OKXP35DIB4LNtuvlYN-Abrino
       - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
-      - MOSIP_API_USERINFO_URL=https://mosip-api.{{hostname}}/esignet/get-oidp-user-info
+      - MOSIP_API_USERINFO_URL=https://esignet.sdec.mosip.net/v1/esignet/oidc/userinfo
     deploy:
       replicas: 1
     networks:
