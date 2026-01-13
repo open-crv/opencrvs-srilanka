@@ -58,7 +58,7 @@ services:
       - SMTP_PASSWORD=${SMTP_PASSWORD}
       - SMTP_SECURE=${SMTP_SECURE}
       - ESIGNET_REDIRECT_URL=https://api-internal.sdec.mosip.net/authorize
-      - OPENID_PROVIDER_CLIENT_ID=7ftT1reAZ8cdBrJe0sslbnY8irNKNyhm
+      - OPENID_PROVIDER_CLIENT_ID= opencrvs-sludi-partner
       - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
       - MOSIP_API_USERINFO_URL=https://api-internal.sdec.mosip.net/esignet/get-oidp-user-info
     deploy:
