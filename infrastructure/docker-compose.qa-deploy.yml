@@ -57,10 +57,10 @@ services:
       - SMTP_USERNAME=${SMTP_USERNAME}
       - SMTP_PASSWORD=${SMTP_PASSWORD}
       - SMTP_SECURE=${SMTP_SECURE}
-      - ESIGNET_REDIRECT_URL=http://34.2.28.99:3000/authorize
-      - OPENID_PROVIDER_CLIENT_ID=IIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjHcyi
+      - ESIGNET_REDIRECT_URL=https://api-internal.sdec.mosip.net/authorize
+      - OPENID_PROVIDER_CLIENT_ID=7ftT1reAZ8cdBrJe0sslbnY8irNKNyhm
       - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
-      - MOSIP_API_USERINFO_URL=http://34.2.28.99:3000/esignet/get-oidp-user-info
+      - MOSIP_API_USERINFO_URL=https://api-internal.sdec.mosip.net/esignet/get-oidp-user-info
     deploy:
       replicas: 1
     networks:
