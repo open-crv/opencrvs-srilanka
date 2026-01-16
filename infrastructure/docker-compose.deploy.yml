@@ -1051,7 +1051,7 @@ services:
       - LOCALE=en
       - ESIGNET_USERINFO_URL=http://esignet-mock:20260/oidc/userinfo
       - ESIGNET_TOKEN_URL=http://esignet-mock:20260/oauth/token
-      - OIDP_CLIENT_PRIVATE_KEY_PATH=/certs/esignet-jwk.txt
+      - OIDP_CLIENT_PRIVATE_KEY_PATH=/certs/private.json
       - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
       - DECRYPT_P12_FILE_PATH=/certs/keystore.p12
       - DECRYPT_P12_FILE_PASSWORD=mosip123
