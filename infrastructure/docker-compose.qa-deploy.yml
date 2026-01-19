@@ -60,7 +60,7 @@ services:
       - ESIGNET_REDIRECT_URL=https://esignet.sdec.mosip.net/authorize
       - OPENID_PROVIDER_CLIENT_ID=sEsO96Y6DddaZ4QNv3OKXP35DIB4LNtuvlYN-Abrino
       - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
-      - MOSIP_API_USERINFO_URL=https://esignet.sdec.mosip.net/esignet/get-oidp-user-info
+      - MOSIP_API_USERINFO_URL=https://api-internal.sdec.mosip.net
     deploy:
       replicas: 1
     networks:
@@ -131,10 +131,53 @@ services:
       - NODE_ENV=production
 
   mosip-api:
-    environment:
-      - MOSIP_WEBSUB_CALLBACK_URL=http://mosip-api:2024/websub/callback
     volumes:
-      - /certs:/certs:ro 
+      - '/data/sqlite:/data/sqlite'
+    image: ghcr.io/opencrvs/mosip-api:1.0
+    environment:
+      - NODE_ENV=production
+      - MOSIP_BIRTH_WEBHOOK_URL=http://mosip-mock:20240/webhooks/opencrvs/birth
+      - MOSIP_DEATH_WEBHOOK_URL=http://mosip-mock:20240/webhooks/opencrvs/death
+      - OPENCRVS_GATEWAY_URL=http://gateway:7070
+      - OPENCRVS_PUBLIC_KEY_URL=http://auth:4040/.well-known
+      - LOCALE=en
+      - ESIGNET_USERINFO_URL=https://esignet.sdec.mosip.net/esignet/get-oidp-user-info
+      - ESIGNET_TOKEN_URL=https://esignet.sdec.mosip.net/v1/esignet/oauth/v2/token
+      - ESIGNET_REDIRECT_URL=https://esignet.sdec.mosip.net/authorize
+      - OIDP_CLIENT_PRIVATE_KEY_PATH=/certs/esignet-jwk.txt
+      - CLIENT_APP_URL=https://register.{{hostname}}
+      - SQLITE_DATABASE_PATH=/data/sqlite/mosip-api.db
+      - MOSIP_PACKET_AUTH_CLIENT_ID=opencrvs-sludi-partner
+      - MOSIP_PACKET_AUTH_CLIENT_SECRET=7ftT1reAZ8cdBrJe0sslbnY8irNKNyhm
+      - MOSIP_AUTH_URL=https://api-internal.sdec.mosip.net
+      - MOSIP_WEBSUB_CALLBACK_URL=https://mosip-api.{{hostname}}/websub/callback
+      - MOSIP_CENTER_ID=10002
+      - MOSIP_MACHINE_ID=10013
+    deploy:
+      replicas: 1
+      labels:
+        - 'traefik.enable=true'
+        - 'traefik.http.routers.mosip-api.rule=Host(`mosip-api.{{hostname}}`)'
+        - 'traefik.http.services.mosip-api.loadbalancer.server.port=2024'
+        - 'traefik.http.routers.mosip-api.tls=true'
+        - 'traefik.http.routers.mosip-api.tls.certresolver=certResolver'
+        - 'traefik.http.routers.mosip-api.entrypoints=web,websecure'
+        - 'traefik.http.routers.mosip-api.middlewares=gzip-compression'
+        - 'traefik.docker.network=opencrvs_overlay_net'
+        - 'traefik.http.middlewares.mosip-api.headers.customresponseheaders.Pragma=no-cache'
+        - 'traefik.http.middlewares.mosip-api.headers.customresponseheaders.Cache-control=no-store'
+        - 'traefik.http.middlewares.mosip-api.headers.customresponseheaders.X-Robots-Tag=none'
+        - 'traefik.http.middlewares.mosip-api.headers.stsseconds=31536000'
+        - 'traefik.http.middlewares.mosip-api.headers.stsincludesubdomains=true'
+        - 'traefik.http.middlewares.mosip-api.headers.stspreload=true'
+    networks:
+      - overlay_net
+    logging:
+      driver: gelf
+      options:
+        gelf-address: 'udp://127.0.0.1:12201'
+        tag: 'mosip-api'
+
 
   mosip-mock:
     image: ghcr.io/opencrvs/mosip-mock:1.8.0
