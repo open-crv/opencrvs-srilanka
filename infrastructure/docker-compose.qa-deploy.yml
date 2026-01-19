@@ -131,72 +131,10 @@ services:
       - NODE_ENV=production
 
   mosip-api:
-    volumes:
-      - '/data/sqlite:/data/sqlite'
-    image: ghcr.io/opencrvs/mosip-api:1.0
     environment:
-     - NODE_ENV=production
-      - MOSIP_BIRTH_WEBHOOK_URL=https://api-internal.sdec.mosip.net/webhooks/opencrvs/birth
-      - MOSIP_DEATH_WEBHOOK_URL=https://api-internal.sdec.mosip.net/webhooks/opencrvs/death
-      - OPENCRVS_GRAPHQL_GATEWAY_URL=http://gateway:7070/graphql
-      - OPENCRVS_PUBLIC_KEY_URL=http://auth:4040/.well-known
-      - LOCALE=en
-      - ESIGNET_USERINFO_URL=http://esignet-mock:20260/oidc/userinfo
-      - ESIGNET_TOKEN_URL=http://esignet-mock:20260/oauth/token
-      - OIDP_CLIENT_PRIVATE_KEY_PATH=/certs/private.json
-      - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
-      - DECRYPT_P12_FILE_PATH=/certs/keystore.p12
-      - DECRYPT_P12_FILE_PASSWORD=mosip123
-      - ENCRYPT_CERT_PATH=/certs/ida-partner.crt
-      - IDA_AUTH_DOMAIN_URI=https://api-internal.sdec.mosip.net/
-      - IDA_AUTH_URL=https://api-internal.sdec.mosip.net/idauthentication/v1/auth
-      - PARTNER_APIKEY=123456
-      - PARTNER_ID=aaaaaAAAAAbbbbbBBBBBcccccCCCCCdddddDDDDD
-      - PARTNER_MISP_LK=crvs-partner
-      - SIGN_P12_FILE_PATH=/certs/keystore.p12
-      - SIGN_P12_FILE_PASSWORD=mosip123
-      - CLIENT_APP_URL=https://register.{{hostname}}
-      - SQLITE_DATABASE_PATH=/data/sqlite/mosip-api.db
-      - MOSIP_AUTH_URL=https://api-internal.sdec.mosip.net/v1/authmanager/authenticate/clientidsecretkey
-      - MOSIP_AUTH_CLIENT_APP_ID=admin
-      - MOSIP_PACKET_AUTH_CLIENT_ID=opencrvs-sludi-partner
-      - MOSIP_PACKET_AUTH_CLIENT_SECRET=7ftT1reAZ8cdBrJe0sslbnY8irNKNyhm
-      - MOSIP_WEBSUB_AUTH_CLIENT_ID=mosip-websub-client
-      - MOSIP_WEBSUB_AUTH_CLIENT_SECRET=abcdeABCDE123456
       - MOSIP_WEBSUB_CALLBACK_URL=https://api-internal.sdec.mosip.net/websub/callback
-      - MOSIP_WEBSUB_HUB_URL=https://api-internal.sdec.mosip.net/websub/hub
-      - MOSIP_WEBSUB_SECRET=mosip-websub-secret
-      - MOSIP_WEBSUB_TOPIC=CREDENTIAL_ISSUED
-      - MOSIP_CREATE_PACKET_URL=https://api-internal.sdec.mosip.net/commons/v1/packetmanager/createPacket
-      - MOSIP_PROCESS_PACKET_URL=https://api-internal.sdec.mosip.net/registrationprocessor/v1/workflowmanager/workflowinstance
-      - MOSIP_VERIFIABLE_CREDENTIAL_ALLOWLIST=https://api-internal.sdec.mosip.net/.well-known/public-key.json
-      - MOSIP_CENTER_ID=10002
-      - MOSIP_MACHINE_ID=10013
-    deploy:
-      replicas: 1
-      labels:
-        - 'traefik.enable=true'
-        - 'traefik.http.routers.mosip-api.rule=Host(`mosip-api.{{hostname}}`)'
-        - 'traefik.http.services.mosip-api.loadbalancer.server.port=2024'
-        - 'traefik.http.routers.mosip-api.tls=true'
-        - 'traefik.http.routers.mosip-api.tls.certresolver=certResolver'
-        - 'traefik.http.routers.mosip-api.entrypoints=web,websecure'
-        - 'traefik.http.routers.mosip-api.middlewares=gzip-compression'
-        - 'traefik.docker.network=opencrvs_overlay_net'
-        - 'traefik.http.middlewares.mosip-api.headers.customresponseheaders.Pragma=no-cache'
-        - 'traefik.http.middlewares.mosip-api.headers.customresponseheaders.Cache-control=no-store'
-        - 'traefik.http.middlewares.mosip-api.headers.customresponseheaders.X-Robots-Tag=none'
-        - 'traefik.http.middlewares.mosip-api.headers.stsseconds=31536000'
-        - 'traefik.http.middlewares.mosip-api.headers.stsincludesubdomains=true'
-        - 'traefik.http.middlewares.mosip-api.headers.stspreload=true'
-    networks:
-      - overlay_net
-    logging:
-      driver: gelf
-      options:
-        gelf-address: 'udp://127.0.0.1:12201'
-        tag: 'mosip-api'
-
+    volumes:
+      - /certs:/certs:ro 
 
   mosip-mock:
     image: ghcr.io/opencrvs/mosip-mock:1.8.0
@@ -212,7 +150,7 @@ services:
       - SMTP_PASSWORD=${SMTP_PASSWORD:-}
       - SMTP_SECURE=${SMTP_SECURE:-}
       - MOSIP_WEBSUB_CALLBACK_URL=https://api-internal.sdec.mosip.net/websub/callback
-      - ISSUER_URL=https://api-internal.sdec.mosip.net
+      - ISSUER_URL=https://api-internal.sdec.mosip.net/
       - MOSIP_WEBSUB_TOPIC=CREDENTIAL_ISSUED
     networks:
       - overlay_net
