@@ -135,22 +135,41 @@ services:
       - '/data/sqlite:/data/sqlite'
     image: ghcr.io/opencrvs/mosip-api:1.0
     environment:
-      - NODE_ENV=production
-      - MOSIP_BIRTH_WEBHOOK_URL=http://mosip-mock:20240/webhooks/opencrvs/birth
-      - MOSIP_DEATH_WEBHOOK_URL=http://mosip-mock:20240/webhooks/opencrvs/death
-      - OPENCRVS_GATEWAY_URL=http://gateway:7070
+     - NODE_ENV=production
+      - MOSIP_BIRTH_WEBHOOK_URL=https://api-internal.sdec.mosip.net/webhooks/opencrvs/birth
+      - MOSIP_DEATH_WEBHOOK_URL=https://api-internal.sdec.mosip.net/webhooks/opencrvs/death
+      - OPENCRVS_GRAPHQL_GATEWAY_URL=http://gateway:7070/graphql
       - OPENCRVS_PUBLIC_KEY_URL=http://auth:4040/.well-known
       - LOCALE=en
-      - ESIGNET_USERINFO_URL=https://esignet.sdec.mosip.net/esignet/get-oidp-user-info
-      - ESIGNET_TOKEN_URL=https://esignet.sdec.mosip.net/v1/esignet/oauth/v2/token
-      - ESIGNET_REDIRECT_URL=https://esignet.sdec.mosip.net/authorize
-      - OIDP_CLIENT_PRIVATE_KEY_PATH=/certs/esignet-jwk.txt
+      - ESIGNET_USERINFO_URL=http://esignet-mock:20260/oidc/userinfo
+      - ESIGNET_TOKEN_URL=http://esignet-mock:20260/oauth/token
+      - OIDP_CLIENT_PRIVATE_KEY_PATH=/certs/private.json
+      - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
+      - DECRYPT_P12_FILE_PATH=/certs/keystore.p12
+      - DECRYPT_P12_FILE_PASSWORD=mosip123
+      - ENCRYPT_CERT_PATH=/certs/ida-partner.crt
+      - IDA_AUTH_DOMAIN_URI=https://api-internal.sdec.mosip.net/
+      - IDA_AUTH_URL=https://api-internal.sdec.mosip.net/idauthentication/v1/auth
+      - PARTNER_APIKEY=123456
+      - PARTNER_ID=aaaaaAAAAAbbbbbBBBBBcccccCCCCCdddddDDDDD
+      - PARTNER_MISP_LK=crvs-partner
+      - SIGN_P12_FILE_PATH=/certs/keystore.p12
+      - SIGN_P12_FILE_PASSWORD=mosip123
       - CLIENT_APP_URL=https://register.{{hostname}}
       - SQLITE_DATABASE_PATH=/data/sqlite/mosip-api.db
+      - MOSIP_AUTH_URL=https://api-internal.sdec.mosip.net/v1/authmanager/authenticate/clientidsecretkey
+      - MOSIP_AUTH_CLIENT_APP_ID=admin
       - MOSIP_PACKET_AUTH_CLIENT_ID=opencrvs-sludi-partner
       - MOSIP_PACKET_AUTH_CLIENT_SECRET=7ftT1reAZ8cdBrJe0sslbnY8irNKNyhm
-      - MOSIP_AUTH_URL=https://api-internal.sdec.mosip.net
-      - MOSIP_WEBSUB_CALLBACK_URL=https://mosip-api.{{hostname}}/websub/callback
+      - MOSIP_WEBSUB_AUTH_CLIENT_ID=mosip-websub-client
+      - MOSIP_WEBSUB_AUTH_CLIENT_SECRET=abcdeABCDE123456
+      - MOSIP_WEBSUB_CALLBACK_URL=https://api-internal.sdec.mosip.net/websub/callback
+      - MOSIP_WEBSUB_HUB_URL=https://api-internal.sdec.mosip.net/websub/hub
+      - MOSIP_WEBSUB_SECRET=mosip-websub-secret
+      - MOSIP_WEBSUB_TOPIC=CREDENTIAL_ISSUED
+      - MOSIP_CREATE_PACKET_URL=https://api-internal.sdec.mosip.net/commons/v1/packetmanager/createPacket
+      - MOSIP_PROCESS_PACKET_URL=https://api-internal.sdec.mosip.net/registrationprocessor/v1/workflowmanager/workflowinstance
+      - MOSIP_VERIFIABLE_CREDENTIAL_ALLOWLIST=https://api-internal.sdec.mosip.net/.well-known/public-key.json
       - MOSIP_CENTER_ID=10002
       - MOSIP_MACHINE_ID=10013
     deploy:
@@ -192,8 +211,8 @@ services:
       - SMTP_USERNAME=${SMTP_USERNAME:-}
       - SMTP_PASSWORD=${SMTP_PASSWORD:-}
       - SMTP_SECURE=${SMTP_SECURE:-}
-      - MOSIP_WEBSUB_CALLBACK_URL=http://mosip-api:2024/websub/callback
-      - ISSUER_URL=http://mosip-mock:20240
+      - MOSIP_WEBSUB_CALLBACK_URL=https://api-internal.sdec.mosip.net/websub/callback
+      - ISSUER_URL=https://api-internal.sdec.mosip.net
       - MOSIP_WEBSUB_TOPIC=CREDENTIAL_ISSUED
     networks:
       - overlay_net
