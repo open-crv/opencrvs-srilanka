@@ -1051,18 +1051,26 @@ services:
       - LOCALE=en
       - ESIGNET_USERINFO_URL=https://esignet.sdec.mosip.net/oidc/userinfo
       - ESIGNET_TOKEN_URL=https://esignet.sdec.mosip.net/oauth/token
-      - OIDP_CLIENT_PRIVATE_KEY_PATH=/certs/private.json
+      #todo
+      #- OIDP_CLIENT_PRIVATE_KEY_PATH=/certs/private.json
+
       - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
-      - DECRYPT_P12_FILE_PATH=/certs/keystore.p12
-      - DECRYPT_P12_FILE_PASSWORD=mosip123
-      - ENCRYPT_CERT_PATH=/certs/ida-partner.crt
+
+       #todo
+      #- DECRYPT_P12_FILE_PATH=/certs/keystore.p12
+      #- DECRYPT_P12_FILE_PASSWORD=mosip123
+      #- ENCRYPT_CERT_PATH=/certs/ida-partner.crt
+
+
       - IDA_AUTH_DOMAIN_URI=https://api-internal.sdec.mosip.net/
       - IDA_AUTH_URL=https://api-internal.sdec.mosip.net/idauthentication/v1/auth
       - PARTNER_APIKEY=123456
       - PARTNER_ID=aaaaaAAAAAbbbbbBBBBBcccccCCCCCdddddDDDDD
       - PARTNER_MISP_LK=crvs-partner
-      - SIGN_P12_FILE_PATH=/certs/keystore.p12
-      - SIGN_P12_FILE_PASSWORD=mosip123
+
+       #todo
+      #- SIGN_P12_FILE_PATH=/certs/keystore.p12
+      #- SIGN_P12_FILE_PASSWORD=mosip123
       - CLIENT_APP_URL=https://register.{{hostname}}
       - SQLITE_DATABASE_PATH=/data/sqlite/mosip-api.db
       - MOSIP_AUTH_URL=https://api-internal.sdec.mosip.net/v1/authmanager/authenticate/clientidsecretkey
