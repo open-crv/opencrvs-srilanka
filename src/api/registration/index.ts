@@ -11,18 +11,26 @@
 import * as Hapi from '@hapi/hapi'
 import { generateRegistrationNumber } from './registrationNumber'
 import { createClient } from '@opencrvs/toolkit/api'
-import { ActionInput } from '@opencrvs/toolkit/events'
-import { GATEWAY_URL } from '@countryconfig/constants'
+import {
+  ActionInput,
+  deepMerge,
+  aggregateActionDeclarations,
+  EventDocument,
+  getPendingAction,
+  NameFieldValue
+} from '@opencrvs/toolkit/events'
+import { GATEWAY_URL, MOSIP_INTEROP_URL } from '@countryconfig/constants'
 import { v4 as uuidv4 } from 'uuid'
+import { sendInformantNotification } from '../notification/informantNotification'
+import { createMosipInteropClient } from '@opencrvs/mosip/api'
+import { logger } from '@countryconfig/logger'
+import {
+  shouldForwardBirthRegistrationToMosip,
+  shouldForwardDeathRegistrationToMosip
+} from '@countryconfig/form/v2/mosip'
 
-interface ActionConfirmationRequest extends Hapi.Request {
-  payload: {
-    actionId: string
-    event: {
-      id: string
-    }
-    action: ActionInput
-  }
+export interface ActionConfirmationRequest extends Hapi.Request {
+  payload: EventDocument
 }
 
 /* eslint-disable no-unused-vars */
@@ -51,22 +59,24 @@ interface ActionConfirmationRequest extends Hapi.Request {
  * @param {Hapi.ResponseToolkit} h - The response toolkit.
  * @returns {Hapi.Response} The response object. Should return HTTP 200, 202 or 400. With HTTP 200, the payload should contain the generated registration number.
  */
-export function onRegisterHandler(
+export async function onRegisterHandler(
   request: ActionConfirmationRequest,
   h: Hapi.ResponseToolkit
 ) {
   const token = request.auth.artifacts.token as string
-  const actionId = request.payload.actionId
-  const eventId = request.payload.event.id
-  const action = request.payload.action
+  const event = request.payload
+  const eventId = event.id
+  const action = getPendingAction(event.actions)
 
   // OPTION 1: Immediate acceptance (HTTP 200)
   // Return HTTP 200 with a registration number to immediately accept the registration action.
   // This is the default implementation that automatically generates and assigns a registration number.
 
-  return h
-    .response({ registrationNumber: generateRegistrationNumber() })
-    .code(200)
+  const registrationNumber = generateRegistrationNumber()
+
+  await sendInformantNotification({ event, token, registrationNumber })
+
+  return h.response({ registrationNumber }).code(200)
 
   // OPTION 2: Immediate rejection (HTTP 400)
   // To reject the registration immediately, uncomment the following:
@@ -132,7 +142,6 @@ async function rejectRequestedRegistration(
 ) {
   const url = new URL('events', GATEWAY_URL).toString()
   const client = createClient(url, `Bearer ${token}`)
-
   const event = await client.event.actions.register.reject.mutate({
     transactionId: uuidv4(),
     eventId,
@@ -140,4 +149,184 @@ async function rejectRequestedRegistration(
   })
 
   return event
+}
+
+async function requestRejection(
+  token: string,
+  eventId: string,
+  actionId: string,
+  reason?: string
+) {
+  const url = new URL('events', GATEWAY_URL).toString()
+  const client = createClient(url, `Bearer ${token}`)
+  const event = await client.event.actions.reject.request.mutate({
+    transactionId: uuidv4(),
+    eventId,
+    actionId,
+    content: { reason }
+  })
+
+  return event
+}
+
+function handleDeferredRejection(
+  token: string,
+  eventId: string,
+  actionId: string,
+  reason?: string
+) {
+  process.nextTick(async () => {
+    await rejectRequestedRegistration(token, eventId, actionId)
+    await requestRejection(token, eventId, actionId, reason)
+  })
+}
+
+export async function onMosipBirthRegisterHandler(
+  request: ActionConfirmationRequest,
+  h: Hapi.ResponseToolkit
+) {
+  const token = request.auth.artifacts.token as string
+  const event = request.payload
+  const declaration = aggregateActionDeclarations(event)
+
+  const registrationNumber = generateRegistrationNumber()
+  const pendingAction = getPendingAction(event.actions)
+
+  const { valid, reason } = shouldForwardBirthRegistrationToMosip(declaration)
+
+  // TBD: Should we let user know if they should wait for MOSIP registration to complete or send notification here?
+  // await sendInformantNotification({ event, token, registrationNumber })
+
+  if (!valid) {
+    handleDeferredRejection(token, event.id, pendingAction.id, reason)
+    return h.response().code(202)
+  }
+
+  try {
+    logger.info(
+      'Passed country specified custom logic check for id creation. Forwarding to MOSIP...'
+    )
+
+    const declaration = deepMerge(
+      aggregateActionDeclarations(event),
+      pendingAction.declaration
+    )
+
+    const mosipInteropClient = createMosipInteropClient(
+      MOSIP_INTEROP_URL,
+      `Bearer ${token}`
+    )
+
+    const childName = declaration['child.name'] as NameFieldValue | undefined
+    mosipInteropClient.register({
+      trackingId: event.trackingId,
+      requestFields: {
+        birthCertificateNumber: registrationNumber,
+        fullName: [
+          childName?.firstname,
+          childName?.middlename,
+          childName?.surname
+        ]
+          .filter(Boolean)
+          .join(' '),
+        dateOfBirth: declaration['child.dob'],
+        gender: declaration['child.gender']
+      },
+      notification: {
+        recipientEmail: declaration['informant.email'] as string,
+        recipientFullName: '@TODO',
+        recipientPhone: '@TODO'
+      },
+      metaInfo: {},
+      audit: {}
+    })
+
+    return h.response().code(202)
+  } catch (error) {
+    logger.error(error)
+    handleDeferredRejection(
+      token,
+      event.id,
+      pendingAction.id,
+      'Unexpected error in OpenCRVS-MOSIP interoperability layer'
+    )
+    return h.response().code(202)
+  }
+}
+
+export async function onMosipDeathRegisterHandler(
+  request: ActionConfirmationRequest,
+  h: Hapi.ResponseToolkit
+) {
+  const token = request.auth.artifacts.token as string
+  const event = request.payload
+  const declaration = aggregateActionDeclarations(event)
+
+  const registrationNumber = generateRegistrationNumber()
+
+  const { valid, reason } = shouldForwardDeathRegistrationToMosip(declaration)
+  const pendingAction = getPendingAction(event.actions)
+
+  // TBD: Should we let user know if they should wait for MOSIP registration to complete or send notification here?
+  // await sendInformantNotification({ event, token, registrationNumber })
+
+  if (!valid) {
+    handleDeferredRejection(token, event.id, pendingAction.id, reason)
+    return h.response().code(202)
+  }
+
+  try {
+    logger.info(
+      'Passed country specified custom logic check for id creation. Forwarding to MOSIP...'
+    )
+
+    const declaration = deepMerge(
+      aggregateActionDeclarations(event),
+      pendingAction.declaration
+    )
+
+    const mosipInteropClient = createMosipInteropClient(
+      MOSIP_INTEROP_URL,
+      `Bearer ${token}`
+    )
+
+    const deceasedName = declaration['deceased.name'] as
+      | NameFieldValue
+      | undefined
+
+    mosipInteropClient.register({
+      trackingId: event.trackingId,
+      requestFields: {
+        deathCertificateNumber: registrationNumber,
+        fullName: [
+          deceasedName?.firstname,
+          deceasedName?.middlename,
+          deceasedName?.surname
+        ]
+          .filter(Boolean)
+          .join(' '),
+        dateOfBirth: declaration['deceased.dob'],
+        gender: declaration['deceased.gender'],
+        nationalIdNumber: declaration['deceased.nid']
+      },
+      notification: {
+        recipientEmail: declaration['informant.email'] as string,
+        recipientFullName: '@TODO',
+        recipientPhone: '@TODO'
+      },
+      metaInfo: {},
+      audit: {}
+    })
+
+    return h.response().code(202)
+  } catch (error) {
+    logger.error(error)
+    handleDeferredRejection(
+      token,
+      event.id,
+      pendingAction.id,
+      'Unexpected error in OpenCRVS-MOSIP interoperability layer'
+    )
+    return h.response().code(202)
+  }
 }

@@ -94,6 +94,5 @@ export const sendEmail = async (params: {
     if (error.response) {
       logger.error(error.response.body)
     }
-    throw error
   }
 }
