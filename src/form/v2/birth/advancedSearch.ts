@@ -56,7 +56,7 @@ export const advancedSearchBirth = [
       field('child.dob', {
         searchCriteriaLabelPrefix: childPrefix
       }).range(),
-      field('child.name', {
+      field('child.nameEnglish', {
         validations: [],
         conditionals: []
       }).fuzzy(),
@@ -92,7 +92,7 @@ export const advancedSearchBirth = [
       field('mother.dob', {
         searchCriteriaLabelPrefix: motherPrefix
       }).range(),
-      field('mother.name', {
+      field('mother.nameEnglish', {
         validations: [],
         conditionals: []
       }).fuzzy()
@@ -108,7 +108,7 @@ export const advancedSearchBirth = [
       field('father.dob', {
         searchCriteriaLabelPrefix: fatherPrefix
       }).range(),
-      field('father.name', {
+      field('father.nameEnglish', {
         validations: [],
         conditionals: []
       }).fuzzy()

@@ -16,6 +16,7 @@ import { introduction } from './pages/introduction'
 import { mother } from './pages/mother'
 import { father } from './pages/father'
 import { documents } from './pages/documents'
+import { marriage } from './pages/marriage'
 
 export const BIRTH_DECLARATION_REVIEW = {
   title: {
@@ -55,10 +56,10 @@ export const BIRTH_DECLARATION_REVIEW = {
 
 export const BIRTH_DECLARATION_FORM = defineDeclarationForm({
   label: {
-    defaultMessage: 'Birth decalration form',
+    defaultMessage: 'Birth declaration form',
     id: 'event.birth.action.declare.form.label',
     description: 'This is what this form is referred as in the system'
   },
 
-  pages: [introduction, child, informant, mother, father, documents]
+  pages: [introduction, child, informant, father, mother, marriage, documents]
 })

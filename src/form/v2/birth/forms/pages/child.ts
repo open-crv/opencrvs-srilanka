@@ -19,8 +19,7 @@ import {
   or,
   PageTypes,
   field,
-  user,
-  never
+  user
 } from '@opencrvs/toolkit/events'
 import { not } from '@opencrvs/toolkit/conditionals'
 
@@ -195,46 +194,6 @@ export const child = defineFormPage({
   },
   fields: [
     {
-      id: 'child.nid',
-      type: FieldType.TEXT,
-      label: {
-        defaultMessage: 'National ID',
-        description: 'Label for national ID field for child',
-        id: 'event.birth.action.declare.form.section.child.field.nid.label'
-      },
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: never()
-        }
-      ]
-    },
-    {
-      id: 'child.name',
-      type: FieldType.NAME,
-      required: true,
-      configuration: farajalandNameConfig,
-      hideLabel: true,
-      label: {
-        defaultMessage: "Child's name",
-        description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.child.field.name.label'
-      },
-      validation: [invalidNameValidator('child.name')]
-    },
-    {
-      id: 'child.gender',
-      analytics: true,
-      type: FieldType.SELECT,
-      required: true,
-      label: {
-        defaultMessage: 'Sex',
-        description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.child.field.gender.label'
-      },
-      options: genderOptions
-    },
-    {
       id: 'child.dob',
       analytics: true,
       type: 'DATE',
@@ -255,30 +214,6 @@ export const child = defineFormPage({
         description: 'This is the label for the field',
         id: 'event.birth.action.declare.form.section.child.field.dob.label'
       }
-    },
-    {
-      id: 'child.reason',
-      type: FieldType.TEXT,
-      required: true,
-      label: {
-        defaultMessage: 'Reason for delayed registration',
-        description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.child.field.reason.label'
-      },
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: and(
-            not(
-              field('child.dob')
-                .isAfter()
-                .days(applicationConfig.BIRTH.LATE_REGISTRATION_TARGET)
-                .inPast()
-            ),
-            field('child.dob').isBefore().now()
-          )
-        }
-      ]
     },
     {
       id: 'child.divider1',
@@ -413,28 +348,58 @@ export const child = defineFormPage({
       label: emptyMessage
     },
     {
-      id: 'child.attendantAtBirth',
-      type: FieldType.SELECT,
-      analytics: true,
-      required: false,
+      id: 'child.nameEnglish',
+      type: FieldType.NAME,
+      required: true,
+      configuration: farajalandNameConfig,
+      hideLabel: true,
       label: {
-        defaultMessage: 'Attendant at birth',
+        defaultMessage: "Child's name",
         description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.child.field.attendantAtBirth.label'
+        id: 'event.birth.action.declare.form.section.child.field.nameEnglish.label'
       },
-      options: attendantAtBirthOptions
+      validation: [invalidNameValidator('child.nameEnglish')]
     },
     {
-      id: 'child.birthType',
+      id: 'child.nameSinhala', //TODO might need to use separate fields due to translations
+      type: FieldType.NAME,
+      required: true,
+      configuration: farajalandNameConfig,
+      hideLabel: true,
+      label: {
+        defaultMessage: "Child's name",
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.child.field.nameSinhala.label'
+      }
+    },
+    {
+      id: 'child.nameTamil',
+      type: FieldType.NAME,
+      required: true,
+      configuration: farajalandNameConfig,
+      hideLabel: true,
+      label: {
+        defaultMessage: "Child's name",
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.child.field.nameTamil.label'
+      }
+    },
+    {
+      id: 'child.divider3',
+      type: FieldType.DIVIDER,
+      label: emptyMessage
+    },
+    {
+      id: 'child.gender',
       analytics: true,
       type: FieldType.SELECT,
-      required: false,
+      required: true,
       label: {
-        defaultMessage: 'Type of birth',
+        defaultMessage: 'Sex',
         description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.child.field.birthType.label'
+        id: 'event.birth.action.declare.form.section.child.field.gender.label'
       },
-      options: typeOfBirthOptions
+      options: genderOptions
     },
     {
       id: 'child.weightAtBirth',
@@ -467,6 +432,42 @@ export const child = defineFormPage({
           id: 'event.birth.action.declare.form.section.child.field.weightAtBirth.postfix'
         }
       }
+    },
+    {
+      id: 'child.birthOrder',
+      analytics: true,
+      type: FieldType.NUMBER,
+      required: true,
+      label: {
+        defaultMessage: 'Live birth order',
+        description: 'Form section title for Child',
+        id: 'event.birth.action.declare.form.section.child.field.birthOrder.label'
+      },
+      validation: [
+        {
+          message: {
+            defaultMessage: 'Must be within 1 and 30',
+            description: 'This is the error message for invalid number range',
+            id: 'error.child.birthOrder.invalidNumberRange'
+          },
+          validator: or(
+            field('child.birthOrder').isBetween(1, 30),
+            field('child.birthOrder').isUndefined()
+          )
+        }
+      ]
+    },
+    {
+      id: 'child.birthType',
+      analytics: true,
+      type: FieldType.SELECT,
+      required: false,
+      label: {
+        defaultMessage: 'Type of birth',
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.child.field.birthType.label'
+      },
+      options: typeOfBirthOptions
     }
   ]
 })

@@ -307,3 +307,18 @@ export const defaultStreetAddressConfiguration = [
     type: FieldType.TEXT
   }
 ]
+
+export const placeOfBirthAddressConfiguration = [
+  {
+    id: 'cityOrTown',
+    parent: field('country'),
+    conditionals: [],
+    required: false,
+    label: {
+      id: 'field.address.cityOrTown.label',
+      defaultMessage: 'City / Town',
+      description: 'This is the label for the field'
+    },
+    type: FieldType.TEXT
+  }
+]

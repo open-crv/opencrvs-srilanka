@@ -19,7 +19,7 @@ import {
   field,
   user
 } from '@opencrvs/toolkit/events'
-import { or, not, never } from '@opencrvs/toolkit/conditionals'
+import { or, not } from '@opencrvs/toolkit/conditionals'
 import { emptyMessage } from '@countryconfig/form/v2/utils'
 import {
   invalidNameValidator,
@@ -27,14 +27,16 @@ import {
   farajalandNameConfig
 } from '@countryconfig/form/v2/birth/validators'
 import { InformantType } from './informant'
-import { IdType, idTypeOptions } from '../../../person'
 import {
-  educationalAttainmentOptions,
-  maritalStatusOptions
-} from '../../../../common/select-options'
+  IdType,
+  idTypeOptions,
+  yesNoRadioOptions,
+  YesNoTypes
+} from '../../../person'
 import {
   defaultStreetAddressConfiguration,
-  getNestedFieldValidators
+  getNestedFieldValidators,
+  placeOfBirthAddressConfiguration
 } from '@countryconfig/form/street-address-configuration'
 import {
   getMOSIPIntegrationFields,
@@ -78,183 +80,6 @@ export const mother = defineFormPage({
       ]
     },
     {
-      id: 'mother.details.divider',
-      type: FieldType.DIVIDER,
-      label: emptyMessage,
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: not(
-            field('informant.relation').isEqualTo(InformantType.MOTHER)
-          )
-        }
-      ]
-    },
-    {
-      id: 'mother.reason',
-      type: FieldType.TEXT,
-      required: true,
-      label: {
-        defaultMessage: 'Reason',
-        description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.mother.field.reason.label'
-      },
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: and(
-            field('mother.detailsNotAvailable').isEqualTo(true),
-            not(field('informant.relation').isEqualTo(InformantType.MOTHER))
-          )
-        }
-      ]
-    },
-    ...getMOSIPIntegrationFields('mother', {
-      existingConditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: requireMotherDetails
-        }
-      ]
-    }),
-    connectToMOSIPIdReader(
-      {
-        id: 'mother.name',
-        type: FieldType.NAME,
-        required: true,
-        configuration: farajalandNameConfig,
-        hideLabel: true,
-        label: {
-          defaultMessage: "Mother's name",
-          description: 'This is the label for the field',
-          id: 'event.birth.action.declare.form.section.mother.field.name.label'
-        },
-        conditionals: [
-          {
-            type: ConditionalType.SHOW,
-            conditional: and(requireMotherDetails)
-          }
-        ],
-        validation: [invalidNameValidator('mother.name')]
-      },
-      {
-        valuePath: 'data.name',
-        disableIf: ['pending', 'verified', 'authenticated']
-      }
-    ),
-    connectToMOSIPIdReader(
-      {
-        id: 'mother.dob',
-        type: 'DATE',
-        required: true,
-        secured: true,
-        analytics: true,
-        validation: [
-          {
-            message: {
-              defaultMessage: 'Must be a valid birth date',
-              description: 'This is the error message for invalid date',
-              id: 'event.birth.action.declare.form.section.person.field.dob.error'
-            },
-            validator: field('mother.dob').isBefore().now()
-          },
-          {
-            message: {
-              defaultMessage: "Birth date must be before child's birth date",
-              description:
-                "This is the error message for a birth date after child's birth date",
-              id: 'event.birth.action.declare.form.section.person.dob.afterChild'
-            },
-            validator: field('mother.dob').isBefore().date(field('child.dob'))
-          }
-        ],
-        label: {
-          defaultMessage: 'Date of birth',
-          description: 'This is the label for the field',
-          id: 'event.birth.action.declare.form.section.person.field.dob.label'
-        },
-        conditionals: [
-          {
-            type: ConditionalType.SHOW,
-            conditional: and(
-              not(field('mother.dobUnknown').isEqualTo(true)),
-              requireMotherDetails
-            )
-          }
-        ]
-      },
-      {
-        valuePath: 'data.birthDate',
-        disableIf: ['pending', 'verified', 'authenticated']
-      }
-    ),
-    connectToMOSIPIdReader(
-      {
-        id: 'mother.dobUnknown',
-        type: FieldType.CHECKBOX,
-        label: {
-          defaultMessage: 'Exact date of birth unknown',
-          description: 'This is the label for the field',
-          id: 'event.birth.action.declare.form.section.person.field.age.checkbox.label'
-        },
-        conditionals: [
-          {
-            type: ConditionalType.SHOW,
-            conditional: requireMotherDetails
-          },
-          {
-            type: ConditionalType.DISPLAY_ON_REVIEW,
-            conditional: never()
-          }
-        ]
-      },
-      {
-        valuePath: 'data.dobUnknown',
-        disableIf: ['pending', 'verified', 'authenticated']
-      }
-    ),
-    connectToMOSIPVerificationStatus(
-      {
-        id: 'mother.age',
-        type: FieldType.AGE,
-        required: true,
-        analytics: true,
-        label: {
-          defaultMessage: 'Age of mother (at the time of event)',
-          description: 'This is the label for the field',
-          id: 'event.birth.action.declare.form.section.mother.field.age.label'
-        },
-        configuration: {
-          asOfDate: field('child.dob'),
-          postfix: {
-            defaultMessage: 'years',
-            description: 'This is the postfix for age field',
-            id: 'event.birth.action.declare.form.section.person.field.age.postfix'
-          }
-        },
-        conditionals: [
-          {
-            type: ConditionalType.SHOW,
-            conditional: and(
-              field('mother.dobUnknown').isEqualTo(true),
-              requireMotherDetails
-            )
-          }
-        ],
-        validation: [
-          {
-            validator: field('mother.age').asAge().isBetween(12, 120),
-            message: {
-              defaultMessage: 'Age must be between 12 and 120',
-              description: 'Error message for invalid age',
-              id: 'event.action.declare.form.section.person.field.age.error'
-            }
-          }
-        ]
-      },
-      { disableIf: ['pending', 'verified', 'authenticated'] }
-    ),
-    {
       id: 'mother.nationality',
       type: FieldType.COUNTRY,
       required: true,
@@ -269,8 +94,30 @@ export const mother = defineFormPage({
           conditional: requireMotherDetails
         }
       ],
-      defaultValue: 'FAR'
+      defaultValue: 'LKA'
     },
+    {
+      id: 'mother.details.divider',
+      type: FieldType.DIVIDER,
+      label: emptyMessage,
+      conditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: not(
+            field('informant.relation').isEqualTo(InformantType.MOTHER)
+          )
+        }
+      ]
+    },
+
+    ...getMOSIPIntegrationFields('mother', {
+      existingConditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: requireMotherDetails
+        }
+      ]
+    }),
     connectToMOSIPIdReader(
       {
         id: 'mother.idType',
@@ -389,8 +236,269 @@ export const mother = defineFormPage({
         disableIf: ['pending', 'verified']
       }
     ),
+    connectToMOSIPIdReader(
+      {
+        id: 'mother.nameEnglish',
+        type: FieldType.NAME,
+        required: true,
+        configuration: farajalandNameConfig,
+        hideLabel: true,
+        label: {
+          defaultMessage: "Mother's name",
+          description: 'This is the label for the field',
+          id: 'event.birth.action.declare.form.section.mother.field.nameEnglish.label'
+        },
+        conditionals: [
+          {
+            type: ConditionalType.SHOW,
+            conditional: and(requireMotherDetails)
+          }
+        ],
+        validation: [invalidNameValidator('mother.nameEnglish')]
+      },
+      {
+        valuePath: 'data.name',
+        disableIf: ['pending', 'verified', 'authenticated']
+      }
+    ),
+    connectToMOSIPIdReader(
+      {
+        id: 'mother.nameSinhala',
+        type: FieldType.NAME,
+        required: true,
+        configuration: farajalandNameConfig,
+        hideLabel: true,
+        label: {
+          defaultMessage: "Mother's name",
+          description: 'This is the label for the field',
+          id: 'event.birth.action.declare.form.section.mother.field.nameSinhala.label'
+        },
+        conditionals: [
+          {
+            type: ConditionalType.SHOW,
+            conditional: and(requireMotherDetails)
+          }
+        ],
+        validation: [invalidNameValidator('mother.nameSinhala')]
+      },
+      {
+        valuePath: 'data.name',
+        disableIf: ['pending', 'verified', 'authenticated']
+      }
+    ),
+    connectToMOSIPIdReader(
+      {
+        id: 'mother.nameTamil',
+        type: FieldType.NAME,
+        required: true,
+        configuration: farajalandNameConfig,
+        hideLabel: true,
+        label: {
+          defaultMessage: "Mother's name",
+          description: 'This is the label for the field',
+          id: 'event.birth.action.declare.form.section.mother.field.nameTamil.label'
+        },
+        conditionals: [
+          {
+            type: ConditionalType.SHOW,
+            conditional: and(requireMotherDetails)
+          }
+        ],
+        validation: [invalidNameValidator('mother.nameTamil')]
+      },
+      {
+        valuePath: 'data.name',
+        disableIf: ['pending', 'verified', 'authenticated']
+      }
+    ),
+    {
+      id: 'mother.nameDivider',
+      type: FieldType.DIVIDER,
+      label: emptyMessage,
+      conditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: requireMotherDetails
+        }
+      ]
+    },
+    connectToMOSIPIdReader(
+      {
+        id: 'mother.dob',
+        type: 'DATE',
+        required: true,
+        secured: true,
+        analytics: true,
+        validation: [
+          {
+            message: {
+              defaultMessage: 'Must be a valid birth date',
+              description: 'This is the error message for invalid date',
+              id: 'event.birth.action.declare.form.section.person.field.dob.error'
+            },
+            validator: field('mother.dob').isBefore().now()
+          },
+          {
+            message: {
+              defaultMessage: "Birth date must be before child's birth date",
+              description:
+                "This is the error message for a birth date after child's birth date",
+              id: 'event.birth.action.declare.form.section.person.dob.afterChild'
+            },
+            validator: field('mother.dob').isBefore().date(field('child.dob'))
+          }
+        ],
+        label: {
+          defaultMessage: 'Date of birth',
+          description: 'This is the label for the field',
+          id: 'event.birth.action.declare.form.section.person.field.dob.label'
+        },
+        conditionals: [
+          {
+            type: ConditionalType.SHOW,
+            conditional: and(
+              not(field('mother.dobUnknown').isEqualTo(true)),
+              requireMotherDetails
+            )
+          }
+        ]
+      },
+      {
+        valuePath: 'data.birthDate',
+        disableIf: ['pending', 'verified', 'authenticated']
+      }
+    ),
+    connectToMOSIPVerificationStatus(
+      {
+        id: 'mother.age',
+        type: FieldType.AGE,
+        required: true,
+        analytics: true,
+        label: {
+          defaultMessage: 'Age of mother (at the time of event)',
+          description: 'This is the label for the field',
+          id: 'event.birth.action.declare.form.section.mother.field.age.label'
+        },
+        configuration: {
+          asOfDate: field('child.dob'),
+          postfix: {
+            defaultMessage: 'years',
+            description: 'This is the postfix for age field',
+            id: 'event.birth.action.declare.form.section.person.field.age.postfix'
+          }
+        },
+        conditionals: [
+          {
+            type: ConditionalType.SHOW,
+            conditional: requireMotherDetails
+          }
+        ],
+        validation: [
+          {
+            validator: field('mother.age').asAge().isBetween(12, 120),
+            message: {
+              defaultMessage: 'Age must be between 12 and 120',
+              description: 'Error message for invalid age',
+              id: 'event.action.declare.form.section.person.field.age.error'
+            }
+          }
+        ]
+      },
+      { disableIf: ['pending', 'verified', 'authenticated'] }
+    ),
     {
       id: 'mother.addressDivider1',
+      type: FieldType.DIVIDER,
+      label: emptyMessage,
+      conditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: requireMotherDetails
+        }
+      ]
+    },
+    {
+      id: 'mother.placeOfBirthHelper', //TODO: change id to something more appropriate
+      type: FieldType.PARAGRAPH,
+      label: {
+        defaultMessage: 'Place of birth',
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.person.field.placeOfBirthHelper.label'
+      },
+      configuration: { styles: { fontVariant: 'h3' } },
+      conditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: requireMotherDetails
+        }
+      ]
+    },
+
+    {
+      id: 'mother.placeOfBirth', //TODO not sure if I can use address type
+      type: FieldType.ADDRESS,
+      required: true,
+      secured: true,
+      hideLabel: true,
+      label: {
+        defaultMessage: 'Usual place of residence',
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.person.field.address.label'
+      },
+      conditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: requireMotherDetails
+        }
+      ],
+      validation: [
+        {
+          message: {
+            defaultMessage: 'Invalid input',
+            description: 'Error message when generic field is invalid',
+            id: 'error.invalidInput'
+          },
+          validator: field(
+            'mother.placeOfBirth'
+          ).isValidAdministrativeLeafLevel()
+        },
+        ...getNestedFieldValidators(
+          'mother.placeOfBirth',
+          placeOfBirthAddressConfiguration
+        )
+      ],
+      defaultValue: {
+        country: 'LKA',
+        addressType: AddressType.DOMESTIC
+      },
+      configuration: {
+        streetAddressForm: placeOfBirthAddressConfiguration
+      }
+    },
+    {
+      id: 'mother.addressDivider2',
+      type: FieldType.DIVIDER,
+      label: emptyMessage,
+      conditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: requireMotherDetails
+        }
+      ]
+    },
+    {
+      id: 'mother.race',
+      type: FieldType.TEXT,
+      required: true,
+      analytics: true,
+      label: {
+        defaultMessage: 'Race',
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.person.field.race.label'
+      }
+    },
+    {
+      id: 'mother.raceDivider',
       type: FieldType.DIVIDER,
       label: emptyMessage,
       conditionals: [
@@ -417,6 +525,33 @@ export const mother = defineFormPage({
       ]
     },
     {
+      id: 'mother.addressSameAs',
+      type: FieldType.RADIO_GROUP,
+      options: yesNoRadioOptions,
+      required: true,
+      label: {
+        defaultMessage: "Same as mother's usual place of residence?",
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.mother.field.address.addressSameAs.label'
+      },
+      parent: field('mother.detailsNotAvailable'),
+      // Keep default address when mother details is updated
+      defaultValue: YesNoTypes.NO,
+      conditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: and(
+            field('mother.detailsNotAvailable').isFalsy(),
+            field('father.detailsNotAvailable').isFalsy()
+          )
+        },
+        {
+          type: ConditionalType.DISPLAY_ON_REVIEW,
+          conditional: field('mother.addressSameAs').isEqualTo(YesNoTypes.YES)
+        }
+      ]
+    },
+    {
       id: 'mother.address',
       type: FieldType.ADDRESS,
       required: true,
@@ -430,7 +565,10 @@ export const mother = defineFormPage({
       conditionals: [
         {
           type: ConditionalType.SHOW,
-          conditional: requireMotherDetails
+          conditional: and(
+            requireMotherDetails,
+            not(field('mother.addressSameAs').isEqualTo(YesNoTypes.YES))
+          )
         }
       ],
       validation: [
@@ -448,7 +586,7 @@ export const mother = defineFormPage({
         )
       ],
       defaultValue: {
-        country: 'FAR',
+        country: 'LKA',
         addressType: AddressType.DOMESTIC,
         administrativeArea: user('primaryOfficeId').locationLevel('district')
       },
@@ -457,87 +595,78 @@ export const mother = defineFormPage({
       }
     },
     {
-      id: 'mother.addressDivider2',
+      id: 'mother.contactDetailsDivider',
       type: FieldType.DIVIDER,
-      label: emptyMessage,
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: requireMotherDetails
-        }
-      ]
+      label: emptyMessage
     },
     {
-      id: 'mother.maritalStatus',
-      type: FieldType.SELECT,
-      analytics: true,
-      required: false,
+      id: 'mother.contactDetailsHelper',
+      type: FieldType.PARAGRAPH,
       label: {
-        defaultMessage: 'Marital Status',
+        defaultMessage: 'Contact details',
         description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.person.field.maritalStatus.label'
+        id: 'event.birth.action.declare.form.section.mother.field.contactDetailsHelper.label'
       },
-      options: maritalStatusOptions,
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: requireMotherDetails
-        }
-      ]
+      configuration: { styles: { fontVariant: 'h3' } }
     },
     {
-      id: 'mother.educationalAttainment',
-      type: FieldType.SELECT,
-      required: false,
-      analytics: true,
+      id: 'mother.mobileNumber',
+      type: FieldType.PHONE,
       label: {
-        defaultMessage: 'Level of education',
+        defaultMessage: 'Mobile number',
         description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.person.field.educationalAttainment.label'
-      },
-      options: educationalAttainmentOptions,
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: requireMotherDetails
-        }
-      ]
+        id: 'event.birth.action.declare.form.section.mother.field.mobileNumber.label'
+      }
     },
     {
-      id: 'mother.occupation',
+      id: 'mother.landlineNumber',
+      type: FieldType.PHONE,
+      label: {
+        defaultMessage: 'Landline number',
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.mother.field.landlineNumber.label'
+      }
+    },
+    {
+      id: 'mother.email',
+      type: FieldType.EMAIL,
+      label: {
+        defaultMessage: 'Email address',
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.mother.field.email.label'
+      }
+    },
+    {
+      id: 'mother.admissionDivider',
+      type: FieldType.DIVIDER,
+      label: emptyMessage
+    },
+    {
+      id: 'mother.admissionHelper',
+      type: FieldType.PARAGRAPH,
+      label: {
+        defaultMessage: 'Hospital Admission Information (if available)',
+        description: 'This is the label for the field',
+        id: 'event.birth.action.declare.form.section.mother.field.admissionHelper.label'
+      },
+      configuration: { styles: { fontVariant: 'h3' } }
+    },
+    {
+      id: 'mother.admissionNumber',
       type: FieldType.TEXT,
-      required: false,
-      analytics: true,
       label: {
-        defaultMessage: 'Occupation',
+        defaultMessage: 'Hospital Admission Number',
         description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.person.field.occupation.label'
-      },
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: requireMotherDetails
-        }
-      ]
+        id: 'event.birth.action.declare.form.section.mother.field.admissionNumber.label'
+      }
     },
     {
-      id: 'mother.previousBirths',
-      type: FieldType.NUMBER,
-      analytics: true,
-      required: false,
+      id: 'mother.admissionDate',
+      type: FieldType.DATE,
       label: {
-        defaultMessage: 'No. of previous births',
+        defaultMessage: 'Date of Admission',
         description: 'This is the label for the field',
-        id: 'event.birth.action.declare.form.section.mother.field.previousBirths.label'
-      },
-      conditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: requireMotherDetails
-        }
-      ],
-      configuration: {
-        min: 0
+        id: 'event.birth.action.declare.form.section.mother.field.admissionDate.label'
       }
     }
   ]
