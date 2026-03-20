@@ -433,45 +433,6 @@ export async function createServer() {
     }
   })
   server.route({
-    method: 'POST',
-    path: '/event-registration',
-    handler: async (request, h) => {
-      const url = env.isProd
-        ? 'https://api-internal.sdec.mosip.net'
-        : 'http://localhost:2024'
-      const result = await verify({ url, request })
-      const bundle = request.payload as fhir3.Bundle
-
-      if (shouldForwardToIDSystem(request.payload as fhir3.Bundle, result)) {
-        const payload =
-          getEventType(bundle) === 'BIRTH'
-            ? fhirBirthToMosip(bundle)
-            : fhirDeathToMosip(bundle)
-
-        logger.info(
-          'Passed country specified custom logic check for id creation. Forwarding to MOSIP...'
-        )
-
-        return mosipRegistrationHandler({
-          url,
-          headers: request.headers,
-          payload
-        })(request, h)
-      } else {
-        logger.info(
-          'Failed country specified custom logic check for id creation. Bypassing id system...'
-        )
-        return eventRegistrationHandler(request, h)
-      }
-    },
-    options: {
-      tags: ['api'],
-      description:
-        'Opportunity for sychrounous integrations with 3rd party systems as a final step in event registration. If successful returns identifiers for that event.'
-    }
-  })
-
-  server.route({
     method: 'GET',
     path: '/crude-death-rate',
     handler: () => ({

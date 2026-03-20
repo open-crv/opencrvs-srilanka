@@ -25,7 +25,6 @@ services:
       - /data/traefik/certs:/etc/certs
       - /opt/opencrvs/infrastructure/traefik/certs.yaml:/etc/traefik/certs.yaml
 
-      
     command:
       # - --tls.certificates.certfile=/etc/certs/cert.crt
       # - --tls.certificates.keyfile=/etc/certs/cert.key
@@ -147,7 +146,7 @@ services:
         '-H',
         'kbn-xsrf: true',
         '--form',
-        'file=@/config.ndjson'
+        'file=@/config.ndjson',
       ]
     restart: on-failure
     volumes:
@@ -265,7 +264,7 @@ services:
         tag: 'mongo-on-update'
   # Configure redis
   redis:
-    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    command: ['redis-server', '/usr/local/etc/redis/redis.conf']
     secrets:
       - source: redis-acl.{{ts}}
         target: /usr/local/etc/redis/users.acl
@@ -477,7 +476,7 @@ services:
         '-E',
         'kibana.username=${KIBANA_USERNAME}',
         '-E',
-        'kibana.password=${KIBANA_PASSWORD}'
+        'kibana.password=${KIBANA_PASSWORD}',
       ]
     configs:
       - source: apm.{{ts}}
@@ -1003,7 +1002,7 @@ services:
 
   postgres-on-update:
     image: postgres:17.6
-    command: ["bash", "-c", "bash /on-deploy.sh && bash /setup-analytics.sh"]
+    command: ['bash', '-c', 'bash /on-deploy.sh && bash /setup-analytics.sh']
     configs:
       - source: postgres-on-deploy.{{ts}}
         target: /on-deploy.sh
@@ -1072,7 +1071,7 @@ services:
       - /opt/opencrvs/infrastructure/metabase/initialize-database.sh:/initialize-database.sh
       - /opt/opencrvs/infrastructure/metabase/update-database.sh:/update-database.sh
       - /opt/opencrvs/infrastructure/metabase/environment-configuration.sql:/environment-configuration.sql
-    entrypoint: ["/bin/sh", "/run.sh"]
+    entrypoint: ['/bin/sh', '/run.sh']
     networks:
       - overlay_net
     environment:
@@ -1120,7 +1119,7 @@ services:
   mosip-api:
     volumes:
       - '/data/sqlite:/data/sqlite'
-    image: ghcr.io/opencrvs/mosip-api:1.8.0
+    image: ghcr.io/opencrvs/mosip-api:$1.9.1
     environment:
       - NODE_ENV=production
       - MOSIP_BIRTH_WEBHOOK_URL=https://api-internal.sdec.mosip.net/webhooks/opencrvs/birth
@@ -1136,7 +1135,6 @@ services:
       - DECRYPT_P12_FILE_PATH=/certs/keystore.p12
       - DECRYPT_P12_FILE_PASSWORD=mosip123
       - ENCRYPT_CERT_PATH=/certs/ida-partner.crt
-
 
       - IDA_AUTH_DOMAIN_URI=https://api-internal.sdec.mosip.net/
       - IDA_AUTH_URL=https://api-internal.sdec.mosip.net/idauthentication/v1/auth

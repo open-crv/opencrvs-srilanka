@@ -17,6 +17,7 @@ import { mother } from './pages/mother'
 import { father } from './pages/father'
 import { documents } from './pages/documents'
 import { marriage } from './pages/marriage'
+import { grandfather } from './pages/grandFather'
 
 export const BIRTH_DECLARATION_REVIEW = {
   title: {
@@ -61,5 +62,14 @@ export const BIRTH_DECLARATION_FORM = defineDeclarationForm({
     description: 'This is what this form is referred as in the system'
   },
 
-  pages: [introduction, child, informant, father, mother, marriage, documents]
+  pages: [
+    introduction,
+    child,
+    informant,
+    father,
+    mother,
+    marriage,
+    grandfather,
+    documents
+  ]
 })

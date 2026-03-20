@@ -121,11 +121,7 @@ export const advancedSearchBirth = [
       id: 'advancedSearch.form.informantDetails'
     },
     fields: [
-      field('informant.dob', {
-        conditionals: [],
-        searchCriteriaLabelPrefix: informantPrefix
-      }).range(),
-      field('informant.name', {
+      field('informant.nameEnglish', {
         conditionals: [],
         validations: []
       }).fuzzy()

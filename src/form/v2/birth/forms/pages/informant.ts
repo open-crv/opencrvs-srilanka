@@ -149,153 +149,6 @@ export const informant = defineFormPage({
       ],
       parent: field('informant.relation')
     },
-    ...getMOSIPIntegrationFields('informant', {
-      existingConditionals: [
-        {
-          type: ConditionalType.SHOW,
-          conditional: informantOtherThanParent
-        }
-      ]
-    }),
-    connectToMOSIPIdReader(
-      {
-        id: 'informant.name',
-        type: FieldType.NAME,
-        required: true,
-        configuration: farajalandNameConfig,
-        hideLabel: true,
-        label: {
-          defaultMessage: "Informant's name",
-          description: 'This is the label for the field',
-          id: 'event.birth.action.declare.form.section.informant.field.name.label'
-        },
-        conditionals: [
-          {
-            type: ConditionalType.SHOW,
-            conditional: informantOtherThanParent
-          }
-        ],
-        validation: [invalidNameValidator('informant.name')]
-      },
-      {
-        valuePath: 'data.name',
-        disableIf: ['pending', 'verified', 'authenticated']
-      }
-    ),
-    connectToMOSIPIdReader(
-      {
-        id: 'informant.dob',
-        type: 'DATE',
-        required: true,
-        validation: [
-          {
-            message: {
-              defaultMessage: 'Must be a valid Birthdate',
-              description: 'This is the error message for invalid date',
-              id: 'event.birth.action.declare.form.section.person.field.dob.error'
-            },
-            validator: field('informant.dob').isBefore().now()
-          },
-          {
-            message: {
-              defaultMessage: "Birth date must be before child's birth date",
-              description:
-                "This is the error message for a birth date after child's birth date",
-              id: 'event.birth.action.declare.form.section.person.dob.afterChild'
-            },
-            validator: field('informant.dob')
-              .isBefore()
-              .date(field('child.dob'))
-          }
-        ],
-        label: {
-          defaultMessage: 'Date of birth',
-          description: 'This is the label for the field',
-          id: 'event.birth.action.declare.form.section.person.field.dob.label'
-        },
-        conditionals: [
-          {
-            type: ConditionalType.SHOW,
-            conditional: and(
-              not(field('informant.dobUnknown').isEqualTo(true)),
-              informantOtherThanParent
-            )
-          }
-        ]
-      },
-      {
-        valuePath: 'data.birthDate',
-        disableIf: ['pending', 'verified', 'authenticated']
-      }
-    ),
-    connectToMOSIPIdReader(
-      {
-        id: 'informant.dobUnknown',
-        type: FieldType.CHECKBOX,
-        label: {
-          defaultMessage: 'Exact date of birth unknown',
-          description: 'This is the label for the field',
-          id: 'event.birth.action.declare.form.section.person.field.age.checkbox.label'
-        },
-        conditionals: [
-          {
-            type: ConditionalType.SHOW,
-            conditional: informantOtherThanParent
-          },
-          {
-            type: ConditionalType.DISPLAY_ON_REVIEW,
-            conditional: never()
-          }
-        ],
-        parent: field('informant.relation')
-      },
-      {
-        valuePath: 'data.dobUnknown',
-        disableIf: ['pending', 'verified', 'authenticated']
-      }
-    ),
-    connectToMOSIPVerificationStatus(
-      {
-        id: 'informant.age',
-        type: FieldType.AGE,
-        analytics: true,
-        required: true,
-        label: {
-          defaultMessage: 'Age of informant (at the time of event)',
-          description: 'This is the label for the field',
-          id: 'event.birth.action.declare.form.section.informant.field.age.label'
-        },
-        configuration: {
-          asOfDate: field('child.dob'),
-          postfix: {
-            defaultMessage: 'years',
-            description: 'This is the postfix for age field',
-            id: 'event.birth.action.declare.form.section.person.field.age.postfix'
-          }
-        },
-        conditionals: [
-          {
-            type: ConditionalType.SHOW,
-            conditional: and(
-              field('informant.dobUnknown').isEqualTo(true),
-              informantOtherThanParent
-            )
-          }
-        ],
-        validation: [
-          {
-            validator: field('informant.age').asAge().isBetween(12, 120),
-            message: {
-              defaultMessage: 'Age must be between 12 and 120',
-              description: 'Error message for invalid age',
-              id: 'event.action.declare.form.section.person.field.age.error'
-            }
-          }
-        ],
-        parent: field('informant.relation')
-      },
-      { disableIf: ['pending', 'verified', 'authenticated'] }
-    ),
     {
       id: 'informant.nationality',
       type: FieldType.COUNTRY,
@@ -311,9 +164,17 @@ export const informant = defineFormPage({
           conditional: informantOtherThanParent
         }
       ],
-      defaultValue: 'FAR',
+      defaultValue: 'LKA',
       parent: field('informant.relation')
     },
+    ...getMOSIPIntegrationFields('informant', {
+      existingConditionals: [
+        {
+          type: ConditionalType.SHOW,
+          conditional: informantOtherThanParent
+        }
+      ]
+    }),
     connectToMOSIPIdReader(
       {
         id: 'informant.idType',
@@ -432,6 +293,81 @@ export const informant = defineFormPage({
         valuePath: 'data.brn',
         hideIf: ['authenticated'],
         disableIf: ['pending', 'verified']
+      }
+    ),
+    connectToMOSIPIdReader(
+      {
+        id: 'informant.nameEnglish',
+        type: FieldType.NAME,
+        required: true,
+        configuration: farajalandNameConfig,
+        hideLabel: true,
+        label: {
+          defaultMessage: "Informant's name in English",
+          description: 'This is the label for the field',
+          id: 'event.birth.action.declare.form.section.informant.field.nameEnglish.label'
+        },
+        conditionals: [
+          {
+            type: ConditionalType.SHOW,
+            conditional: informantOtherThanParent
+          }
+        ],
+        validation: [invalidNameValidator('informant.nameEnglish')]
+      },
+      {
+        valuePath: 'data.name',
+        disableIf: ['pending', 'verified', 'authenticated']
+      }
+    ),
+    connectToMOSIPIdReader(
+      {
+        id: 'informant.nameSinhala',
+        type: FieldType.NAME,
+        required: true,
+        configuration: farajalandNameConfig,
+        hideLabel: true,
+        label: {
+          defaultMessage: "Informant's name in Sinhala",
+          description: 'This is the label for the field',
+          id: 'event.birth.action.declare.form.section.informant.field.nameSinhala.label'
+        },
+        conditionals: [
+          {
+            type: ConditionalType.SHOW,
+            conditional: informantOtherThanParent
+          }
+        ],
+        validation: [invalidNameValidator('informant.nameSinhala')]
+      },
+      {
+        valuePath: 'data.name',
+        disableIf: ['pending', 'verified', 'authenticated']
+      }
+    ),
+    connectToMOSIPIdReader(
+      {
+        id: 'informant.nameTamil',
+        type: FieldType.NAME,
+        required: true,
+        configuration: farajalandNameConfig,
+        hideLabel: true,
+        label: {
+          defaultMessage: "Informant's name in Tamil",
+          description: 'This is the label for the field',
+          id: 'event.birth.action.declare.form.section.informant.field.nameTamil.label'
+        },
+        conditionals: [
+          {
+            type: ConditionalType.SHOW,
+            conditional: informantOtherThanParent
+          }
+        ],
+        validation: [invalidNameValidator('informant.nameTamil')]
+      },
+      {
+        valuePath: 'data.name',
+        disableIf: ['pending', 'verified', 'authenticated']
       }
     ),
     {
