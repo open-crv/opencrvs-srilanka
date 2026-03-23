@@ -24,7 +24,9 @@ import { emptyMessage } from '@countryconfig/form/v2/utils'
 import {
   invalidNameValidator,
   nationalIdValidator,
-  farajalandNameConfig
+  englishNameConfig,
+  sinhalaNameConfig,
+  tamilNameConfig
 } from '@countryconfig/form/v2/birth/validators'
 import { InformantType } from './informant'
 import {
@@ -241,7 +243,7 @@ export const mother = defineFormPage({
         id: 'mother.nameEnglish',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: englishNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Mother's name",
@@ -266,7 +268,7 @@ export const mother = defineFormPage({
         id: 'mother.nameSinhala',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: sinhalaNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Mother's name",
@@ -291,7 +293,7 @@ export const mother = defineFormPage({
         id: 'mother.nameTamil',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: tamilNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Mother's name",

@@ -12,7 +12,7 @@
 import { yesNoRadioOptions } from '@countryconfig/form/v2/person'
 import { emptyMessage } from '@countryconfig/form/v2/utils'
 import { defineFormPage, FieldType } from '@opencrvs/toolkit/events'
-import { farajalandNameConfig } from '../../validators'
+import { sinhalaNameConfig, tamilNameConfig } from '../../validators'
 
 export const grandfather = defineFormPage({
   id: 'grandfather',
@@ -51,7 +51,7 @@ export const grandfather = defineFormPage({
       id: 'grandFather.nameSinhala',
       type: FieldType.NAME,
       required: true,
-      configuration: farajalandNameConfig,
+      configuration: sinhalaNameConfig,
       hideLabel: true,
       label: {
         defaultMessage: "Grandfather's name (in Sinhala)",
@@ -63,7 +63,7 @@ export const grandfather = defineFormPage({
       id: 'grandFather.nameTamil',
       type: FieldType.NAME,
       required: true,
-      configuration: farajalandNameConfig,
+      configuration: tamilNameConfig,
       hideLabel: true,
       label: {
         defaultMessage: "Grandfather's name (in Tamil)",
@@ -111,7 +111,7 @@ export const grandfather = defineFormPage({
       id: 'greatGrandFather.nameSinhala',
       type: FieldType.NAME,
       required: true,
-      configuration: farajalandNameConfig,
+      configuration: sinhalaNameConfig,
       hideLabel: true,
       label: {
         defaultMessage: "Great Grandfather's name (in Sinhala)",
@@ -123,7 +123,7 @@ export const grandfather = defineFormPage({
       id: 'greatGrandFather.nameTamil',
       type: FieldType.NAME,
       required: true,
-      configuration: farajalandNameConfig,
+      configuration: tamilNameConfig,
       hideLabel: true,
       label: {
         defaultMessage: "Great Grandfather's name (in Tamil)",

@@ -21,9 +21,11 @@ import {
 import { or, not } from '@opencrvs/toolkit/conditionals'
 import { emptyMessage } from '@countryconfig/form/v2/utils'
 import {
-  farajalandNameConfig,
+  englishNameConfig,
   invalidNameValidator,
-  nationalIdValidator
+  nationalIdValidator,
+  sinhalaNameConfig,
+  tamilNameConfig
 } from '@countryconfig/form/v2/birth/validators'
 import { InformantType } from './informant'
 import { IdType, idTypeOptions } from '../../../person'
@@ -235,7 +237,7 @@ export const father = defineFormPage({
         id: 'father.nameEnglish',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: englishNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Father's name (in English)",
@@ -260,7 +262,7 @@ export const father = defineFormPage({
         id: 'father.nameSinhala',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: sinhalaNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Father's name (in Sinhala)",
@@ -285,7 +287,7 @@ export const father = defineFormPage({
         id: 'father.nameTamil',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: tamilNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Father's name (in Tamil)",

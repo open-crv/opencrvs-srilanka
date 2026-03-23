@@ -13,7 +13,6 @@ import {
   defineFormPage,
   TranslationConfig,
   ConditionalType,
-  and,
   FieldType,
   AddressType,
   or,
@@ -21,13 +20,12 @@ import {
   field,
   user
 } from '@opencrvs/toolkit/events'
-import { not } from '@opencrvs/toolkit/conditionals'
-
-import { applicationConfig } from '@countryconfig/api/application/application-config'
 
 import { createSelectOptions, emptyMessage } from '@countryconfig/form/v2/utils'
 import {
-  farajalandNameConfig,
+  englishNameConfig,
+  sinhalaNameConfig,
+  tamilNameConfig,
   invalidNameValidator
 } from '@countryconfig/form/v2/birth/validators'
 import {
@@ -177,11 +175,6 @@ export const placeOfBirthOptions = createSelectOptions(
 const typeOfBirthOptions = createSelectOptions(
   TypeOfBirth,
   typeOfBirthMessageDescriptors
-)
-
-const attendantAtBirthOptions = createSelectOptions(
-  AttendantAtBirth,
-  attendantAtBirthMessageDescriptors
 )
 
 export const child = defineFormPage({
@@ -351,24 +344,24 @@ export const child = defineFormPage({
       id: 'child.nameEnglish',
       type: FieldType.NAME,
       required: true,
-      configuration: farajalandNameConfig,
+      configuration: englishNameConfig,
       hideLabel: true,
       label: {
-        defaultMessage: "Child's name",
-        description: 'This is the label for the field',
+        defaultMessage: "Child's name (English)",
+        description: 'This is the label for the English name field',
         id: 'event.birth.action.declare.form.section.child.field.nameEnglish.label'
       },
       validation: [invalidNameValidator('child.nameEnglish')]
     },
     {
-      id: 'child.nameSinhala', //TODO might need to use separate fields due to translations
+      id: 'child.nameSinhala',
       type: FieldType.NAME,
       required: true,
-      configuration: farajalandNameConfig,
+      configuration: sinhalaNameConfig,
       hideLabel: true,
       label: {
-        defaultMessage: "Child's name",
-        description: 'This is the label for the field',
+        defaultMessage: "Child's name (Sinhala)",
+        description: 'This is the label for the Sinhala name field',
         id: 'event.birth.action.declare.form.section.child.field.nameSinhala.label'
       }
     },
@@ -376,11 +369,11 @@ export const child = defineFormPage({
       id: 'child.nameTamil',
       type: FieldType.NAME,
       required: true,
-      configuration: farajalandNameConfig,
+      configuration: tamilNameConfig,
       hideLabel: true,
       label: {
-        defaultMessage: "Child's name",
-        description: 'This is the label for the field',
+        defaultMessage: "Child's name (Tamil)",
+        description: 'This is the label for the Tamil name field',
         id: 'event.birth.action.declare.form.section.child.field.nameTamil.label'
       }
     },

@@ -52,3 +52,69 @@ export const farajalandNameConfig = {
   },
   maxLength: MAX_NAME_LENGTH
 }
+
+export const englishNameConfig = {
+  name: {
+    firstname: {
+      required: true,
+      label: {
+        defaultMessage: 'First name(s) in English',
+        description: 'Label for English first name field',
+        id: 'field.name.english.firstname.label'
+      }
+    },
+    surname: {
+      required: true,
+      label: {
+        defaultMessage: 'Last name in English',
+        description: 'Label for English last name field',
+        id: 'field.name.english.surname.label'
+      }
+    }
+  },
+  maxLength: MAX_NAME_LENGTH
+}
+
+export const sinhalaNameConfig = {
+  name: {
+    firstname: {
+      required: true,
+      label: {
+        defaultMessage: 'First name(s) in Sinhala',
+        description: 'Label for Sinhala first name field',
+        id: 'field.name.sinhala.firstname.label'
+      }
+    },
+    surname: {
+      required: true,
+      label: {
+        defaultMessage: 'Last name in Sinhala',
+        description: 'Label for Sinhala last name field',
+        id: 'field.name.sinhala.surname.label'
+      }
+    }
+  },
+  maxLength: MAX_NAME_LENGTH
+}
+
+export const tamilNameConfig = {
+  name: {
+    firstname: {
+      required: true,
+      label: {
+        defaultMessage: 'First name(s) in Tamil',
+        description: 'Label for Tamil first name field',
+        id: 'field.name.tamil.firstname.label'
+      }
+    },
+    surname: {
+      required: true,
+      label: {
+        defaultMessage: 'Last name in Tamil',
+        description: 'Label for Tamil last name field',
+        id: 'field.name.tamil.surname.label'
+      }
+    }
+  },
+  maxLength: MAX_NAME_LENGTH
+}

@@ -15,7 +15,6 @@ import {
   ConditionalType,
   defineFormPage,
   FieldType,
-  never,
   or,
   TranslationConfig,
   field,
@@ -24,9 +23,11 @@ import {
 import { not } from '@opencrvs/toolkit/conditionals'
 import { createSelectOptions, emptyMessage } from '../../../utils'
 import {
-  farajalandNameConfig,
+  englishNameConfig,
   invalidNameValidator,
-  nationalIdValidator
+  nationalIdValidator,
+  sinhalaNameConfig,
+  tamilNameConfig
 } from '@countryconfig/form/v2/birth/validators'
 import { IdType, idTypeOptions } from '../../../person'
 import {
@@ -35,8 +36,7 @@ import {
 } from '@countryconfig/form/street-address-configuration'
 import {
   getMOSIPIntegrationFields,
-  connectToMOSIPIdReader,
-  connectToMOSIPVerificationStatus
+  connectToMOSIPIdReader
 } from '@countryconfig/form/v2/mosip'
 
 export const InformantType = {
@@ -300,7 +300,7 @@ export const informant = defineFormPage({
         id: 'informant.nameEnglish',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: englishNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Informant's name in English",
@@ -325,7 +325,7 @@ export const informant = defineFormPage({
         id: 'informant.nameSinhala',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: sinhalaNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Informant's name in Sinhala",
@@ -350,7 +350,7 @@ export const informant = defineFormPage({
         id: 'informant.nameTamil',
         type: FieldType.NAME,
         required: true,
-        configuration: farajalandNameConfig,
+        configuration: tamilNameConfig,
         hideLabel: true,
         label: {
           defaultMessage: "Informant's name in Tamil",
