@@ -2341,214 +2341,214 @@ userSetup.type.healthSystem,The description for health system type,Health System
 userSetup.type.hospital,The description for HOSPITAL type,Hospital,රෝහල,மருத்துவமனை
 userSetup.type.system,The description for system type,System,පද්ධතිය,அமைப்பு
 userSetup.waiting,The message that displays when the user is waiting for the account to be created,Setting up your account,ඔබගේ ගිණුම සැකසුම සැකසුම කිරීමට,உங்கள் கணக்கை அமைக்கும் போது
-v2.action.correct,Label for correct record button in dropdown menu,Correct Record,සංස්කරණය සදහා නිවැරදි වාර්තාවක්,சரியான பதிவு
-v2.actionModal.PrimaryAction,The label for primary action button of action modal,"{action, select, declare{Declare} other{{action}}}","{ක්‍රියාකාරී, තෝරන්න, ප්‍රකාශනය{ප්‍රකාශනය} වෙනස්{{ක්‍රියාකාරී}}}","{செயல், தேர்ந்தெடு, அறிக்கை{அறிக்கை} மற்றவை{{செயல்}}}"
-v2.actionModal.cancel,The label for cancel button of action modal,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.actionModal.description,The description for action modal,The declarant will be notified of this action and a record of this decision will be recorded,මානව ප්‍රකාශය මෙම ක්‍රියාව පිළිබඳව දැනුම් ලබා දෙනවා හා මෙම තීරණයේ වාර්තාව ලබා දීමට අවශ්‍ය ය.,பேணி {name} இந்த செயலை அறிவிக்கப்படும் மற்றும் இந்த முடிவுக்கு ஒரு பதிவு செய்யப்படும்.
-v2.actionModal.description.incomplete,Description shown in the action modal when a declaration is incomplete,This incomplete declaration will be submitted for review.,මෙම සම්පූර්ණ ප්‍රලේඛනය සඳහා සමාලෝචනය සඳහා ඉදිරිපත් කරනු ඇත.,இந்த முடிவுறுதி மதிப்புரைக்கு சமர்ப்பிக்கப்படும்.
-v2.actionModal.title,The title for action modal,"{action, select, declare{Declare} other{{action}}} the member?","{ක්‍රියාකාරී, තෝරන්න, ප්‍රකාශනය{ප්‍රකාශනය} වෙනස්{{ක්‍රියාකාරී}}} මෙම සාමාන්‍යයා තෝරන්නේ?","{action, select, declare{அறிக்கை செய்யுங்கள்} other{{action}}} உறுப்பினரை?"
-v2.advancedSearch.accordion.hide,Label for hide button when accordion is closed,Hide,පැහැදිලි කරන්න,மறைக்க
-v2.advancedSearch.accordion.show,Label for show button when accordion is closed,Show,පෙන්වන්න,காட்டு
-v2.advancedSearchResult.table.searchResult,The label for search result header in advancedSearchResult page,Search results,සෙවුම් ප්‍රතිඵලයන්,தேடல் முடிவுகள்
-v2.buttons.back,Back button text,Back,ආපසු,பின்னால்
-v2.buttons.backToReview,Back to review button text,Back to review,අදාලව සපයා ඇත,மீண்டும் பரிசோதனை செய்ய வருகிறேன்
-v2.buttons.cancel,Cancel button text in the modal,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.buttons.change,The label for the change button,Change,පෙරදසුන්ගේ නම {name} වෙත වෙනස් කරන්න.,மாற்றம்
-v2.buttons.changeAll,The label for the change all button,Change all,සියලුමයි,அனைத்து {name} மாற்றுக்களும் செய்யப்படுகின்றன.
-v2.buttons.confirm,Confirm button,Confirm,තහවුරු කරන්න,உறுதிப்படுத்தவும்
-v2.buttons.continue,Continue Button Text,Continue,අපිට ප්‍රායෝලක් කරන්නේ කියන්නේ නැත.,தொடருங்கள்
-v2.buttons.edit,Edit button text,Edit,නැවත සංස්කරණය කරන්න,திருத்துக
-v2.buttons.exit,Label for Exit button on EventTopBar,Exit,පිටවීම,வெளியேறு
-v2.buttons.print,Print button text,Print,මුද්‍රණය කරන්න,அச்சு
-v2.buttons.saveExit,The label for the save and exit button,Save & Exit,සුරක්ෂිතම් & පිවිසීම,சேமி & வெளியேறு (Save & Exit)
-v2.buttons.search,The title of search input submit button,Search,අගවිතා,தேடுக
-v2.changeModal.cancel,The label for cancel button of change modal,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.changeModal.continue,The label for continue button of change modal,Continue,අපිට ප්‍රතිඵල කරන්න.,தொடருங்கள்
-v2.changeModal.description,The description for change modal,A record will be created of any changes you make,ඔබගේ කොටස් කිරීම් කිරීමේ වාර්තා සාදනවා.,நீங்கள் செய்யும் எந்த மாற்றங்களின் பதிவு செய்யப்படும்.
-v2.changeModal.title,The title for change modal,Edit declaration?,ප්‍රතිස්ථාපනය සංස්කරණය කරනවාද?,பிரமாணத்தை திருத்த வேண்டுமா?
-v2.config.advanced.search,This is used for the advanced search,Advanced Search,දර්ශක සෙවීම,மேம்பட்ட தேடல்
-v2.config.advanced.search.instruction,This is used for the advanced search,Select the options to build an advanced search. A minimum of two search parameters is required.,උසස් සෙවුම තොරතුරු ගොනුවක් තෝරා ගැනීමට විකල්ප තෝරන්න. අවලංගු සෙවුම් ක්‍රමයන් දෙකක් අවශ්‍ය වේ.,ஒரு மேம்படுத்தப்பட்ட தேடலை உருவாக்க விருப்பங்களைத் தேர்ந்தெடுக்கவும். குறைந்தபட்சம் இரண்டு தேடல் அடிப்படையில் தேவை.
-v2.config.application.vsexport,Vital statistics title,Vital statistics,ස්ථාන සංඛ්‍යාංකරණය,முக்கிய புள்ளிகள்
-v2.configuration.dateFormat,Default format for date values,d MMMM y,d MMMM y,d MMMM y
-v2.configuration.timeFormat,Default time format for timestamps,"MMMM dd, yyyy · hh.mm a","මාස මාර්තු dd, yyyy · hh.mm a","MMMM dd, yyyy · hh.mm a"
-v2.constants.PIN,PIN label,PIN,කේන්තෝකය,பின்
-v2.constants.address,Label for address,Address,ලිපිනය,முகவரி
-v2.constants.allEvents,Label for select option All events,All events,සියලු සිදුවීම්,அனைத்து நிகழ்வுகளும்
-v2.constants.allStatuses,Label for select option All statuses,All statuses,සියලු තත්ත්වයන්,அனைத்து நிலைகளும்
-v2.constants.application.title,Application title,Application,අයිතිය,விண்ணப்பி
-v2.constants.applicationName,Declaration name of CRVS,One Registry,One Registry,One Registry
-v2.constants.assignRecord,A label for the Assign record -button,Assign record,රාජකාරීත්වය සඳහා ලක් පිටපත් කරන්න,பதிவை ஒதுக்கவும்
-v2.constants.averageRateOfRegistrations,A label for Average rate of registrations,avg. {amount}%,මාධ්‍ය සහිත {amount}%,சராசரி {amount}%
-v2.constants.birth,A label from the birth event,Birth,උපන්දිනය,பிறப்பு
-v2.constants.births,A label from the births event,Births,උපන්දිනයන්,பிறப்புகள்
-v2.constants.by,Label for By (the person who performed the action),By,විසින්,மூலம்
-v2.constants.certificate.title,Certificate title,Certificate,සහයෝගය,சான்றிதழம்
-v2.constants.certificationPaymentTitle,Label for certification payment performance reports,"Payment collected for {event, select, birth{birth} death{death} other{birth}} certificates",{සියලුම} පස්වයින් සඳහා ගෙවිය ඇත {සියලුම} ගානේදී ගෙවිය ඇත,"{நிகரானப் பணம்} {நிகரானப் பணம், select, பிறப்பு{பிறப்பு} மரணம்{மரணம்} மற்றவை{பிறப்பு}} சான்றுகளுக்கான கட்டணம் ஏற்றுக்கொள்ளப்பட்டது"
-v2.constants.certified,A label for certified,certified,බාරදෙන,சான்றிதழ் பெற்றுள்ளது
-v2.constants.collected,The status label for collected,collected,එක් කර ඇත,சேகரிக்கப்பட்டுள்ளது
-v2.constants.collectedBy,The collected by sec text,Collected by,එකතු කළ හැකිය.,சேகரிக்கப்பட்டுள்ளது
-v2.constants.comment,Label for rejection comment,Comment,අදහසයි,கருத்து
-v2.constants.countryName,Name of the OpenCRVS implementation country,Sri Lanka,ශ්‍රී ලංකාව,இலங்கை
-v2.constants.customTimePeriod,Label for Custom time period,Custom time period,සැකසුම් කාල කාලය,தனிப்பட்ட கால காலம்
-v2.constants.dateOfDeclaration,Date of declaration label,Date of declaration,ප්‍රකාශයේ දිනය,அறிவிப்பு தேதி
-v2.constants.death,A label from the death event,Death,මරණය,மரணம்
-v2.constants.deaths,A label from the deaths event,Deaths,මිරිකරන්න්,மரணங்கள்
-v2.constants.declaration,A label for declaration,declaration,නිවාඩුව,அறிக்கை
-v2.constants.declarationCollectedOn,Label for the workflow timestamp when the status is collected,Certificate collected on,සහත් ලබා ගැනීමේ දිනය: {date},சான்றிதழ் சேர்க்கப்பட்டது
-v2.constants.declarationFailedOn,Label for the workflow timestamp when the status is failed,Failed to send on,යවන්නේ අසාර්ථකයි,அனுப்ப தோல்வி ஏற்பட்டது
-v2.constants.declarationRegisteredOn,Label for the workflow timestamp when the status is registered,Declaration registered on,ලියාපදිංචිය ලිවී ඇත,பதிவு செய்யப்பட்ட அறிக்கை
-v2.constants.declarationRejectedOn,Label for the workflow timestamp when the status is rejected,Declaration sent for updates on,යළි යැවීම සඳහා යවන ලදුදු විස්තරයන් සඳහා,புதுப்பிக்கலுக்கான அறிக்கை அனுப்பப்பட்டுள்ளது
-v2.constants.declarationRequestedCorrectionOn,Label for the workflow timestamp when the status is requested correction,Declaration requested correction on,අයිතිය විසින් සංස්කරණය ඉල්ලීමට විය යුතුය,கோரியும் திருத்தம் கோரப்பட்டுள்ளது
-v2.constants.declarationSentForExternalValidationOn,Label for the workflow timestamp when the status is waiting_validation,Declaration sent for external validation on,බාහිර සංස්කරණය සදහා ප්‍රතිනචය යවන ලදි.,வெளியே செய்தியை செயலாளருக்கு சரிபார்க்க அனுப்பப்பட்டுள்ளது.
-v2.constants.declarationStarted,Label for table header column Declaration started,Started,ආරම්භයි,தொடங்கப்பட்டது
-v2.constants.declarationStartedBy,Label for table header column Started by,Started by,ආරම්භ කරන ලදි,தொடங்கினேன்
-v2.constants.declarationStartedOn,Label for the workflow timestamp when the status is draft created,Started on,ආරම්භයි,தொடங்கினேன்
-v2.constants.declarationState,A label to describe when the declaration was actioned on,Declaration {action} on,ප්‍රකාශය {action} මගින්,அறிக்கை {action} செய்யப்படுகிறது
-v2.constants.declarationSubmittedOn,Label for the workflow timestamp when the status is declaration,Declaration submitted on,දායාද ඉදිරිපත් කළ දිනයක්,அறிக்கை சமர்ப்பிக்கப்பட்டது {date}
-v2.constants.declarationUpdatedOn,Label for the workflow timestamp when the status is draft updated,Updated on,යාවත්කාලීන කළ හැකිය.,புதுப்பிக்கப்பட்டது
-v2.constants.declarationValidatedOn,Label for the workflow timestamp when the status is validated,Declaration reviewed on,පරීක්ෂණය සඳහා සටහන් සමාලෝචනය කර ඇත්දැයි පරීක්ෂා කර ඇත.,அறிக்கை மதிப்பீடு செய்யப்பட்டது
-v2.constants.declarations,Declaration title,Declarations,ප්‍රකට ප්‍රකාශයන්,அறிக்கைகள்
-v2.constants.declarationsCount,A label for declarations count,Declarations ({totalItems}),ප්‍රකාශ ({totalItems}),அறிக்கைகள் ({totalItems})
-v2.constants.declrationArchivedOn,Label for the workflow timestamp when the status is archived,Application archived on,අයිතිකරු {officeName} හි ගොනුව ගත කර ඇත,விண்ணப்பம் சேமிக்கப்பட்டது
-v2.constants.dob,Date of birth label,D.o.B.,උ.ප.ද.,ப.ப.த.
-v2.constants.dod,Label for DoD in work queue list item,D.o.D,ක්‍රියාකාරීත්වයක්,த.த.தி.
-v2.constants.downloaded,Label for application download status Downloaded,Downloaded,බාගත කර ඇත,பதிவிறக்கம் செய்யப்பட்டது
-v2.constants.downloading,Label for declaration download status Downloading,Downloading...,බාගත කිරීම...,பதிவிறக்கம் செய்கின்றது...
-v2.constants.duplicateOf,table header for `duplicate of` in record audit,Duplicate of,පිළිතුරුද?,நகல் ஆக்கம்
-v2.constants.emailAddress,Email label,Email Address,ඊමෙල් ලිපිනය,மின்னஞ்சல் முகவரி
-v2.constants.emailBody,Label for email body input,Message,පණිවිඩය,செய்தி
-v2.constants.emailSubject,Label for email subject input,Subject,විශේෂිතයි,பொருள்
-v2.constants.estimatedNumberOfEvents,A label for Estimated number of events,"Estimated no. of {eventType, select, birth {birth} death {death} other {birth}}s","{eventType, select, birth {උපන්} death {මරයි} other {උපන්}} වීම් සඳහා අගැයුම් අංකය.","{eventType, select, birth {பிறப்பு} death {மரணம்} other {பிறப்பு}} எண்ணிக்கை மதிப்பீடுசெய்யப்பட்டது"
-v2.constants.estimatedNumberOfRegistartion,A label for estimated no. of registrations,Estimated no. of registrations,ලියාපදිංචි සංඛ්‍යාංකරණය,பதிவுகளின் அமைந்த எண்ணிக்கை
-v2.constants.estimatedTargetDaysRegistrationTitle,A label for estimated vs total registered in {registrationTargetDays} days,Estimated vs total registered in {registrationTargetDays} days,{registrationTargetDays} දිනයේ අනුමැතිය vs මාසික ලියාපදිංචියක්,{registrationTargetDays} நாட்களில் கணக்கிடப்பட்டது vs மொத்த பதிவுசெய்யப்பட்டது
-v2.constants.event,Label for Event of event in work queue list item,Event,උද්‍යානය,நிகழ்வு
-v2.constants.eventDate,Label for event date in list item,Date of event,සිදුවීමේ දිනය,நிகழ்வின் தேதி
-v2.constants.eventType,Label for table header column Event type,Event,උදව්,நிகழ்வு
-v2.constants.export,Label used for export,Export,නියාමක් කරන්න,ஏற்றுமதி
-v2.constants.failedToSend,Label for declaration status Failed,Failed to send,යොදා නොහැකියි,அனுப்ப தோல்வி ஏற்பட்டது
-v2.constants.femaleOver18,Label for femaleOver18,Female Over 18,මහා වයසට ඉහළ ස්තුතිය ඇතුලු ස්තුතියක්,18 வயது மேல் பெண்
-v2.constants.femaleUnder18,Label for femaleUnder18,Female Under 18,ගැහැනු උපත 18ට වැඩියි,பெண் குறைந்தபட்ச 18 வயது
-v2.constants.form.title,Form Declaration title,Declaration forms,ප්‍රඳුන් පත්වීම්,அறிக்கை படிவங்கள்
-v2.constants.from,Label for text From,From,කරුණාකර,இருந்து
-v2.constants.gender,Gender label,Gender,පුරවැසියා,பாலியல்
-v2.constants.history,History heading,History,ඉතිහාසය,வரலாறு
-v2.constants.id,ID Label,ID,අන්තර්ජාලය,ID
-v2.constants.inReview.status,A label for In Review,In Review,සඳහන් කිරීමේදී,மதிப்பீடு செய்யப்படுகிறது
-v2.constants.incomplete.status,A label for Incomplete,Incomplete,අසම්පූර්ණයි,முடிவற்றையும் முடிக்காது
-v2.constants.informant,Informant Label,Informant,සුදුසුදුරන්,அறிக்கையாளர்
-v2.constants.informantContactNumber,The title of contact number label,Informant contact number,සෞඛ්‍ය සම්බන්ධ අංකය,தகவல் வழங்குநரின் தொலைபேசி எண்
-v2.constants.integrations,Integration title,Integrations,ඒකාබද්ධකවරුන්,ஒரு ஒப்புதல்கள்
-v2.constants.issuedBy,The issued by sec text,Issued by,නම් මතයේ නිර්දේශයේ පිළිබඳව යළියොමු.,வெளியிடப்பட்டது மூலம்
-v2.constants.label.action,Action Label,Action,ක්‍රියාකාරකම,செயல்
-v2.constants.label.date,Date Label,Date,දිනය,தேதி
-v2.constants.language,language label,Language,භාෂාව,மொழி
-v2.constants.last12Months,Label for preset date range Last 12 months,Last 12 months,අවසන් 12 මාසයක්,கடந்த 12 மாதங்கள்
-v2.constants.last30Days,Label for  preset date range Last 30 days,Last 30 days,අවසන් 30 දිනයන්,கடந்த 30 நாட்கள்
-v2.constants.lastEdited,Label for rejection date in work queue list item,Last edited,අවසන් සංස්කරණය කරන ලදි,கடைசியாக திருத்தப்பட்டது
-v2.constants.lastUpdated,Label for Last updated in list item,Last updated,අවසන් වෙනස් කළ වේ,கடைசி மேம்படுத்தல்
-v2.constants.loadMore,A label for load more,Load more,තවත් පැකට් කරන්න,மேலே ஏற்றுக்கொள்
-v2.constants.location,Label for location,Location,ස්ථානය,இடம்
-v2.constants.maleOver18,Label for maleOver18,Male Over 18,පුරවැසි මිටි 18 ට වැඩියි,18 வயது மேல் ஆண்
-v2.constants.maleUnder18,Label for maleUnder18,Male Under 18,පුරාණ අයිතමයි 18ට අඩු,18 வயது குறைந்த ஆண்
-v2.constants.marriage,A label from the marriage event,Marriage,විවාහය,திருமணம்
-v2.constants.marriages,A label from the marriages event,Marriages,විවාහයන්,திருமணங்கள்
-v2.constants.matchedTo,table header for `Matched to` in record audit,Matched to,ගුරුවරුන්ට ගැලපෙන්නේ,Matched to
-v2.constants.month,Label for month,Month,මාසය,மாதம்
-v2.constants.name,Name label,Name,නම,பெயர்
-v2.constants.noConnection,No Connection hover text,No connection,අදාළ සම්බන්ධය නොදැක්වීම,இணைப்பு இல்லை
-v2.constants.noNameProvided,Label for empty title,No name provided,නම සපයා නැත,பெயர் வழங்கப்படவில்லை
-v2.constants.noResults,Text to display if the search return no results for the current filters,No result,ප්‍රතිලාභයක් නොමැත,ஒரு முடிவு இல்லை
-v2.constants.noResultsOutbox,Text to display if there is no items in outbox,No records require processing,කාලසත්‍ය අවශ්‍යතා නොඇතිවිය,பதிவுகள் செயலாக்கப்பட வேண்டும் என்று எந்த பதிவுகளும் இல்லை
-v2.constants.notificationSent,label for notification sent,Notification sent,දැන්වීම යවා ඇත,அறிவு அனுப்பப்பட்டது
-v2.constants.over5Years,Label for registrations over 5 years,Over 5 years,5 වසර ඉහලට,5 ஆண்டுகள் மேல்
-v2.constants.password,Password label,Password,මුරපදය,கடவுச்சொல்
-v2.constants.pendingConnection,Label for declaration status Pending Connection,Pending connection,අනුමැතිය සිටින්නේ,நிலுவை இணைப்பு
-v2.constants.percentageOfEstimation,A label for percentage of estimate,Percentage of estimate,අනුපාතයේ ප්‍රතිශත්වය,மதிப்பீட்டின் சதவீதம்
-v2.constants.performance,Performance title,Performance,කාර්යබහුලව,செயல்பாடு
-v2.constants.phoneNumber,Phone label,Phone number,දුරකථන අංකය,தொலைபேசி எண்
-v2.constants.reason,Label for Reason the declaration was rejected,Reason,කාලය,காரணம்
-v2.constants.record,Label for header table header Record,Record,ලියන්න,பதிவு
-v2.constants.refresh,label for refresh,Refresh,නැවත ප්‍රතිපලයක් කරන්න,புதுப்பிக்கவும்
-v2.constants.registered,A label for registered,Registered,ලියාපදිංචියා,பதிவு செய்யப்பட்டது
-v2.constants.registered.status,A label for registered,Registered,ලියාපදිංචියා,பதிவு செய்யப்பட்டது
-v2.constants.registeredAt,Label for comparison row registeredAt type,Registered at,ලියාපදිංචියි වීමේදී,பதிவு செய்யப்பட்டுள்ளது
-v2.constants.registeredBy,Label for comparison row registeredBy type,Registered by,ලියාපදිංචියෙන්,பதிவு செய்யப்பட்டது {officeName} மூலம்
-v2.constants.registeredInTargetd,A label for Registered in {registrationTargetDays} days,Registered in {registrationTargetDays} days,{registrationTargetDays} දිනයේදී ලියාපදිංචි වී ඇත,{registrationTargetDays} நாட்களில் பதிவு செய்யப்பட்டுள்ளது.
-v2.constants.registeredWithinTargetd,A label for Registered {registrationTargetDays} within days of event,Registered within\n{registrationTargetDays} days of event,සිසුන්ට ලියාපදිංචි වී ඇත\n{registrationTargetDays} දිනයන්ද සඳහා,நிகழ்வுக்கு முன்பு {registrationTargetDays} நாட்களில் பதிவு செய்யப்பட்டுள்ளது
-v2.constants.rejected,A label for rejected,rejected,ප්‍රතිචාරයක් කරන ලදි,நிராகரித்தது
-v2.constants.rejectedDays,The title of rejected days of declaration,Sent for updates {text},යළියගේ යාවත්කාලී කිරීම සඳහා යවන ලදි {text},புதுப்பிக்கப்பட்டது {text}
-v2.constants.relationship,Relationship Label for death,Relationship,සම්බන්ධතාව,உறவு
-v2.constants.requestReason,Label for Reason the declaration was corrected,Reason for request,ඉල්ලීමේ හේතුව,கோரிக்கைக்கு காரணம்
-v2.constants.requestedCorrection,A label for requested correction,requested correction,ඇය වෙනස් ඉලෙක්ස් කරගත්විය.,கோரிய சரியாக செய்யப்பட்டது
-v2.constants.requireUpdatesLoading,The text when all rejected declarations are loading,Checking your declarations,ඔබගේ ප්‍රකාශ පරීක්ෂා කරමින් පවතී,உங்கள் அறிக்கைகளை சரிபார்க்கப்படுகிறது
-v2.constants.requiresUpdates.status,A label for Requires updates,Requires updates,යාවත්කාලීනවීම් අවශ්‍යයි,புதுப்பிக்கப்பட வேண்டும்
-v2.constants.review,A label from the review button,Review,අදාළවකාව,மதிப்பீடு
-v2.constants.role,Role label,Role,භාවිතය,பதவி
-v2.constants.search,The title of the page,Search,අගවිතාවන්ට සොයන්න,தேடுக
-v2.constants.sending,Label for declaration status Submitting,Sending...,යවන්න...,அனுப்புகிறது...
-v2.constants.sentForApproval,label for sent for approval,Sent for approval,අනුමත කිරීමට යවන ලදුවක්,அனுமோனத்துக்கு அனுப்பப்பட்டுள்ளது
-v2.constants.sentForReview,label for sent for review,Sent for review,සඳහන් කිරීම සඳහා යවන ලදුදුයි,மதிப்பீடுக்கு அனுப்பப்பட்டது
-v2.constants.sentForUpdates,label for sent for updates,Sent for updates,යළි යළි යාවත්කාලීනව කරන්න,புதுப்பிக்க அனுப்பப்பட்டது
-v2.constants.sentForUpdatesOn,Label for rejection date in work queue list item,Sent for updates on,යළි යාවත්කාලීන කිරීම සඳහා යවන ලදි.,புதுப்பிக்க அனுப்பவும்
-v2.constants.sentForValidation,label for sent for validation,Sent for validation,වලංගු කිරීම සඳහා යවන ලදුදුයි,சரிபார்க்கப்படும் படியில் அனுப்பப்பட்டுள்ளது
-v2.constants.sentOn,Label for rejection date in work queue list item,Sent on,යළියම් යවන ලදි,அனுப்பப்பட்டது
-v2.constants.showMore,Label for show more link,Show next {pageSize},ඊළඟ {pageSize} පෙන්වන්න.,அடுக்கு {pageSize} காட்டு
-v2.constants.skipToMainContent,Label for a keyboard accessibility link which skips to the main content,Skip to main content,මූලික අන්තර්ගතයට පිවිසෙන්න,முக்கிய உள்ளடக்கத்திற்கு விடுக.
-v2.constants.startedAt,Label for Started At in list item,Started,ආරම්භයාට ඇරඹේ,தொடங்கினேன்
-v2.constants.startedBy,Label for Started by in list item,Started by,ආරම්භ කරන ලදියේ,தொடங்கினேன்
-v2.constants.status,Title for column,Status,තරමේදීම,நிலை
-v2.constants.submissionStatus,Label for table header of column Submission status,Submission status,ඉල්ලීම් තත්වය,சமர்ப்பன நிலை
-v2.constants.submitted,A label for submitted,submitted,ඉදිරිපත් කරන ලදි,சமர்ப்பிக்கப்பட்டது
-v2.constants.systemrole,System Role label,System Role,සිසුන් හස්තිය,அமைப்பு பதவி
-v2.constants.timeFramesTitle,Header for tabel performance timeframs,"{event, select, birth{Birth} death{Death} other{Birth}} registered by time period, from date of occurrence","{event, select, birth{උපන්දිනය} death{මධ්‍යය} other{උපන්දිනය}} ලියාපදිංචි කරන ලදි, දින කාලයේ සිට උපන්දිනයේ දක්වා","நிகழ்நிலை, நிகழ்ச்சி, பிற{Birth} மரண{Death} மற்ற{Birth} ஆகியவை நிகழ்நிலையாக, நிகழ்ச்சியுடன் தேதி முதல் பதிவு செய்யப்பட்டுள்ளது"
-v2.constants.timeInProgress,Label for column Time in progress,Time in progress,වේලාව ප්‍රකාශයට පවතී.,நேரம் முன்னேற்றம் செய்கிறது.
-v2.constants.timePeriod,A label for Time period,Time period,වේලි කාලය,நேர காலம்
-v2.constants.timeReadyForReview,Label for column Time in ready for review,Time in ready for review,සමාලෝචනය සඳහා සූදානම්ව සිටි කාලය,மீளாய்வுக்குத் தயாரான நிலையில் இருந்த நேரம்
-v2.constants.timeReadyToPrint,Label for column Time in ready to print,Time in ready to print,ක්‍රියාකාරී කිරීම සඳහා කාලය,அசைவு செய்ய காலம்
-v2.constants.timeRequireUpdates,Label for column Time in require updates,Time in require updates,වෙනස් අවශ්‍යයි වේලාවන්ට,புதுப்பிக்க நேரம் தேவை
-v2.constants.timeWaitingExternalValidation,Label for column Time in external validation BRIS,Time in external validation,බාහිර සංස්කරණයේ කාලය,வெளியேறும் சரிபார்ப்பில் நேரம்
-v2.constants.timeWatingApproval,Label for column Time in waiting for approval,Time in waiting for approval,අනුමැතිය අනුරූපනය කිරීම සඳහා කාලය,அனுமதியை காத்திருக்கும் நேரம்
-v2.constants.to,Used in sentence,to,"ඔබගේ අයිතිකරු {name}, {officeName} ට පිවිසෙනු ඇත.",அவருக்கு
-v2.constants.toCapitalized,Label for To,To,කරුණාකර මෙම වාක්‍යය පරිවර්තනය කරන්න.,பெற்றோர் {name} என்ற அவருடைய அலுவலகம் {officeName}
-v2.constants.total,Label for total,Total,මුළුදැක්කේ {total},மொத்தம்
-v2.constants.totalFileSizeExceed,Accumulated File size exceed message,Total size of documents exceeds {fileSize}. Please reduce file size of your uploads,ලේඛන් එකෙහි එන්න ප්‍රමාණය {fileSize} ඉවත් කරන්න. කරුණාකර ඔබගේ උඩුගත ගොනු ප්‍රමාණය අවසන් කරන්න.,ஆவணங்களின் மொத்த அளவு {fileSize} விதிக்கப்பட்டுள்ளது. உங்கள் பதிவேற்றங்களின் கோப்பு அளவை குறைக்கவும்.
-v2.constants.totalRegistered,A label for Total registered,Total registered,සම්පූර්ණ ලියාපදිංචියන්,மொத்த பதிவு செய்யப்பட்டது
-v2.constants.totalRegisteredInTargetDays,A label for total registered in {registrationTargetDays} days,Total registered in {registrationTargetDays} days,{registrationTargetDays} දිනයේ ලියාපදිංචියන් එකතු විය,{registrationTargetDays} நாட்களில் மொத்த பதிவு செய்யப்பட்டது
-v2.constants.trackingId,Search menu tracking id type,Tracking ID,චලවූ අංකය,கண்காணிப்பு ஐடி
-v2.constants.type,Label for type of event in work queue list item,Type,ටයිප් කරන්න,வகை
-v2.constants.update,The title of reject button in list item actions,Update,යළි සංවාදයක් යාවත්කාලීන කරන්න.,புதுப்பிக்கவும்
-v2.constants.user,The name of the user form,User,පරිශීලකයා,பயனர்
-v2.constants.username,Username,Username,පරිශීලකවරු,பயனர்பெயர்
-v2.constants.validated,A label for validated,validated,තහවුරු කර ඇත,சரிபார்க்கப்பட்டுள்ளது
-v2.constants.viewAll,Label for view all link,View all,සියලුමයි,அனைத்தும் பார்
-v2.constants.waitingToSend,Label for declaration status Ready to Submit,Waiting to send,යවන්න අපි බලන්නේ නැතිලුණුද?,அனுப்ப காத்திருக்கிறேன்
-v2.constants.waitingValidated,A label for waitingValidated,Waiting for validation,වලංගු වීම බලන්නේ නැත,சரிபார்க்கப்படுத்தப்படுகிறேன்
-v2.constants.week,Label for week,Week,සතිය,வாரம்
-v2.constants.within1YearTo5Years,Label for registrations within 1 year to 5 years,1 year - 5 years,1 වසර - 5 වසර,1 ஆண்டு - 5 ஆண்டுகள்
-v2.constants.withinTargetDays,Label for registrations within {registrationTargetDays} days,Within {registrationTargetDays} days,{registrationTargetDays} දිනයන් තිබෙනවා,{registrationTargetDays} நாட்கள் உள்ளிட்டு
-v2.constants.withinTargetDaysTo1Year,Label for registrations within {registrationTargetDays} days to 1 year,{registrationTargetDays} days - 1 year,{registrationTargetDays} දින - 1 වසරය,{registrationTargetDays} நாட்கள் - 1 ஆண்டு
-v2.correction.corrector.anotherAgent,Label for another registration or field agent option in certificate correction form,Another registration agent or field agent,නව ලියාපදිංචි නියාපදිංචි හෝ ක්ෂේත්‍රයක්,மற்றொரு பதிவு ஏஜென்ட் அல்லது புலம் ஏஜென்ட்
-v2.correction.corrector.identity.instruction,The title for the corrector form,Please verify the identity of the person making this request,මෙම ඉලෙක්ස් කිරීම කිරීමේ පුද්ගලිකත්වය තහවුරු කරන්න.,இந்த கோரிக்கையை செய்த வழக்கறிஞரின் அடையாளத்தை சரிபார்க்கவும்.
-v2.correction.corrector.identity.verified,Label for verified option in corrector identity check page,I have verified their identity,මම ඔවුන්ගේ අන්තර්ගතය තහවුරු කළා,நான் அவர்களின் அடையாளத்தை சரிபார்த்துக்கொண்டேன்.
-v2.correction.corrector.identity.verified.label,The title for the corrector form,@todo,@todo,"மன்னிக்கவும், இந்த பணியை செய்ய வேண்டியது."
-v2.correction.corrector.informant,Label for informant option in certificate correction form,Informant,නිවේදනයක්,அறியப்படும் நபர்
-v2.correction.corrector.me,Label for registrar option in certificate correction form,Me (Registrar),මම ({officeName}),நான் ({officeName})
-v2.correction.corrector.others,Label for someone else option in certificate correction form,Someone else,තවත් කාර්යයක්,யாரோ மற்றவர்
-v2.correction.corrector.paragraph.title,The title for the corrector form,"For all record corrections at a minimum an affidavit must be provided. For material errors and omissions eg. in paternity cases, a court order must also be provided.","සිසුන් සිහිකාරී සංස්කරණයන් සඳහා අවශ්‍ය අත්සන එකක් එළිදගන්නේ අත්සන ප්‍රතිස්ථාපනය ලබා ගැනීමයි. පිරිස දෝෂ හා අත්සන අත්හිටවූ අසාර්ථකයන් සඳහා, පිරිස නිවාඩු සාමාන්‍යයෙන් එකක් එළිදගන්නේ අසාර්ථකයයි.","அனைத்து பதிவு சரியாக்கங்களுக்கு குறைந்தபட்ச ஒரு அபிதாவிட் வழங்கப்பட வேண்டும். பொருத்தமான பிழைகள் மற்றும் விடைகள் என்னும் பாதுகாப்பு வழக்கங்களில், நீதிமன்ற கட்டளையும் வழங்கப்பட வேண்டும்."
-v2.correction.corrector.title,The title for the corrector form,Who is requesting a change to this record?,මෙම වාර්තාව වෙනස් කිරීමට අවශ්‍යයි කවුරුද?,இந்த பதிவை மாற்ற கோரிக்கை யார்?
-v2.correction.reason.title,The title for the corrector form,Reason for correction?,සංශෝධනය සඳහා හේතුව?,திருத்தம் காரணம்?
-v2.correction.requester.relationshop.intro.label,The title for the corrector form,Note: In the case that the child is now of legal age (18) then only they should be able to request a change to their birth record.,"සියලුම නිළධාරීත්වයට දායක වූ විට, එයට තාවකාලික වරක් (18) වෙනි විට පරිශීලකයා ඔවුන්ගේ උපරිම වාර්තා වෙනස් කිරීමට හැකි යැයි විය යුතුය.","குழந்தை இப்போது சட்டம் அடைந்திருக்கும் வயது (18) உள்ளதால், அவர்கள் தங்கள் பிறப்பு பதிவை மாற்ற கோரலாம் என்று மட்டும் அவர்கள் கோரிக்கை செய்ய முடியக்கூடும்."
-v2.correction.supportingDocuments.attest.label,Label for attestation of supporting documents,Attest,තහවුරු කරන්න,சான்றிதழ்
-v2.correction.supportingDocuments.notNeeded.label,Label for indicating supporting documents are not needed,Not Needed,අවශ්‍ය නොවේ,தேவையில்லை
+action.correct,Label for correct record button in dropdown menu,Correct record,,
+actionModal.PrimaryAction,The label for primary action button of action modal,"{action, select, declare{Declare} other{{action}}}",,
+actionModal.cancel,The label for cancel button of action modal,Cancel,,
+actionModal.description,The description for action modal,The informant will be notified of this decision and a record of this decision will be recorded,,
+actionModal.description.incomplete,Description shown in the action modal when a declaration is incomplete,This incomplete declaration will be submitted for review.,,
+actionModal.title,The title for action modal,"{action, select, declare{Declare} other{{action}}} the member?",,
+advancedSearch.accordion.hide,Label for hide button when accordion is closed,Hide,,
+advancedSearch.accordion.show,Label for show button when accordion is closed,Show,,
+advancedSearchResult.table.searchResult,The label for search result header in advancedSearchResult page,Search results,,
+buttons.back,Back button text,Back,,
+buttons.backToReview,Back to review button text,Back to review,,
+buttons.cancel,Cancel button text in the modal,Cancel,,
+buttons.change,The label for the change button,Change,,
+buttons.changeAll,The label for the change all button,Change all,,
+buttons.confirm,Confirm button,Confirm,,
+buttons.continue,Continue Button Text,Continue,,
+buttons.edit,Edit button text,Edit,,
+buttons.exit,Label for Exit button on EventTopBar,Exit,,
+buttons.print,Print button text,Print,,
+buttons.saveExit,The label for the save and exit button,Save & Exit,,
+buttons.search,The title of search input submit button,Search,,
+changeModal.cancel,The label for cancel button of change modal,Cancel,,
+changeModal.continue,The label for continue button of change modal,Continue,,
+changeModal.description,The description for change modal,A record will be created of any changes you make,,
+changeModal.title,The title for change modal,Edit declaration?,,
+config.advanced.search,This is used for the advanced search,Advanced Search,,
+config.advanced.search.instruction,This is used for the advanced search,Select the options to build an advanced search. A minimum of two search parameters is required.,,
+config.application.vsexport,VS Export tab,Vital statistics,,
+configuration.dateFormat,Default format for date values,d MMMM y,,
+configuration.timeFormat,Default time format for timestamps,"MMMM dd, yyyy · hh.mm a",,
+constants.PIN,PIN label,PIN,,
+constants.address,Label for address,Address,,
+constants.allEvents,Label for select option All events,All events,,
+constants.allStatuses,Label for select option All statuses,All statuses,,
+constants.application.title,Application title,Application,,
+constants.applicationName,Declaration name of CRVS,OpenCRVS,,
+constants.assignRecord,A label for the Assign record -button,Assign record,,
+constants.averageRateOfRegistrations,A label for Average rate of registrations,Avg. {amount}%,,
+constants.birth,A label from the birth event,Birth,,
+constants.births,A label from the births event,Births,,
+constants.by,Label for By (the person who performed the action),By,,
+constants.certificate.title,Certificate title,Certificate,,
+constants.certificationPaymentTitle,Label for certification payment performance reports,"Payment collected for {event, select, birth{birth} death{death} other{birth}} certificates",,
+constants.certified,A label for certified,certified,,
+constants.collected,The status label for collected,Collected,,
+constants.collectedBy,The collected by sec text,Collected by,,
+constants.comment,Label for rejection comment,Comment,,
+constants.countryName,Name of the OpenCRVS implementation country,Farajaland,,
+constants.customTimePeriod,Label for Custom time period,Custom time period,,
+constants.dateOfDeclaration,Date of declaration label,Date of declaration,,
+constants.death,A label from the death event,Death,,
+constants.deaths,A label from the deaths event,Deaths,,
+constants.declaration,A label for declaration,declaration,,
+constants.declarationCollectedOn,Label for the workflow timestamp when the status is collected,Certificate collected on,,
+constants.declarationFailedOn,Label for the workflow timestamp when the status is failed,Failed to send on,,
+constants.declarationRegisteredOn,Label for the workflow timestamp when the status is registered,Registered on,,
+constants.declarationRejectedOn,Label for the workflow timestamp when the status is rejected,Declaration rejected on,,
+constants.declarationRequestedCorrectionOn,Label for the workflow timestamp when the status is requested correction,Declaration requested correction on,,
+constants.declarationSentForExternalValidationOn,Label for the workflow timestamp when the status is waiting_validation,Declaration sent for external validation on,,
+constants.declarationStarted,Label for table header column Declaration started,Started,,
+constants.declarationStartedBy,Label for table header column Started by,Started by,,
+constants.declarationStartedOn,Label for the workflow timestamp when the status is draft created,Started on,,
+constants.declarationState,A label to describe when the declaration was actioned on,Declaration {action} on,,
+constants.declarationSubmittedOn,Label for the workflow timestamp when the status is declaration,Declaration submitted on,,
+constants.declarationUpdatedOn,Label for the workflow timestamp when the status is draft updated,Updated on,,
+constants.declarationValidatedOn,Label for the workflow timestamp when the status is validated,Declaration reviewed on,,
+constants.declarations,Declaration title,Declarations,,
+constants.declarationsCount,A label for declarations count,Declarations ({totalItems}),,
+constants.declrationArchivedOn,Label for the workflow timestamp when the status is archived,Application archived on,,
+constants.dob,Date of birth label,D.o.B.,,
+constants.dod,Label for DoD in work queue list item,D.o.D.,,
+constants.downloaded,Label for application download status Downloaded,Downloaded,,
+constants.downloading,Label for declaration download status Downloading,Downloading...,,
+constants.duplicateOf,table header for `duplicate of` in record audit,Duplicate of,,
+constants.emailAddress,Email label,Email Address,,
+constants.emailBody,Label for email body input,Message,,
+constants.emailSubject,Label for email subject input,Subject,,
+constants.estimatedNumberOfEvents,A label for Estimated number of events,"Estimated{lineBreak}no. of {eventType, select, birth {birth} death {death} other {birth}}s",,
+constants.estimatedNumberOfRegistartion,A label for estimated no. of registrations,Estimated no. of registrations,,
+constants.estimatedTargetDaysRegistrationTitle,A label for estimated vs total registered in {registrationTargetDays} days,Estimated vs total registered in {registrationTargetDays} days,,
+constants.event,Label for Event of event in work queue list item,Event,,
+constants.eventDate,Label for event date in list item,Date of event,,
+constants.eventType,Label for table header column Event type,Event,,
+constants.export,Label used for export,Export,,
+constants.failedToSend,Label for declaration status Failed,Failed to send,,
+constants.femaleOver18,Label for femaleOver18,Female Over 18,,
+constants.femaleUnder18,Label for femaleUnder18,Female Under 18,,
+constants.form.title,Form Declaration title,Declaration forms,,
+constants.from,Label for text From,From,,
+constants.gender,Gender label,Gender,,
+constants.history,History heading,History,,
+constants.id,ID Label,ID,,
+constants.inReview.status,A label for In Review,In review,,
+constants.incomplete.status,A label for Incomplete,Incomplete ,,
+constants.informant,Informant Label,Informant,,
+constants.informantContactNumber,The title of contact number label,Informant contact number,,
+constants.integrations,Integration title,Integrations,,
+constants.issuedBy,The issued by sec text,Issued by,,
+constants.label.action,Action Label,Action,,
+constants.label.date,Date Label,Date,,
+constants.language,language label,Language,,
+constants.last12Months,Label for preset date range Last 12 months,Last 12 months,,
+constants.last30Days,Label for  preset date range Last 30 days,Last 30 days,,
+constants.lastEdited,Label for rejection date in work queue list item,Last edited,,
+constants.lastUpdated,Label for Last updated in list item,Last update,,
+constants.loadMore,A label for load more,Load more,,
+constants.location,Label for location,Location,,
+constants.maleOver18,Label for maleOver18,Male Over 18,,
+constants.maleUnder18,Label for maleUnder18,Male Under 18,,
+constants.marriage,A label from the marriage event,Marriage,,
+constants.marriages,A label from the marriages event,Marriages,,
+constants.matchedTo,table header for `Matched to` in record audit,Matched to,,
+constants.month,Label for month,Month,,
+constants.name,Name label,Name,,
+constants.noConnection,No Connection hover text,No connection,,
+constants.noNameProvided,Label for empty title,No name provided,,
+constants.noResults,Text to display if the search return no results for the current filters,No result,,
+constants.noResultsOutbox,Text to display if there is no items in outbox,No records require processing,,
+constants.notificationSent,label for notification sent,Notification sent,,
+constants.over5Years,Label for registrations over 5 years,Over 5 years,,
+constants.password,Password label,Password,,
+constants.pendingConnection,Label for declaration status Pending Connection,Pending connection,,
+constants.percentageOfEstimation,A label for percentage of estimate,Percentage of estimate,,
+constants.performance,Performance title,Performance,,
+constants.phoneNumber,Phone label,Phone number,,
+constants.reason,Label for Reason the declaration was rejected,Reason,,
+constants.record,Label for header table header Record,Record,,
+constants.refresh,label for refresh,refresh,,
+constants.registered,A label for registered,Registered,,
+constants.registered.status,A label for registered,Registered,,
+constants.registeredAt,Label for comparison row registeredAt type,Registered at,,
+constants.registeredBy,Label for comparison row registeredBy type,Registered by,,
+constants.registeredInTargetd,A label for Registered in {registrationTargetDays} days,Registered in {registrationTargetDays} days,,
+constants.registeredWithinTargetd,A label for Registered {registrationTargetDays} within  days of event,Registered within{lineBreak}{registrationTargetDays} days of event,,
+constants.rejected,A label for rejected,rejected,,
+constants.rejectedDays,The title of rejected days of declaration,Rejected {text},,
+constants.relationship,Relationship Label for death,Relationship,,
+constants.requestReason,Label for Reason the declaration was corrected,Reason for request,,
+constants.requestedCorrection,A label for requested correction,requested correction,,
+constants.requireUpdatesLoading,The text when all rejected declarations are loading,Checking your declarations,,
+constants.requiresUpdates.status,A label for Requires updates,Requires updates,,
+constants.review,A label from the review button,Review,,
+constants.role,Role label,Role,,
+constants.search,The title of the page,Search,,
+constants.sending,Label for declaration status Submitting,Sending...,,
+constants.sentForApproval,label for sent for approval,Sent for approval,,
+constants.sentForReview,label for sent for review,Sent for review,,
+constants.sentForUpdates,label for sent for updates,Sent for updates,,
+constants.sentForUpdatesOn,Label for rejection date in work queue list item,Sent for updates on,,
+constants.sentForValidation,label for sent for validation,Sent for validation,,
+constants.sentOn,Label for rejection date in work queue list item,Sent on,,
+constants.showMore,Label for show more link,Show next {pageSize},,
+constants.skipToMainContent,Label for a keyboard accessibility link which skips to the main content,Skip to main content,,
+constants.startedAt,Label for Started At in list item,Started,,
+constants.startedBy,Label for Started by in list item,Started by,,
+constants.status,Title for column,Status,,
+constants.submissionStatus,Label for table header of column Submission status,Submission status,,
+constants.submitted,A label for submitted,submitted,,
+constants.systemrole,System Role label,System Role,,
+constants.timeFramesTitle,Header for tabel performance timeframs,"{event, select, birth{Birth} death{Death} other{Birth}} registered by time period, from date of occurrence",,
+constants.timeInProgress,Label for column Time in progress,Time in progress,,
+constants.timePeriod,A label for Time period,Time period,,
+constants.timeReadyForReview,Label for column Time in ready for review,Time in ready for review,,
+constants.timeReadyToPrint,Label for column Time in ready to print,Time in ready to print,,
+constants.timeRequireUpdates,Label for column Time in require updates,Time in require updates,,
+constants.timeWaitingExternalValidation,Label for column Time in external validation BRIS,Time in external validation,,
+constants.timeWatingApproval,Label for column Time in waiting for approval,Time in waiting for approval,,
+constants.to,Used in sentence,to,,
+constants.toCapitalized,Label for To,To,,
+constants.total,Label for total,Total,,
+constants.totalFileSizeExceed,Accumulated File size exceed message,Total size of documents exceeds {fileSize}. Please reduce file size of your uploads,,
+constants.totalRegistered,A label for Total registered,Total{lineBreak}registered,,
+constants.totalRegisteredInTargetDays,A label for total registered in {registrationTargetDays} days,Total registered in {registrationTargetDays} days,,
+constants.trackingId,Search menu tracking id type,Tracking ID,,
+constants.type,Label for type of event in work queue list item,Type,,
+constants.update,The title of reject button in list item actions,Update,,
+constants.user,The name of the user form,User,,
+constants.username,Username,Username,,
+constants.validated,A label for validated,validated,,
+constants.viewAll,Label for view all link,View all,,
+constants.waitingToSend,Label for declaration status Ready to Submit,Waiting to send,,
+constants.waitingValidated,A label for waitingValidated,Waiting for validation,,
+constants.week,Label for week,Week,,
+constants.within1YearTo5Years,Label for registrations within 1 year to 5 years,1 year - 5 years,,
+constants.withinTargetDays,Label for registrations within {registrationTargetDays} days,Within {registrationTargetDays} days,,
+constants.withinTargetDaysTo1Year,Label for registrations within {registrationTargetDays} days to 1 year,{registrationTargetDays} days - 1 year,,
+correction.corrector.anotherAgent,Label for another registration or field agent option in certificate correction form,Another registration agent or field agent,,
+correction.corrector.identity.instruction,The title for the corrector form,Please verify the identity of the person making this request,,
+correction.corrector.identity.verified,Label for verified option in corrector identity check page,I have verified their identity,,
+correction.corrector.identity.verified.label,The title for the corrector form,@todo,,
+correction.corrector.informant,Label for informant option in certificate correction form,"Informant ({informant, select, MOTHER {Mother} FATHER {Father} GRANDFATHER {Grandfather} GRANDMOTHER {Grandmother} BROTHER {Brother} SISTER {Sister} LEGAL_GUARDIAN {Legal guardian} BRIDE {Bride} GROOM {Groom} HEAD_OF_GROOM_FAMILY {Head of groom's family} HEAD_OF_BRIDE_FAMILY {Head of bride's family} SPOUSE {Spouse} SON {Son} DAUGHTER {Daughter} SON_IN_LAW {Son in law} DAUGHTER_IN_LAW {Daughter in law} GRANDSON {Grandson} GRANDDAUGHTER {Granddaughter} other {{informant}}})",,
+correction.corrector.me,Label for registrar option in certificate correction form,Me,,
+correction.corrector.others,Label for someone else option in certificate correction form,Someone else,,
+correction.corrector.paragraph.title,The title for the corrector form,"For all record corrections at a minimum an affidavit must be provided. For material errors and omissions eg. in paternity cases, a court order must also be provided.",,
+correction.corrector.title,The title for the corrector form,Correction requester,,
+correction.reason.title,The title for the corrector form,Reason for correction?,,
+correction.requester.relationshop.intro.label,The title for the corrector form,Note: In the case that the child is now of legal age (18) then only they should be able to request a change to their birth record.,,
+correction.supportingDocuments.attest.label,Label for attestation of supporting documents,Attest,,
+correction.supportingDocuments.notNeeded.label,Label for indicating supporting documents are not needed,Not Needed,,
 v2.custom.field.form.requiredField,,Required for registration,ලියාපදිංචි සඳහා අවශ්‍යයි,பதிவு செய்ய தேவையானது
-v2.error.child.weightAtBirth.invalidNumberRange,This is the error message for invalid number range,Must be within 0 and 6,0 හා 6 අතරට ඇති යහපත් විය යුතුය,0 மற்றும் 6 உள்ள இடத்தில் இருக்க வேண்டும்
+error.child.weightAtBirth.invalidNumberRange,This is the error message for invalid number range,Must be within 0 and 6,,
 v2.error.hidden,"Error message when field is hidden or disabled, but a value was received",Hidden or disabled field should not receive a value,සැඟවුණු හෝ අක්‍රීය කළ යුතු ක්ෂේත්‍රය අගය ලබා නොලැබේ.,மறைக்கப்பட்ட அல்லது முடக்கப்பட்ட புலம் ஒரு மதிப்பைப் பெறக்கூடாது.
 v2.error.invalidDate,Error message when date field is invalid,Invalid date field,අවලංගු දින ක්ෂේත්රය,தவறான தேதி புலம்
 v2.error.invalidEmail,Error message when email address is invalid,Invalid email address,අවලංගු ඊමේල් ලිපිනයක් නොවේ.,தவறான மின்னஞ்சல் முகவரி
-v2.error.invalidInput,Error message when generic field is invalid,Invalid input,වලංගු ආදායමක්,தவறான உள்ளீடு
-v2.error.invalidName,This is the error message for invalid name,"Input contains invalid characters. Please use only letters (a-z, A-Z), numbers (0-9), hyphens (-), apostrophes(') and underscores (_)","ආත්ම අක්‍රීය අක්ෂර අක්ෂරයන් පරිවර්තනය කරන්න. කරුණාකර අක්ෂර (a-z, A-Z), අංක (0-9), හයිෆන් (-), ඇප්ග්‍රෝස් ('), සහ යුන්ඩර්ස්කොර්ස් (_) පරිවර්තනය කරන්න.","உள்ளீடு தவறான எழுத்துக்களைக் கொண்டுள்ளது. தயவுசெய்து உரைகள் (a-z, A-Z), எண்கள் (0-9), ஹைப்பன்கள் (-), அபோஸ்த்ரோப்கள்(') மற்றும் அடிக்கட்டுகள் (_) மட்டுமே பயன்படுத்தவும்."
+error.invalidInput,Error message when generic field is invalid,Invalid input,,
+error.invalidName,This is the error message for invalid name,"Input contains invalid characters. Please use only letters (a-z, A-Z), numbers (0-9), hyphens (-) and apostrophes(')",,
 v2.error.required,Error message when required field is missing,Required for registration,ලියාපදිංචි සඳහා අවශ්‍යයි,பதிவு செய்ய தேவையானது
-v2.error.search,The error message shown when a search query fails,An error occurred while searching,සෙවීම කිරීමේ වාර්තාවේ දෝෂය සිදු විය හැකිය.,தேடல் செய்யும் போது பிழை ஏற்பட்டது.
+error.search,The error message shown when a search query fails,An error occurred while searching,,
 v2.event.action.declare.form.section.person.field.address.country.label,This is the label for the field,Country,රාජගීය,நாடு
 v2.event.action.declare.form.section.person.field.address.number.label,This is the label for the field,Number,අංකය,எண்
 v2.event.action.declare.form.section.person.field.address.other.addressLine1.label,This is the label for the field,Address Line 1,ලිපිනය පේළි 1,முகவரி வரி 1
@@ -2562,152 +2562,152 @@ v2.event.action.declare.form.section.person.field.address.residentialArea.label,
 v2.event.action.declare.form.section.person.field.address.street.label,This is the label for the field,Street,වීදියවෙනිදා පාර.,தெரு
 v2.event.action.declare.form.section.person.field.address.town.label,This is the label for the field,Town / Village,නගරය / ගම,நகரம் / கிராமம்
 v2.event.action.declare.form.section.person.field.address.zipCode.label,This is the label for the field,Postal Code,තැපැල් කේතය,அஞ்சல் குறியீடு
-v2.event.birth.action.declare.form.label,This is what this form is referred as in the system,Birth decalration form,උපන්දින ප්‍රකාශ පත්වීමේ ආකෘතිය,பிறப்பு புரிவு படிவம்
-v2.event.birth.action.declare.form.review.comment.label,Label for the comment field in the review section,Comment,අදහස්,கருத்து
-v2.event.birth.action.declare.form.review.signature.label,Label for the signature field in the review section,Signature of informant,සාකච්ඡාවේ අංශය,அறிக்கையாளரின் கையொப்பம்
-v2.event.birth.action.declare.form.review.title,Title of the form to show in review page,"{child.firstname, select, __EMPTY__ {Birth declaration} other {{child.surname, select, __EMPTY__ {Birth declaration} other {Birth declaration for {child.firstname} {child.surname}}}}}","{child.firstname, select, __EMPTY__ {උපන්දින ප්‍රලේඛනය} other {{child.surname, select, __EMPTY__ {උපන්දින ප්‍රලේඛනය} other {උපන්දින ප්‍රලේඛනය {child.firstname} {child.surname}}}}}","{child.firstname, select, __EMPTY__ {பிறப்பு அறிக்கை} other {{child.surname, select, __EMPTY__ {பிறப்பு அறிக்கை} other {{child.firstname} {child.surname} க்கான பிறப்பு அறிக்கை}}}"
-v2.event.birth.action.declare.form.section.child.field.attendantAtBirth.label,This is the label for the field,Attendant at birth,උපරිම සේවයක්,பிறப்பில் உதவியாள்
-v2.event.birth.action.declare.form.section.child.field.birthLocation.label,This is the label for the field,Location of birth,උපන්වර්සයේ ස්ථානය,பிறந்த இடம்
-v2.event.birth.action.declare.form.section.child.field.birthType.label,This is the label for the field,Type of birth,උපරිම ආකෘතිය,பிறப்பு வகை
-v2.event.birth.action.declare.form.section.child.field.dob.error,This is the error message for invalid date,Must be a valid birth date,වලංගු උපන් දිනය විසින් විය යුතුය,ஒரு செல்லுபடியாக பிறந்த தேதி இருக்க வேண்டும்.
-v2.event.birth.action.declare.form.section.child.field.dob.label,This is the label for the field,Date of birth,උපන්දිනය,பிறந்த தேதி
+event.birth.action.declare.form.label,This is what this form is referred as in the system,Birth decalration form,,
+event.birth.action.declare.form.review.comment.label,Label for the comment field in the review section,Comment,,
+event.birth.action.declare.form.review.signature.label,Label for the signature field in the review section,Signature of informant,,
+event.birth.action.declare.form.review.title,Title of the form to show in review page,"{child.name.firstname, select, __EMPTY__ {{child.name.surname, select, __EMPTY__ {Birth declaration} other {Birth declaration for {child.name.surname}}}} other {{child.name.surname, select, __EMPTY__ {Birth declaration for {child.name.firstname}} other {Birth declaration for {child.name.firstname} {child.name.surname}}}}}",,
+event.birth.action.declare.form.section.child.field.attendantAtBirth.label,This is the label for the field,Attendant at birth,,
+event.birth.action.declare.form.section.child.field.birthLocation.label,This is the label for the field,Location of birth,,
+event.birth.action.declare.form.section.child.field.birthType.label,This is the label for the field,Type of birth,,
+event.birth.action.declare.form.section.child.field.dob.error,This is the error message for invalid date,Must be a valid birth date,,
+event.birth.action.declare.form.section.child.field.dob.label,This is the label for the field,Date of birth,,
 v2.event.birth.action.declare.form.section.child.field.firstname.label,This is the label for the field,First name(s),මුල් නම(විස්තර),முதல் பெயர்(கள்)
-v2.event.birth.action.declare.form.section.child.field.gender.label,This is the label for the field,Sex,ස්ත්‍රී පුරුෂ භාවය,பாலினம்
-v2.event.birth.action.declare.form.section.child.field.placeOfBirth.label,This is the label for the field,Place of delivery,නිෂ්පාදන ස්ථානය,விநியோக இடம்
+event.birth.action.declare.form.section.child.field.gender.label,This is the label for the field,Sex,,
+event.birth.action.declare.form.section.child.field.placeOfBirth.label,This is the label for the field,Place of delivery,,
 v2.event.birth.action.declare.form.section.child.field.surname.label,This is the label for the field,Last name,අවසන් නම,கடைசி பெயர்
-v2.event.birth.action.declare.form.section.child.field.weightAtBirth.label,This is the label for the field,Weight at birth,උපරිම බරය,பிறந்த நேரத்தில் எடை
-v2.event.birth.action.declare.form.section.child.field.weightAtBirth.postfix,This is the postfix for the weight field,Kilograms (kg),කිලෝග්රෑම් ({kg}),கிலோகிராம் (கிஜி)
+event.birth.action.declare.form.section.child.field.weightAtBirth.label,This is the label for the field,Weight at birth,,
+event.birth.action.declare.form.section.child.field.weightAtBirth.postfix,This is the postfix for the weight field,Kilograms (kg),,
 v2.event.birth.action.declare.form.section.documents.field.helper.label,This is the label for the field,The following documents are required,පසුබිම් ලිපි ප්‍රදේශ වේ.,பின்வரும் ஆவணங்கள் தேவைப்படுகின்றன
-v2.event.birth.action.declare.form.section.documents.field.proofOfBirth.label,This is the label for the field,Proof of birth,උපලේඛනයට සහතිකයක්,பிறப்பு தொடர்பு
-v2.event.birth.action.declare.form.section.documents.field.proofOfFather.label,This is the label for the field,Proof of father's ID,පියාගේ හැඳුනුම් ප්‍රතිස්ථාපනය,அப்பாவின் அடையாளம் சான்றிதழ்
-v2.event.birth.action.declare.form.section.documents.field.proofOfMother.label,This is the label for the field,Proof of mother's ID,මව්වේ හැඳුනුම් ප්‍රතිස්ථාපනය,தாயின் அடையாளம் சான்றிதழ்
-v2.event.birth.action.declare.form.section.documents.field.proofOther.label,This is the label for the field,Other,අමතර,மற்றொரு
-v2.event.birth.action.declare.form.section.father.field.address.addressSameAs.label,This is the label for the field,Same as mother's usual place of residence?,මවින්ගේ පැරණි ස්ථානය සමාවෙන්ද?,தாயின் பொது வசியத்துக்கு ஒரே இடமா?
-v2.event.birth.action.declare.form.section.father.field.age.label,This is the label for the field,Age of father,පියාගේ වයස,அப்பாவின் வயது
+event.birth.action.declare.form.section.documents.field.proofOfBirth.label,This is the label for the field,Proof of birth,,
+event.birth.action.declare.form.section.documents.field.proofOfFather.label,This is the label for the field,Proof of father's ID,,
+event.birth.action.declare.form.section.documents.field.proofOfMother.label,This is the label for the field,Proof of mother's ID,,
+event.birth.action.declare.form.section.documents.field.proofOther.label,This is the label for the field,Other,,
+event.birth.action.declare.form.section.father.field.address.addressSameAs.label,This is the label for the field,Same as mother's usual place of residence?,,
+event.birth.action.declare.form.section.father.field.age.label,This is the label for the field,Age of father (at the time of event),,
 v2.event.birth.action.declare.form.section.father.field.detailsNotAvailable.label,This is the label for the field,Father's details are not available,පියාවේ විස්තර {officeName} ලබා නොමැත.,அப்பாவின் விவரங்கள் கிடைக்கவில்லை.
-v2.event.birth.action.declare.form.section.father.field.reason.label,This is the label for the field,Reason,කාලය,காரணம்
-v2.event.birth.action.declare.form.section.informant.field.age.label,This is the label for the field,Age of informant,නිවාඩුවේ වයසයි,தகவல் வழக்கம்
-v2.event.birth.action.declare.form.section.informant.field.email.label,This is the label for the field,Email,ඊ-මොලය,மின்னஞ்சல்
-v2.event.birth.action.declare.form.section.informant.field.other.relation.label,This is the label for the field,Relationship to child,ළමයාට සම්බන්ධයක්,குழந்தைக்கு உறவு
-v2.event.birth.action.declare.form.section.informant.field.phoneNo.error,The error message that appears on phone numbers,Must be a valid 10 digit number that starts with 0(7|9),0(7|9) දෙකයේ ආකෘතිය හැකි දශකය විය යුතුය.,0(7|9) ஆரம்பிக்கும் 10 இலக்க எண் இருக்க வேண்டும்.
-v2.event.birth.action.declare.form.section.informant.field.phoneNo.label,This is the label for the field,Phone number,දුරකථන අංකය,தொலைபேசி எண்
-v2.event.birth.action.declare.form.section.informant.field.relation.label,This is the label for the field,Relationship to child,දරුවෝ සම්බන්ධය,குழந்தைக்கு உறவு
-v2.event.birth.action.declare.form.section.mother.field.age.label,This is the label for the field,Age of mother,මව්න්ගේ වයසේ,தாயின் வயது
+event.birth.action.declare.form.section.father.field.reason.label,This is the label for the field,Reason,,
+event.birth.action.declare.form.section.informant.field.age.label,This is the label for the field,Age of informant (at the time of event),,
+event.birth.action.declare.form.section.informant.field.email.label,This is the label for the field,Email,,
+event.birth.action.declare.form.section.informant.field.other.relation.label,This is the label for the field,Relationship to child,,
+event.birth.action.declare.form.section.informant.field.phoneNo.error,The error message that appears on phone numbers where the first two characters must be a 01 and length must be 11,Must be a valid 10 digit number that starts with 0(7|9),,
+event.birth.action.declare.form.section.informant.field.phoneNo.label,This is the label for the field,Phone number,,
+event.birth.action.declare.form.section.informant.field.relation.label,This is the label for the field,Relationship to child,,
+event.birth.action.declare.form.section.mother.field.age.label,This is the label for the field,Age of mother (at the time of event),,
 v2.event.birth.action.declare.form.section.mother.field.detailsNotAvailable.label,This is the label for the field,Mother's details are not available,අම්මාවේ විස්තර {details} ලබා දෙනවා නැත.,தாயின் விவரங்கள் கிடைக்கவில்லை.
-v2.event.birth.action.declare.form.section.mother.field.previousBirths.label,This is the label for the field,No. of previous births,පෙර උපසිරැසි ගණන,முந்தைய ஜன்மங்களின் எண்ணிக்கை
-v2.event.birth.action.declare.form.section.mother.field.reason.label,This is the label for the field,Reason,කාලය,காரணம்
+event.birth.action.declare.form.section.mother.field.previousBirths.label,This is the label for the field,No. of previous births,,
+event.birth.action.declare.form.section.mother.field.reason.label,This is the label for the field,Reason,,
 v2.event.birth.action.declare.form.section.person.field.address.district.label,This is the label for the field,District,දිස්ත්‍රික්කය,மாவட்டம்
-v2.event.birth.action.declare.form.section.person.field.address.label,This is the label for the field,Usual place of residence,සාමාන්‍ය වසරේ නිවාසය,வாசிக்கும் இடம்
+event.birth.action.declare.form.section.person.field.address.label,This is the label for the field,Usual place of residence,,
 v2.event.birth.action.declare.form.section.person.field.address.province.label,This is the label for the field,Province,පළාත,மாகாணம்
 v2.event.birth.action.declare.form.section.person.field.address.urbanOrRural.label,This is the label for the field,Urban or Rural,නගර හෝ පිහිටි බැවින් පිළිබඳව කරුණු කරන්න.,நகர் அல்லது ஊர்
 v2.event.birth.action.declare.form.section.person.field.address.village.label,This is the label for the field,Village,ගමය,கிராமம்
-v2.event.birth.action.declare.form.section.person.field.addressHelper.label,This is the label for the field,Usual place of residence,සාමාජික ස්ථානය,வாசிக்கும் இடம்
-v2.event.birth.action.declare.form.section.person.field.age.checkbox.label,This is the label for the field,Exact date of birth unknown,උදාහරණයේ පිටපත් දිනය නොදක්වයි,பிறந்த தேதி தெரியவில்லை
-v2.event.birth.action.declare.form.section.person.field.age.postfix,This is the postfix for age field,years,වසරයන්,ஆண்டுகள்
+event.birth.action.declare.form.section.person.field.addressHelper.label,This is the label for the field,Usual place of residence,,
+event.birth.action.declare.form.section.person.field.age.checkbox.label,This is the label for the field,Exact date of birth unknown,,
+event.birth.action.declare.form.section.person.field.age.postfix,This is the postfix for age field,years,,
 v2.event.birth.action.declare.form.section.person.field.age.text.label,This is the label for the field,Age of person,පුද්ගලික වයස්,நபரின் வயது
-v2.event.birth.action.declare.form.section.person.field.brn.label,This is the label for the field,National Identity Card No.,ජාතික හැඳුනුම්පත් අංකය,தேசிய அடையாள அட்டை எண்
-v2.event.birth.action.declare.form.section.person.field.dob.error,This is the error message for invalid date,Must be a valid birth date,වලංගු උපන් දිනය විසින් විය යුතුය,ஒரு செல்லுபடியாக பிறந்த தேதி இருக்க வேண்டும்.
-v2.event.birth.action.declare.form.section.person.field.dob.label,This is the label for the field,Date of birth,උපන්දිනය,பிறந்த தேதி
-v2.event.birth.action.declare.form.section.person.field.educationalAttainment.label,This is the label for the field,Level of education,විශ්වාස මට්ටම,கல்வி அளவு
+event.birth.action.declare.form.section.person.field.brn.label,This is the label for the field,ID Number,,
+event.birth.action.declare.form.section.person.field.dob.error,This is the error message for invalid date,Must be a valid birth date,,
+event.birth.action.declare.form.section.person.field.dob.label,This is the label for the field,Date of birth,,
+event.birth.action.declare.form.section.person.field.educationalAttainment.label,This is the label for the field,Level of education,,
 v2.event.birth.action.declare.form.section.person.field.firstname.label,This is the label for the field,First name(s),මුල් නම(විස්තර),முதல் பெயர்(கள்)
-v2.event.birth.action.declare.form.section.person.field.idType.label,This is the label for the field,Type of ID,අත්පොටස් වර්ගය,ஐடி வகை
-v2.event.birth.action.declare.form.section.person.field.maritalStatus.label,This is the label for the field,Marital Status,විවාහක තත්ත්වය,திருமண நிலை
-v2.event.birth.action.declare.form.section.person.field.nationality.label,This is the label for the field,Nationality,ජාතිකත්වය,தேசியம்
-v2.event.birth.action.declare.form.section.person.field.nid.label,This is the label for the field,National Identity Card No.,ජාතික හැඳුනුම්පත් අංකය,தேசிய அடையாள அட்டை எண்
-v2.event.birth.action.declare.form.section.person.field.occupation.label,This is the label for the field,Occupation,ආත්මය,பணி
-v2.event.birth.action.declare.form.section.person.field.passport.label,This is the label for the field,National Identity Card No.,ජාතික හැඳුනුම්පත් අංකය,தேசிய அடையாள அட்டை எண்
+event.birth.action.declare.form.section.person.field.idType.label,This is the label for the field,Type of ID,,
+event.birth.action.declare.form.section.person.field.maritalStatus.label,This is the label for the field,Marital Status,,
+event.birth.action.declare.form.section.person.field.nationality.label,This is the label for the field,Nationality,,
+event.birth.action.declare.form.section.person.field.nid.label,This is the label for the field,ID Number,,
+event.birth.action.declare.form.section.person.field.occupation.label,This is the label for the field,Occupation,,
+event.birth.action.declare.form.section.person.field.passport.label,This is the label for the field,ID Number,,
 v2.event.birth.action.declare.form.section.person.field.surname.label,This is the label for the field,Last name,අවසන් නම,கடைசி பெயர்
 v2.event.birth.action.declare.form.version.1,This is the first version of the form,Version 1,සංස්කරණය 1,பதிப்பு 1
-v2.event.birth.action.declare.label,This is shown as the action name anywhere the user can trigger the action from,Declare,නියමිත කරන්න,அறிக்கை
-v2.event.birth.label,This is what this event is referred as in the system,Birth,උපන්දිනය,பிறப்பு
-v2.event.birth.summary.child.dob.empty,Label for date of birth not available,No date of birth,උපන්දිනය නැත,பிறந்த தேதி இல்லை
+event.birth.action.declare.label,This is shown as the action name anywhere the user can trigger the action from,Declare,,
+event.birth.label,This is what this event is referred as in the system,Birth,,
+event.birth.summary.child.dob.empty,Label for date of birth not available,No date of birth,,
 v2.event.birth.summary.child.dob.label,Label for date of birth,Date of birth,උපන්දිනය,பிறந்த தேதி
 v2.event.birth.summary.child.dob.value,This is the dob value of the child,{child.dob},{child.dob},{child.dob}
-v2.event.birth.summary.child.placeOfBirth.empty,Label for place of birth not available,No place of birth,No place of birth,No place of birth
-v2.event.birth.summary.child.placeOfBirth.label,Label for place of birth,Place of birth,උපන් ගවේදය,பிறந்த இடம்
+event.birth.summary.child.placeOfBirth.empty,Label for place of birth not available,No place of birth,,
+event.birth.summary.child.placeOfBirth.label,Label for place of birth,Place of birth,,
 v2.event.birth.summary.child.placeOfBirth.value,This is the place of birth value of the child,"{child.placeOfBirth, select, PRIVATE_HOME {{child.address.privateHome.addressType, select, DOMESTIC {{child.address.privateHome.district}, {child.address.privateHome.province}, {child.address.privateHome.country}}other {{child.address.privateHome.district2}, {child.address.privateHome.state}, {child.address.privateHome.country}}}} OTHER {{child.address.other.addressType, select, DOMESTIC {{child.address.other.district}, {child.address.other.province}, {child.address.other.country}}other {{child.address.other.district2}, {child.address.other.state}, {child.address.other.country}}}} other {{child.birthLocation}}}","{child.placeOfBirth, select, PRIVATE_HOME {{child.address.privateHome.addressType, select, DOMESTIC {{child.address.privateHome.district}, {child.address.privateHome.province}, {child.address.privateHome.country}}other {{child.address.privateHome.district2}, {child.address.privateHome.state}, {child.address.privateHome.country}}}} OTHER {{child.address.other.addressType, select, DOMESTIC {{child.address.other.district}, {child.address.other.province}, {child.address.other.country}}other {{child.address.other.district2}, {child.address.other.state}, {child.address.other.country}}}} other {{child.birthLocation}}}","{child.placeOfBirth, select, PRIVATE_HOME {{child.address.privateHome.addressType, select, DOMESTIC {{child.address.privateHome.district}, {child.address.privateHome.province}, {child.address.privateHome.country}}other {{child.address.privateHome.district2}, {child.address.privateHome.state}, {child.address.privateHome.country}}}} OTHER {{child.address.other.addressType, select, DOMESTIC {{child.address.other.district}, {child.address.other.province}, {child.address.other.country}}other {{child.address.other.district2}, {child.address.other.state}, {child.address.other.country}}}} other {{child.birthLocation}}}"
-v2.event.birth.summary.informant.contact.empty,This is shown when there is no informant information,No contact details provided,සදහා දුරකතන අංක සපයා නොමැත,தொடர்பு விவரங்கள் வழங்கப்படவில்லை
-v2.event.birth.summary.informant.contact.label,This is the label for the informant information,Contact,ඇමතුම්කරන්න,தொடர்பு
-v2.event.birth.summary.informant.contact.value,This is the contact value of the informant,{informant.phoneNo} {informant.email},{informant.phoneNo} {informant.email},{informant.phoneNo} {informant.email}
+event.birth.summary.informant.contact.empty,This is shown when there is no informant information,No contact details provided,,
+event.birth.summary.informant.contact.label,This is the label for the informant information,Contact,,
+event.birth.summary.informant.contact.value,This is the contact value of the informant,{informant.phoneNo} {informant.email},,
 v2.event.birth.summary.title,This is the title of the summary,{child.firstname} {child.surname},{child.firstname} {child.surname},{child.firstname} {child.surname} என்று அழைக்கப்படுகின்றன.
 v2.event.birth.workqueue.all.name.label,Label for name in all workqueue,{child.surname} {child.firstname},{child.firstname} {child.surname},{child.surname} {child.firstname}
 v2.event.default.action.certificate.form.section.who.field.surname.label,This is the label for the field,Type,ටයිප් කරන්න.,வகை
-v2.event.default.action.certificate.template.type.label,Select certificate template,Type,ටයිප් කරන්න,வகை
+event.default.action.certificate.template.type.label,Select certificate template,Type,,
 v2.event.history.markAsDuplicate,,Marked as a duplicate,අනුමත ලකුණු ලක් කර ඇත්තේ,நகலாக குறிக்கப்பட்டது
-v2.event.history.role,Label for the role in event history,"{role, select, LOCAL_REGISTRAR {Local Registrar} SOCIAL_WORKER {Field Agent} REGISTRATION_AGENT {Registration Agent} other {Unknown}}","{role, select, LOCAL_REGISTRAR {දේශීය ලිපිටාවි} SOCIAL_WORKER {ක්‍රියා නිලධාරි} REGISTRATION_AGENT {ලියාපදිංචි} other {නොදත්}}","{role, select, LOCAL_REGISTRAR {உள்ளூர் பதிவுதலையர்} SOCIAL_WORKER {புலம்பொருள் முதலாளி} REGISTRATION_AGENT {பதிவு முதலாளி} other {அறியப்படாதவர்}}"
-v2.event.summary.event.label,Label for the event field,Event,උදව්,நிகழ்வு
+event.history.role,Label for the role in event history,"{role, select, LOCAL_REGISTRAR {Local Registrar} FIELD_AGENT {Field Agent} POLICE_OFFICER {Police Officer} REGISTRATION_AGENT {Registration Agent} HEALTHCARE_WORKER {Healthcare Worker} HOSPITAL_CLERK {Hospital Clerk} LOCAL_SYSTEM_ADMIN {Administrator} NATIONAL_REGISTRAR {Registrar General} PERFORMANCE_MANAGER {Operations Manager} NATIONAL_SYSTEM_ADMIN {National Administrator} COMMUNITY_LEADER {Community Leader} HEALTH {Health integration} IMPORT {Import integration} NATIONAL_ID {National ID integration} RECORD_SEARCH {Record search integration} WEBHOOK {Webhook} other {Unknown}}",,
+event.summary.event.label,Label for the event field,Event,,
 v2.event.summary.event.value,Value for the event field,{eventLabel},{eventLabel},{eventLabel}
-v2.event.summary.registrationNumber.empty,No registration number message,No registration number,ලියාපදිංචි අංකය නොමැතිව ඇත.,பதிவு எண் இல்லை.
-v2.event.summary.registrationNumber.label,Label for the registration number field,Registration Number,ලියාපදිංචි අංකය,பதிவு எண்
-v2.event.summary.registrationNumber.value,Value for the registration number field,{event.registrationNumber},{සිසු.ලියාපදිංචි.සංඛ්‍යාංකරණය},{event.registrationNumber} என்பது பதிவு எண் ஆகும்.
-v2.event.summary.status.label,Label for the status field,Status,තරඟකාරීත්වය,நிலை
-v2.event.summary.status.value,Value for the status field,"{event.status, select, CREATED {Draft} NOTIFIED {Incomplete} VALIDATED {Validated} DRAFT {Draft} DECLARED {Declared} REGISTERED {Registered} REJECTED {Requires update} ARCHIVED {Archived} MARKED_AS_DUPLICATE {Marked as a duplicate} other {Unknown}}","{event.status, select, CREATED {කළ ප්‍රමාණය} NOTIFIED {අසම්පූර්ණ} VALIDATED {සාදන ලද} DRAFT {කළ ප්‍රමාණය} DECLARED {දායක කරන ලද} REGISTERED {ලියාපදිංචි කරන ලද} REJECTED {යළි යොමු කිරීමට අවශ්‍ය} ARCHIVED {ගත් ප්‍රමාණය} MARKED_AS_DUPLICATE {අනුපිටපත් කරන ලද} other {නොදන්න}}","{event.status, select, CREATED {உத்தரவாக} NOTIFIED {முடிவுற்றது} VALIDATED {சரிபார்க்கப்பட்டது} DRAFT {உத்தரவாக} DECLARED {அறிக்கை செய்யப்பட்டது} REGISTERED {பதிவுசெய்யப்பட்டது} REJECTED {புதுப்பிக்க தேவை} ARCHIVED {பதிவுசெய்யப்பட்டது} MARKED_AS_DUPLICATE {நகலாக குறிக்கப்பட்டது} other {அறியப்படாதது}}"
-v2.event.summary.trackingId.empty,Message when tracking ID is empty,No tracking ID,අටවන් හිමිකරුගේ ID නොමැතිව ඇත.,கண்காணும் ஐடி இல்லை.
-v2.event.summary.trackingId.label,Label for the tracking ID field,Tracking ID,දල්ෆ් කිරීමේ හැඳුනුම්පත්කරණය,கண்காணிப்பு ஐடி
-v2.event.summary.trackingId.value,Value for the tracking ID field,{event.trackingId},{event.trackingId} යන්න ලෙස ප්‍රකාශයක් වෙනස් කරන්න.,{event.trackingId} என்பது மொழிபெயர்ப்பு செய்யப்பட்டுள்ளது.
-v2.event.tennis-club-membership.action.certificate.form.label,This is what this form is referred as in the system,Tennis club membership certificate collector,ටෙනිස් සමාගම සාමාන්‍ය සහාය එළිදගත් ප්‍රපෝෂණයේ එකතු කිරීමේ සහායක්,டென்னிஸ் கிளப் உறுதிப்படி சேகரி
+event.summary.registrationNumber.empty,No registration number message,No registration number,,
+event.summary.registrationNumber.label,Label for the registration number field,Registration Number,,
+event.summary.registrationNumber.value,Value for the registration number field,{event.registrationNumber},,
+event.summary.status.label,Label for the status field,Status,,
+event.summary.status.value,Value for the status field,"{event.status, select, CREATED {Draft} NOTIFIED {Notified} VALIDATED {Validated} DRAFT {Draft} DECLARED {Declared} REGISTERED {Registered} CERTIFIED {Certified} REJECTED {Requires update} ARCHIVED {Archived} MARKED_AS_DUPLICATE {Marked as a duplicate} MARK_AS_NOT_DUPLICATE {Marked not a duplicate} other {Unknown}}",,
+event.summary.trackingId.empty,Message when tracking ID is empty,No tracking ID,,
+event.summary.trackingId.label,Label for the tracking ID field,Tracking ID,,
+event.summary.trackingId.value,Value for the tracking ID field,{event.trackingId},,
+event.tennis-club-membership.action.certificate.form.label,This is what this form is referred as in the system,Tennis club membership certificate collector,,
 v2.event.tennis-club-membership.action.certificate.form.review.title,Title of the form to show in review page,Member certificate collector for {firstname} {surname},{firstname} {surname} සඳහා සාමාජික සහයෝගී ගොනු එක්තරගත කිරීමේ අයිතියක්,{firstname} {surname} க்கான உறுதிப் பத்தியை சேகரிப்பவர்
-v2.event.tennis-club-membership.action.certificate.form.section.requester.informant.label,This is the label for the field,Print and issue Informant,දැන්ම මුද්‍රණය කිරීම සහ නිවේදනය දෙනු ඇත.,அறிக்கை அச்சுறுத்தி வெளியிடுக.
-v2.event.tennis-club-membership.action.certificate.form.section.requester.label,This is the label for the field,Requester,අවශ්‍යයි,கோரிப்பர்
-v2.event.tennis-club-membership.action.certificate.form.section.requester.other.label,This is the label for the field,Print and issue someone else,මුදා හා නික්ම කරන්න,அச்சுக்கு அச்சு செய்யுங்கள்
-v2.event.tennis-club-membership.action.certificate.form.section.requester.printInAdvance.label,This is the label for the field,Print in advance,අතින් මුදා දැමීමට ප්‍රින්ට් කරන්න.,முன்பே அச்சிடுங்கள்
-v2.event.tennis-club-membership.action.certificate.form.section.who.title,This is the title of the section,Print certified copy,සහත් ප්‍රභාවිත ප්‍රාථමිකයාගේ ප්‍රිනාමික ප්‍රාථමිකයාට ප්‍රිනාමිකයාගේ ප්‍රිනාමිකයාට මුද්‍රණය කරන්න.,சான்றிதழில் அசல் பிரிக்கவும்
+event.tennis-club-membership.action.certificate.form.section.requester.informant.label,This is the label for the field,Print and issue Informant,,
+event.tennis-club-membership.action.certificate.form.section.requester.label,This is the label for the field,Requester,,
+event.tennis-club-membership.action.certificate.form.section.requester.other.label,This is the label for the field,Print and issue someone else,,
+event.tennis-club-membership.action.certificate.form.section.requester.printInAdvance.label,This is the label for the field,Print in advance,,
+event.tennis-club-membership.action.certificate.form.section.who.title,This is the title of the section,Print certified copy,,
 v2.event.tennis-club-membership.action.certificate.form.version.1,This is the first version of the form,Version 1,සංස්කරණය 1,பதிப்பு 1
-v2.event.tennis-club-membership.action.collect-certificate.label,This is shown as the action name anywhere the user can trigger the action from,Print certificate,සහතිකය මුද්‍රණය කරන්න,சான்றிதழை அச்சிடவும்
-v2.event.tennis-club-membership.action.declare.form.label,This is what this form is referred as in the system,Tennis club membership application,ටෙනිස් ස්ථාන සාවද්‍ය අයදුම්පත,டென்னிஸ் கிளப் உறுதிப்படுத்துதல் விண்ணப்பு
-v2.event.tennis-club-membership.action.declare.form.review.title,Title of the form to show in review page,"{applicant.firstname, select, __EMPTY__ {Member declaration} other {{applicant.surname, select, __EMPTY__ {Member declaration} other {Member declaration for {applicant.firstname} {applicant.surname}}}}}","{applicant.firstname, select, __EMPTY__ {සාමාජික ප්‍රලේඛනය} other {{applicant.surname, select, __EMPTY__ {සාමාජික ප්‍රලේඛනය} other {{applicant.firstname} {applicant.surname} සඳහා සාමාජික ප්‍රලේඛනය}}}}","{applicant.firstname, select, __EMPTY__ {உறுதிப்படுத்துபவர் அறிக்கை} other {{applicant.surname, select, __EMPTY__ {உறுதிப்படுத்துபவர் அறிக்கை} other {{applicant.firstname} {applicant.surname} க்கான உறுதிப்படுத்துபவர் அறிக்கை}}}}"
-v2.event.tennis-club-membership.action.declare.form.section.recommender.field.firstname.label,This is the label for the field,Recommender's first name,නියෝජනාවේ මුල් නම,பரிந்துரையாளரின் முதல் பெயர்
-v2.event.tennis-club-membership.action.declare.form.section.recommender.field.id.label,This is the label for the field,Recommender's membership ID,නියෝජනයාගේ සාමාන්‍ය සහාය අංකය,பரிந்துரையாளரின் உறுப்பினர் ஐடி
-v2.event.tennis-club-membership.action.declare.form.section.recommender.field.none.label,This is the label for the field,No recommender,අන්තර්ක්‍රියයි,பரிந்துரிக்குந்தவர் இல்லை
+event.tennis-club-membership.action.collect-certificate.label,This is shown as the action name anywhere the user can trigger the action from,Print certificate,,
+event.tennis-club-membership.action.declare.form.label,This is what this form is referred as in the system,Tennis club membership application,,
+event.tennis-club-membership.action.declare.form.review.title,Title of the form to show in review page,"{applicant.name.firstname, select, __EMPTY__{{applicant.name.surname, select, __EMPTY__{Member declaration} other{Member declaration for {applicant.name.surname}}}} other{{applicant.name.surname, select, __EMPTY__{Member declaration for {applicant.name.firstname}} other{Member declaration for {applicant.name.firstname} {applicant.name.surname}}}}}",,
+event.tennis-club-membership.action.declare.form.section.recommender.field.firstname.label,This is the label for the field,Recommender's first name,,
+event.tennis-club-membership.action.declare.form.section.recommender.field.id.label,This is the label for the field,Recommender's membership ID,,
+event.tennis-club-membership.action.declare.form.section.recommender.field.none.label,This is the label for the field,No recommender,,
 v2.event.tennis-club-membership.action.declare.form.section.recommender.field.surname.label,This is the label for the field,Recommender's surname,නියෝජනාවේ පෙරටුගේ වර්ගය,பரிந்துரையாளரின் குடும்பப் பெயர்
-v2.event.tennis-club-membership.action.declare.form.section.recommender.title,This is the title of the section,Who is recommending the applicant?,ඇයින් සඳහන් කරන්නේ කුමරුද?,விண்ணப்பரை யார் பரிந்துரைக்கின்றார்?
+event.tennis-club-membership.action.declare.form.section.recommender.title,This is the title of the section,Who is recommending the applicant?,,
 v2.event.tennis-club-membership.action.declare.form.section.who.field.address.label,This is the label for the field,Applicant's address,අයිතිකයාගේ ලිපිනය,விண்ணப்பரின் முகவரி
-v2.event.tennis-club-membership.action.declare.form.section.who.field.dob.error,This is the error message for invalid date,Must be a valid birth date,වලංගු උපන් දිනය විය යුතු යැයි යළි පෙළගැස්මක් විය යුතුය.,ஒரு செல்லுபடியாக பிறந்த தேதி இருக்க வேண்டும்.
-v2.event.tennis-club-membership.action.declare.form.section.who.field.dob.label,This is the label for the field,Applicant's date of birth,අයියාට්ගේ උපන් දිනය,விண்ணப்பரின் பிறந்த தேதி
+event.tennis-club-membership.action.declare.form.section.who.field.dob.error,This is the error message for invalid date,Must be a valid birth date,,
+event.tennis-club-membership.action.declare.form.section.who.field.dob.label,This is the label for the field,Applicant's date of birth,,
 v2.event.tennis-club-membership.action.declare.form.section.who.field.firstname.label,This is the label for the field,Applicant's first name,අයියාටේ මුල් නම,விண்ணப்பரின் முதல் பெயர் {name}
-v2.event.tennis-club-membership.action.declare.form.section.who.field.image.label,This is the label for the field,Applicant's profile picture,අයියන්ගේ පැතිකඩ රූපය,விண்ணப்பரின் சுயவிவர படம்
+event.tennis-club-membership.action.declare.form.section.who.field.image.label,This is the label for the field,Applicant's profile picture,,
 v2.event.tennis-club-membership.action.declare.form.section.who.field.surname.label,This is the label for the field,Applicant's surname,අයිපන්ට්ස් ප්‍රාචරය,விண்ணப்பரின் குடும்பப் பெயர்
-v2.event.tennis-club-membership.action.declare.form.section.who.title,This is the title of the section,Who is applying for the membership?,මෙම සාමාජිකයා කුමන්ත්‍රයාට අයදුම් කරමු ද?,யார் உறுதியாளராக விண்ணப்பிக்கிறார்?
+event.tennis-club-membership.action.declare.form.section.who.title,This is the title of the section,Who is applying for the membership?,,
 v2.event.tennis-club-membership.action.declare.form.version.1,This is the first version of the form,Version 1,සංස්කරණය 1,பதிப்பு 1
-v2.event.tennis-club-membership.action.declare.label,This is shown as the action name anywhere the user can trigger the action from,Send an application,අයිතිය යවන්න,ஒரு விண்ணப்பை அனுப்புங்கள்.
-v2.event.tennis-club-membership.action.delete.label,This is shown as the action name anywhere the user can trigger the action from,Delete draft,කකුල් ඉවත් කරන්න,வரையறுக்கவும்
-v2.event.tennis-club-membership.action.form.section.alienNumberDetails.label,Field for entering Alien Number details,Alien Number Details,දෛශූ අංකය විස්තරයන්,ஏலியன் எண் விவரங்கள்
-v2.event.tennis-club-membership.action.form.section.drivingLicenseDetails.label,Field for entering Driving License details,Driving License Details,රියදුරු බලපත් විස්තරයන්,ஓட்டு அனுமதிவிவரங்கள்
-v2.event.tennis-club-membership.action.form.section.firstName.label,This is the label for the first name field,First Name,මුල් නම,முதல் பெயர்
-v2.event.tennis-club-membership.action.form.section.idType.alienNumber.label,Option for selecting Alien Number as the ID type,Alien Number,ද්විතියි අංකය,ஏலியன் எண்
-v2.event.tennis-club-membership.action.form.section.idType.drivingLicense.label,Option for selecting Driving License as the ID type,Driving License,රියදුරු බලපත්රය,ஓட்டு அனுமதிப்பத்தில்
-v2.event.tennis-club-membership.action.form.section.idType.label,This is the label for selecting the type of ID,Select Type of ID,අනෙකුත් ID වර්ගය තෝරන්න,ஐடி வகையைத் தேர்ந்தெடுக்கவும்.
-v2.event.tennis-club-membership.action.form.section.idType.noId.label,Option for selecting No ID as the ID type,No ID,අංකය නැත,ஐடி இல்லை
-v2.event.tennis-club-membership.action.form.section.idType.other.label,Option for selecting Other as the ID type,Other,අමතර,மற்றொரு
-v2.event.tennis-club-membership.action.form.section.idType.passport.label,Option for selecting Passport as the ID type,Passport,ගුවන් ලේඛනය,கடவுச்சீட்டு
-v2.event.tennis-club-membership.action.form.section.idType.refugeeNumber.label,Option for selecting Refugee Number as the ID type,Refugee Number,පරිවෘත අංකය,அவர்கள் படையில் உள்ள புலம்
-v2.event.tennis-club-membership.action.form.section.idTypeOther.label,Field for entering ID type if Other is selected,Other ID Type (if applicable),වෙනත් හැඳුනුම් වර්ගය (අත්‍යවශ්‍ය වූ වන්නේ),பிற ஐடி வகை (பொருநர் பொருநராக இரும் போது)
-v2.event.tennis-club-membership.action.form.section.lastName.label,This is the label for the last name field,Last Name,අවසන් නම,கடைசி பெயர்
-v2.event.tennis-club-membership.action.form.section.passportDetails.label,Field for entering Passport details,Passport Details,පහසුකම් විස්තරයන්,கடவுச்சீட்டு விவரங்கள்
-v2.event.tennis-club-membership.action.form.section.refugeeNumberDetails.label,Field for entering Refugee Number details,Refugee Number Details,පුරවැසි අංක විස්තරයන්,அவர்களின் அடையாள எண்கள்
-v2.event.tennis-club-membership.action.form.section.relationshipToMember.label,This is the label for the relationship to member field,Relationship to Member,සාමාජිකත්වය {name} සඳහා,உறுதியான உறுதியாளர்
-v2.event.tennis-club-membership.action.form.section.signedAffidavit.label,This is the label for uploading a signed affidavit,Signed Affidavit (Optional),අත්සන් පිළිබඳව ලියාපදිංචිය (විකල්ප),கையொப்பம் செய்யப்பட்ட சான்றிதழ் (விரும்பினால்)
-v2.event.tennis-club-membership.action.register.label,This is shown as the action name anywhere the user can trigger the action from,Register,ලියාපදිංචියට ලියන්න,பதிவு செய்க
-v2.event.tennis-club-membership.action.requestCorrection.form.section.corrector,This is the title of the section,Correction requester,සංස්කරණය ඉල්ලීමේදී,திருத்தல் கோருந்துவிடும் வேண்டுகோள்
-v2.event.tennis-club-membership.action.requestCorrection.form.section.verify,This is the title of the section,Verify their identity,ඔව්හි තහවුරු කරන්නේදැයි ප්‍රතික්ෂේප කරන්න.,அவர்கள் அவர்கள் அடையாளத்தை சரிபார்க்கவும்.
-v2.event.tennis-club-membership.action.requestCorrection.label,This is shown as the action name anywhere the user can trigger the action from,Request correction,විස්තරය ඉල්ලීමක් කරනවා,திருத்தம் கோரப்படுகிறது
+event.tennis-club-membership.action.declare.label,This is shown as the action name anywhere the user can trigger the action from,Send an application,,
+event.tennis-club-membership.action.delete.label,This is shown as the action name anywhere the user can trigger the action from,Delete draft,,
+event.tennis-club-membership.action.form.section.alienNumberDetails.label,Field for entering Alien Number details,Alien Number Details,,
+event.tennis-club-membership.action.form.section.drivingLicenseDetails.label,Field for entering Driving License details,Driving License Details,,
+event.tennis-club-membership.action.form.section.firstName.label,This is the label for the first name field,First Name,,
+event.tennis-club-membership.action.form.section.idType.alienNumber.label,Option for selecting Alien Number as the ID type,Alien Number,,
+event.tennis-club-membership.action.form.section.idType.drivingLicense.label,Option for selecting Driving License as the ID type,Driving License,,
+event.tennis-club-membership.action.form.section.idType.label,This is the label for selecting the type of ID,Select Type of ID,,
+event.tennis-club-membership.action.form.section.idType.noId.label,Option for selecting No ID as the ID type,No ID,,
+event.tennis-club-membership.action.form.section.idType.other.label,Option for selecting Other as the ID type,Other,,
+event.tennis-club-membership.action.form.section.idType.passport.label,Option for selecting Passport as the ID type,Passport,,
+event.tennis-club-membership.action.form.section.idType.refugeeNumber.label,Option for selecting Refugee Number as the ID type,Refugee Number,,
+event.tennis-club-membership.action.form.section.idTypeOther.label,Field for entering ID type if Other is selected,Other ID Type (if applicable),,
+event.tennis-club-membership.action.form.section.lastName.label,This is the label for the last name field,Last Name,,
+event.tennis-club-membership.action.form.section.passportDetails.label,Field for entering Passport details,Passport Details,,
+event.tennis-club-membership.action.form.section.refugeeNumberDetails.label,Field for entering Refugee Number details,Refugee Number Details,,
+event.tennis-club-membership.action.form.section.relationshipToMember.label,This is the label for the relationship to member field,Relationship to Member,,
+event.tennis-club-membership.action.form.section.signedAffidavit.label,This is the label for uploading a signed affidavit,Signed Affidavit (Optional),,
+event.tennis-club-membership.action.register.label,This is shown as the action name anywhere the user can trigger the action from,Register,,
+event.tennis-club-membership.action.requestCorrection.form.section.corrector,This is the title of the section,Correction requester,,
+event.tennis-club-membership.action.requestCorrection.form.section.verify,This is the title of the section,Verify their identity,,
+event.tennis-club-membership.action.requestCorrection.label,This is shown as the action name anywhere the user can trigger the action from,Request correction,,
 v2.event.tennis-club-membership.action.sdf.label,This is shown as the action name anywhere the user can trigger the action from,My custom action,මගේ සැකසුම,எனது தனிப்பட்ட செயல்
-v2.event.tennis-club-membership.action.validate.label,This is shown as the action name anywhere the user can trigger the action from,Validate,තහවුරු කරන්න,சரிபார்க்கவும்
-v2.event.tennis-club-membership.label,This is what this event is referred as in the system,Tennis club membership application,ටෙනිස් සමාගම් අයිතිකාරීතා සහිතවාදීම,டென்னிஸ் கிளப் உறுதிப்படுத்துதல் விண்ணப்பு
+event.tennis-club-membership.action.validate.label,This is shown as the action name anywhere the user can trigger the action from,Validate,,
+event.tennis-club-membership.label,This is what this event is referred as in the system,Tennis club membership application,,
 v2.event.tennis-club-membership.search,This is what this event is referred as in the system,Tennis club registration search,ටෙනිස් සාමාන්‍ය ලියාපදිංචි සෙවීම,டென்னிஸ் கிளப் பதிவு தேடல்
-v2.event.tennis-club-membership.summary.field.applicant.firstname.empty,Shown when the applicant's first name is missing in summary,Applicant's first name missing,ඇයිට්ස් පළමු නම අසාර්ථකයි,விண்ணப்பரின் முதல் பெயர் இல்லை
-v2.event.tennis-club-membership.summary.field.applicant.firstname.label,Label for the applicant's first name field,Applicant's First Name,අයියාටේ මුල් නම,விண்ணப்பரின் முதல் பெயர்
+event.tennis-club-membership.summary.field.applicant.firstname.empty,Shown when the applicant's first name is missing in summary,Applicant's first name missing,,
+event.tennis-club-membership.summary.field.applicant.firstname.label,Label for the applicant's first name field,Applicant's First Name,,
 v2.event.tennis-club-membership.summary.field.applicant.firstname.value,Value for the applicant's first name field,{applicant.firstname},{applicant.firstname} යන්නා,{applicant.firstname} என்ற பெயரை மொழிபெயர்க்கவும்.
 v2.event.tennis-club-membership.summary.field.applicant.surname.empty,Shown when the surname is missing in summary,Applicant's surname missing,අයිකන්ට්ස් හිමිකරුවාගේ නම අසාර්ථකයි,விண்ணப்பரின் குடும்பப் பெயர் காணப்படவில்லை
 v2.event.tennis-club-membership.summary.field.applicant.surname.label,Label for the applicant's surname field,Applicant's Surname,අයියන්ගේ ප්‍රාචනායකයා,விண்ணப்பரின் குடும்பப் பெயர்
 v2.event.tennis-club-membership.summary.field.applicant.surname.value,Value for the applicant's surname field,{applicant.surname},{applicant.surname} යන්න,{applicant.surname}
 v2.event.tennis-club-membership.summary.field.firstname.label,Label for the given field on form.,First name,මුල් නම,முதல் பெயர்
 v2.event.tennis-club-membership.summary.field.firstname.value,Value for the matching field on form.,{applicant.firstname},{applicant.firstname} යන්නා,{applicant.firstname} என்ற பெயரைக் கொண்டது.
-v2.event.tennis-club-membership.summary.field.recommender.firstname.empty,Shown when the recommender first name is missing in summary,Recommender's first name missing,නිවාඩුවේ පළමු නම අසාර්ථකයි,பரிந்துரையரின் முதல் பெயர் இல்லை
-v2.event.tennis-club-membership.summary.field.recommender.firstname.label,Label for the recommender's first name field,Recommender's First Name,නිවාඩුවේ මුල් නම,பரிந்துரையரின் முதல் பெயர்
+event.tennis-club-membership.summary.field.recommender.firstname.empty,Shown when the recommender first name is missing in summary,Recommender's first name missing,,
+event.tennis-club-membership.summary.field.recommender.firstname.label,Label for the recommender's first name field,Recommender's First Name,,
 v2.event.tennis-club-membership.summary.field.recommender.firstname.value,Value for the recommender's first name field,{recommender.firstname},{recommender.firstname} යන්න,{recommender.firstname} என்று அழைக்கப்படுகிறார்.
-v2.event.tennis-club-membership.summary.field.recommender.id.empty,Shown when the recommender id is missing in summary,Recommender's id missing,නියෝජනය කිරීමේ හැඳුනුම් සංඛ්‍යාව අසාර්ථකයි,பரிந்துரிக்குநரின் ஐடி இல்லை
-v2.event.tennis-club-membership.summary.field.recommender.id.label,Label for the recommender's ID field,Recommender's ID,Recommender's ID,Recommender's ID
+event.tennis-club-membership.summary.field.recommender.id.empty,Shown when the recommender id is missing in summary,Recommender's id missing,,
+event.tennis-club-membership.summary.field.recommender.id.label,Label for the recommender's ID field,Recommender's ID,,
 v2.event.tennis-club-membership.summary.field.recommender.id.value,Value for the recommender's ID field,{recommender.id},{recommender.id} යන්නෙන් අනුමැතියක් වෙනස් කරන්න.,{பரிந்துரிக்குநர்.ஐடி}
 v2.event.tennis-club-membership.summary.field.recommender.surname.empty,Shown when the recommender surname is missing in summary,Recommender's surname missing,නියෝජනාවේ පෙරටු නම අසාර්ථකයි,பரிந்துரையாளரின் குடியிருப்பு இல்லை
 v2.event.tennis-club-membership.summary.field.recommender.surname.label,Label for the recommender's surname field,Recommender's Surname,නියෝජනාවේ ප්‍රාචරිත්ගේ වර්ගය,பரிந்துரையாளின் குடியிருப்பு
@@ -2716,171 +2716,171 @@ v2.event.tennis-club-membership.summary.title.label,Label for the summary title 
 v2.event.tennis-club-membership.workqueue.all.name.label,Label for the 'All' work queue filter for tennis club membership,{applicant.firstname} {applicant.surname},{applicant.firstname} {applicant.surname},{applicant.firstname} {applicant.surname}
 v2.event.tennis-club-membership.workqueue.readyForReview.name.label,Label for 'Ready for Review' work queue for tennis club membership,Ready for Review,සමාවෙන්න සදාචාරය සදහා,பரிசோதனைக்கு தயாராக உள்ளேன்
 v2.event.tennis-club-membership.workqueue.registered.name.label,Label for 'Registered' work queue for tennis club membership,Registered,ලියාපදිංචිය කර ඇත්තේ,பதிவு செய்யப்பட்டது
-v2.events.history.status,Events status history,"{status, select, CREATE {Draft} VALIDATE {Validated} DRAFT {Draft} DECLARE {Declared} REGISTER {Registered} PRINT_CERTIFICATE {Print certificate} REJECT {Rejected} ARCHIVED {Archived} MARKED_AS_DUPLICATE {Marked as a duplicate} READ {Viewed} ASSIGN {Assigned} UNASSIGN {Unassigned} other {Unknown}}","{status, select, CREATE {කාර්යය} VALIDATE {වලංගු කරනවා} DRAFT {කළ පාඩු} DECLARE {වාර්යය කරනවා} REGISTER {ලියාපදිංචි කරනවා} PRINT_CERTIFICATE {සහතිකය මුද්‍රණය කරනවා} REJECT {ප්‍රතික්ෂේප කරනවා} ARCHIVED {ගත් පිටපත} MARKED_AS_DUPLICATE {අනුපිටපත කරනවා} READ {පෙන්වනවා} ASSIGN {පැවරීම} UNASSIGN {අන්තරීම} other {නොදන්න}}","{status, select, CREATE {உருவாக்குக} VALIDATE {செருக்குக} DRAFT {வரையறை} DECLARE {அறிக்கை செய்} REGISTER {பதிவு செய்} PRINT_CERTIFICATE {சான்றிதழ் அச்சிடு} REJECT {நிராகரி} ARCHIVED {பதிப்புச் சேமிக்கப்பட்டது} MARKED_AS_DUPLICATE {நகலாக குறிக்கப்பட்டது} READ {படிக்கப்பட்டது} ASSIGN {ஒதுக்கீடு செய்} UNASSIGN {ஒதுக்கீடு நீக்கு} other {அறியப்படாது}}"
-v2.events.status,Dynamic event status,"{status, select, OUTBOX {Syncing..} CREATED {Draft} VALIDATED {Validated} DRAFT {Draft} DECLARED {Declared} REGISTERED {Registered} other {Unknown}}","{status, select, OUTBOX {සන්නිවේදනය කෙරුම් කෙරේ..} CREATED {කාලසීම} VALIDATED {වලංගු කරන ලදි} DRAFT {කාලසීම} DECLARED {ප්‍රකාශ කරන ලදි} REGISTERED {ලියාපදිංචි කරන ලදි} other {නොදත්තනු}}","{status, select, OUTBOX {ஒப்பந்தம்..} CREATED {வரையறு} VALIDATED {செல்லுபடியாக்கப்பட்டது} DRAFT {வரையறு} DECLARED {அறிக்கை செய்யப்பட்டது} REGISTERED {பதிவுசெய்யப்பட்டது} other {அறியப்படாதது}}"
-v2.exitModal.cancel,Modal cancel button,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.exitModal.exitWithoutSaving,exitmodal without saving label,Exit without saving changes?,වෙනස් සුරකින්නේද?,மாற்றங்களை சேமிக்காதே வெளியேற வேண்டுமா?
-v2.exitModal.exitWithoutSavingDescription,exitmodal without saving  description,You have unsaved changes on your declaration form. Are you sure you want to exit without saving?,ඔබගේ ප්‍රකාශ පත්‍රයේ අසුරු වෙනස් ඇත. සුරකින්නේ ඔබ සුරැකීම් සිදු කිරීමට අවශ්‍යද?,உங்கள் பேரவை படிவத்தில் சேமிக்கப்படாத மாற்றங்கள் உள்ளன. சேமிக்காது வெளியேற வேண்டுமா?
-v2.field.address.addressLine1.label,This is the label for the field,Address Line 1,ලිපිනය පේළි 1,முகவரி வரிக் 1
-v2.field.address.addressLine2.label,This is the label for the field,Address Line 2,ලිපිනය පේළිය 2,முகவரி வரி 2
-v2.field.address.addressLine3.label,This is the label for the field,Address Line 3,ලිපිනය පේළිය 3,முகவரி வரி 3
-v2.field.address.cityOrTown.label,This is the label for the field,Town / Village,නගරය / ගම,நகரம் / கிராமம்
-v2.field.address.country.label,Label for country in address,Country,රාජගීය,நாடு
-v2.field.address.district.label,Label for district in address,District,දිස්ත්‍රික්කය,மாவட்டம்
-v2.field.address.district2.label,This is the label for the field,District,දිස්ත්‍රික්කය,மாவட்டம்
+events.history.status,Events status history,"{status, select, Requested {Waiting for external validation} other {{action, select, CREATE {Declaration started} NOTIFY {Sent incomplete} VALIDATE {Sent for approval} DRAFT {Draft} DECLARE {Sent for review} REGISTER {Registered} PRINT_CERTIFICATE {Certified} REJECT {Rejected} ARCHIVE {Archived} DUPLICATE_DETECTED {Flagged as potential duplicate} MARKED_AS_DUPLICATE {Marked as a duplicate} MARK_AS_NOT_DUPLICATE {Marked not a duplicate} CORRECTED {Record corrected} REQUEST_CORRECTION {Correction requested} APPROVE_CORRECTION {Correction approved} REJECT_CORRECTION {Correction rejected} READ {Viewed} ASSIGN {Assigned} UNASSIGN {Unassigned} UPDATE {Updated} other {Unknown}}}}",,
+events.status,Dynamic event status,"{status, select, OUTBOX {Syncing..} CREATED {Draft} VALIDATED {Validated} DRAFT {Draft} DECLARED {Declared} REGISTERED {Registered} CERTIFIED {Certified} REJECTED {Rejected} ARCHIVED {Archived} MARKED_AS_DUPLICATE {Marked as a duplicate} MARK_AS_NOT_DUPLICATE {Marked not a duplicate} NOTIFIED {In progress} other {Unknown}}",,
+exitModal.cancel, Modal cancel button,Cancel,,
+exitModal.exitWithoutSaving,exitmodal without saving label,Exit without saving changes?,,
+exitModal.exitWithoutSavingDescription, exitmodal without saving  description,You have unsaved changes on your declaration form. Are you sure you want to exit without saving?,,
+field.address.addressLine1.label,This is the label for the field,Address Line 1,,
+field.address.addressLine2.label,This is the label for the field,Address Line 2,,
+field.address.addressLine3.label,This is the label for the field,Address Line 3,,
+field.address.cityOrTown.label,This is the label for the field,City / Town,,
+field.address.country.label,Label for country in address,Country,,
+field.address.district.label,Label for district in address,District,,
+field.address.district2.label,This is the label for the field,District,,
 v2.field.address.label.rural,Label for rural area,Rural,ප්‍රාන්තයේ,ஊராட்சி
 v2.field.address.label.urban,Label for urban area,Urban,නගරයා,நகர்
-v2.field.address.number.label,Label for address number,Number,අංකය,எண்
-v2.field.address.postcodeOrZip.label,This is the label for the field,Postal Code,තැපැල් කේතය,அஞ்சல் குறியீடு
-v2.field.address.province.label,Label for province in address,Province,පළාත,மாநிலம்
-v2.field.address.residentialArea.label,Label for residential area in address,Street / Lane,වීදිය / මාවත,தெரு / ஒழுங்கை
-v2.field.address.state.label,This is the label for the field,Province,පළාත,மாகாணம்
-v2.field.address.street.label,Label for street in address,Street,වීදියවල,தெரு
-v2.field.address.town.label,Label for town in address,Town / Village,නගරය / ගම,நகரம் / கிராமம்
+field.address.number.label,Label for address number,Number,,
+field.address.postcodeOrZip.label,This is the label for the field,Postcode / Zip,,
+field.address.province.label,Label for province in address,Province,,
+field.address.residentialArea.label,Label for residential area in address,Residential Area,,
+field.address.state.label,This is the label for the field,State,,
+field.address.street.label,Label for street in address,Street,,
+field.address.town.label,Label for town in address,Town,,
 v2.field.address.urbanOrRural.label,Label for selecting between urban or rural,Urban or Rural,නගරේ හෝ පිහිටියේ,நகர் அல்லது ஊர்
 v2.field.address.village.label,Label for village in address,Village,ගමය,கிராமம்
 v2.field.address.zipCode.label,Label for ZIP code in address,ZIP Code,සිංහල අක්ෂර අංකය,சிப் குறியீடு
-v2.file.upload.fileSize.error,Error message when the selected file is too large,File size must be less than {maxSize}mb,ගොනුවේ ප්‍රමාණය {maxSize}mb ට වඩා අඩුවිය යුතුය,கோப்பு அளவு {maxSize}mb க்கும் குறைவாக இருக்க வேண்டும்
-v2.file.upload.fileType.error,Error message when the selected file type is not supported,File format not supported. Please attach {types} (max {maxSize}mb),ගොනු ආදාන නොවේ. කරුණාකර {types} (උපරිම {maxSize}mb) අමුන්ගේම අදහසක් ඇතුළත් කරන්න.,கோப்பு வடிவம் ஆதரிக்கப்படவில்லை. தயவுசெய்து {types} இணைக்கவும் ({maxSize}mb வரை)
-v2.form.birth.child.title,Form section title for Child,Child's details,දරුවාගේ විස්තරයන්,குழந்தையின் விவரங்கள்
-v2.form.field.label.No,Label for form field radio option No,No,නෑ,இல்லை
-v2.form.field.label.Yes,Label for form field radio option Yes,Yes,ඔව්,ஆம்
-v2.form.field.label.attendantAtBirthLayperson,Label for layperson attendant,Layperson,අධ්‍යාපනයේ අධ්‍යාපනිකයා,அரசியல் அல்லது சட்டத்தில் அனுபவம் இல்லாத ஒருவர்
-v2.form.field.label.attendantAtBirthMidwife,Label for midwife attendant,Midwife,මිඩ්වයිෆ්,மகப்பேறு செய்பவர்
-v2.form.field.label.attendantAtBirthNone,Label for no attendant,None,කිසිවක් නොවේ,எதுவும்
-v2.form.field.label.attendantAtBirthNurse,Label for nurse attendant,Nurse,නර්ස්,மருத்துவமனையில் வேலை செய்யும் வேலையாளர்
-v2.form.field.label.attendantAtBirthOtherParamedicalPersonnel,Label for other paramedical personnel,Other paramedical personnel,වෙනත් පැරම්ඇල් පුද්ගලනයක්,பிற பெரியவர்கள் சேவையாளர்கள்
-v2.form.field.label.attendantAtBirthPhysician,Label for physician attendant,Physician,වෛරස්කාරයා,மருத்துவர்
-v2.form.field.label.attendantAtBirthTraditionalBirthAttendant,Label for traditional birth attendant,Traditional birth attendant,පැරණි උපත් උපුටාදායකයා,பாரம்பரிய பிறவிப் பரிசுப் பணியாளர்
-v2.form.field.label.birthTypeHigherMultipleDelivery,Label for higher multiple delivery birth,Higher multiple delivery,උසස් බහුල නිවේදනය,உயர் பல விநியோகம்
-v2.form.field.label.birthTypeQuadruplet,Label for quadruplet birth,Quadruplet,චක්‍රව්පල්ට්,நான்குப்பேர்
-v2.form.field.label.birthTypeSingle,Label for single birth,Single,එක් දිගටම නියමිතයි,தனிமை
-v2.form.field.label.birthTypeTriplet,Label for triplet birth,Triplet,තුන්ක්ලිට්,மூவர்
-v2.form.field.label.birthTypeTwin,Label for twin birth,Twin,ද්විත්වය,இரட்டை
+file.upload.fileSize.error,Error message when the selected file is too large,File size must be less than {maxSize}mb,,
+file.upload.fileType.error,Error message when the selected file type is not supported,File format not supported. Please attach {types} (max {maxSize}mb),,
+form.birth.child.title,Form section title for Child,Child's details,,
+form.field.label.No,Label for form field radio option No,No,,
+form.field.label.Yes,Label for form field radio option Yes,Yes,,
+form.field.label.attendantAtBirthLayperson,Label for layperson attendant,Layperson,,
+form.field.label.attendantAtBirthMidwife,Label for midwife attendant,Midwife,,
+form.field.label.attendantAtBirthNone,Label for no attendant,None,,
+form.field.label.attendantAtBirthNurse,Label for nurse attendant,Nurse,,
+form.field.label.attendantAtBirthOtherParamedicalPersonnel,Label for other paramedical personnel,Other paramedical personnel,,
+form.field.label.attendantAtBirthPhysician,Label for physician attendant,Physician,,
+form.field.label.attendantAtBirthTraditionalBirthAttendant,Label for traditional birth attendant,Traditional birth attendant,,
+form.field.label.birthTypeHigherMultipleDelivery,Label for higher multiple delivery birth,Higher multiple delivery,,
+form.field.label.birthTypeQuadruplet,Label for quadruplet birth,Quadruplet,,
+form.field.label.birthTypeSingle,Label for single birth,Single,,
+form.field.label.birthTypeTriplet,Label for triplet birth,Triplet,,
+form.field.label.birthTypeTwin,Label for twin birth,Twin,,
 v2.form.field.label.documentTypeBirthCertificate,Option for form field: Type of ID,Birth Certificate,උපන්දින සහතිකය,பிறப்பு சான்றிதழ்
 v2.form.field.label.documentTypeOther,Option for form field: Type of ID,Other,අමතර,மற்றொரு
-v2.form.field.label.educationAttainmentISCED1,Option for form field: ISCED1 education,Primary,ප්‍රථිප්තිය,முதன்மை
-v2.form.field.label.educationAttainmentISCED4,Option for form field: ISCED4 education,Secondary,දෙවන සංවාදය,இரண்டாவது
-v2.form.field.label.educationAttainmentISCED5,Option for form field: ISCED5 education,Tertiary,තොරියාර්යයා,மூன்றாம்
-v2.form.field.label.educationAttainmentNone,Option for form field: no education,No schooling,පාසලේ පාඩම නොදැක්වීමක් නොවේ.,பள்ளிக்கு செல்லவில்லை
-v2.form.field.label.healthInstitution,Select item for Health Institution,Health Institution,ආධිර සම්පූර්ණ ස්ථානය,ஆரோக்கிய நிறுவனம்
-v2.form.field.label.iDTypeBRN,Option for form field: Type of ID,Birth Registration Number,උපන්දින ලියාපදිංචි අංකය,பிறப்பு பதிவு எண்
-v2.form.field.label.iDTypeNationalID,Option for form field: Type of ID,National ID,ජාතික හැඳුනුම්පත,தேசிய ஐடி
-v2.form.field.label.iDTypeNone,Option for form field: Type of ID,None,කිසිවක් නැත,எதுவும்
-v2.form.field.label.iDTypePassport,Option for form field: Type of ID,Passport,ගුවන් පදය,கடவுச்சீட்டு
-v2.form.field.label.informantRelation.brother,Label for option brother,Brother,මහත්මයා,சகோதரர்
-v2.form.field.label.informantRelation.father,Label for option father,Father,පියාව,அப்பா
-v2.form.field.label.informantRelation.grandfather,Label for option Grandfather,Grandfather,සුභ දවසක්!,தாத்தா
-v2.form.field.label.informantRelation.grandmother,Label for option Grandmother,Grandmother,දායකින්,பாட்டி
-v2.form.field.label.informantRelation.legalGuardian,Label for option Legal Guardian,Legal guardian,වෛරස ආධාරයා,சட்டப்பூர்வ காப்புத்துறை
-v2.form.field.label.informantRelation.mother,Label for option mother,Mother,මව,தாய்
-v2.form.field.label.informantRelation.others,Label for option someone else,Someone else,තවත් කාර්යයක්,யாரோ மற்றவர்
-v2.form.field.label.informantRelation.sister,Label for option Sister,Sister,කෝෂියක්,சகோதரி
-v2.form.field.label.maritalStatusDivorced,Option for form field: Marital status,Divorced,විවාහකයි,பிரித்துவிட்டுள்ளேன்
-v2.form.field.label.maritalStatusMarried,Option for form field: Marital status,Married,විවාහයක් කරඇති,திருமணம் செய்யப்பட்டார்
-v2.form.field.label.maritalStatusNotStated,Option for form field: Marital status,Not stated,නොවැය කළ නොහැක,குறிப்பு இல்லை
-v2.form.field.label.maritalStatusSeparated,Option for form field: Marital status,Separated,වෙනස් වීම් කර ඇත,பிரியமாகிறேன்
-v2.form.field.label.maritalStatusSingle,Option for form field: Marital status,Single,එක් දක්වා,தனிமை
-v2.form.field.label.maritalStatusWidowed,Option for form field: Marital status,Widowed,විවාහයට පවා වීමේදී සිටිනවා.,விதவை
-v2.form.field.label.otherInstitution,Select item for Other location,Other,අමතර,மற்றொரு
-v2.form.field.label.privateHome,Select item for Private Home,Residential address,නිවාස ලිපිනය,வாசியார் முகவரி
-v2.form.field.label.rural,Label for form field checkbox option Rural,Rural,ප්‍රාන්තයේ,ஊராட்சி
-v2.form.field.label.sexFemale,Label for option female,Female,ගැහැණු ස්තුතියි,பெண்
-v2.form.field.label.sexMale,Label for option male,Male,පුරුෂයා,ஆண்
-v2.form.field.label.sexUnknown,Label for option unknown,Unknown,නොදන්න,அறியப்படாது
-v2.form.field.label.urban,Label for form field checkbox option Urban,Urban,නගරයා,நகர்
-v2.form.section.documents.title,Form section title for documents,Upload supporting documents,සහයෝගී ලේඛන් උඩුගත කරන්න,உதவியை பதிவேற்றவும்
-v2.form.section.father.title,Form section title for fathers details,Father's details,පියාස්වේ විස්තරයන්,அப்பாவின் விவரங்கள்
-v2.form.section.informant.title,Form section title for informants details,Informant's details,නිවේදනගැනීම්වේලාකාරීතාව,அறிக்கையாளரின் விவரங்கள்
-v2.form.section.information.birth.bullet1,Form information for birth,I am going to help you make a declaration of birth.,මම ඔබට උපරිමයේ උපලේඛනය සාදනවි.,நான் உங்களுக்கு பிறப்பு அறிக்கை உருவாக்க உதவுவேன்.
-v2.form.section.information.birth.bullet2,Form information for birth,As the legal Informant it is important that all the information provided by you is accurate.,වාර්තා ප්‍රදේශීයයෙන් එක්වන්නේ ඔබ වෙනස් කළ විස්තර සිදු කර ඇත්තේ ප්‍රකාශ විය හැකිය.,சட்டமன்ற அறிக்கையாளராக உங்கள் வழக்குகள் அனைத்தும் சரியானவை என்று உறுதிப்படுத்தப்படும் முக்கியமாகும்.
-v2.form.section.information.birth.bullet3,Form information for birth,Once the declaration is processed you will receive an SMS to tell you when to visit the office to collect the certificate - Take your ID with you.,"නිවේදනය සැකසුම් කර ඇත්නම්, ඔබට ලැබුණු SMS එකක් ලබා දෙන්නේ නැවත ලබා ගැනීම සඳහා කාඩ් ලබා ගැනීමේ වේලාව ඔබට දැනුම් දෙනාගත හැක - ඔබගේ හැඳුනුම් එක එකතු කරන්න.","அறிக்கை செயல்படுத்தப்பட்ட பிறகு, உங்களுக்கு சான்ஸ் அனுப்பப்படும் போது அலுவலகத்தில் சான்றியை பெற செல்ல எப்போது வர வேண்டும் என்று தெரியும் - உங்கள் ஐடி உங்களுடைய கூட்டுத்தாவரை எடுத்துக்கொள்ளுங்கள்."
-v2.form.section.information.birth.bullet4,Form information for birth,"Make sure you collect the certificate. A birth certificate is critical for this child, especially to make their life easy later on. It will help to access health services, school examinations and government benefits.","තහවුරු ගන්නාගේ සහභාගී කරන්න. මෙම ළමයාගේ ජීවනය සහිත විශේෂයෙන්ම උපරිම කිසිවක් සිටිනවා. එය සෞඛ්‍ය සේවාවන්, පාසලේ පරීක්ෂණ සහ රජයේ ලකුණු පිළිබඳ සහයෝගයට පිවිසෙයි.","சான்றிதழை சேகரிக்க உறுதிப்படுத்துங்கள். இந்த குழந்தைக்கு பிறப்பு சான்றிதழ் முக்கியம், குறிப்பாக அவர்கள் பின்னர் வாழ்க்கையை எளிதாக்க உதவும். இது சுகாதார சேவைகளை, பள்ளி தேர்வுகளை மற்றும் அரசு நன்குலுக்களை அணுக உதவும்."
-v2.form.section.information.birth.bulletList.label,Label for the birth information bullet list,Birth Information,උපන්දින තොරතුරු,பிறப்பு தகவல்
-v2.form.section.mother.title,Form section title for mothers details,Mother's details,මව්ගේ විස්තරයන්,தாயின் விவரங்கள்
-v2.messages.emptyString,Empty string,,,
-v2.navigation.CREATED,In progress label in navigation,In progress,සිදුවෙමි,செயலாக்கம் செய்கிறது
-v2.navigation.DECLARED,Ready for review label in navigation,Ready for review,සමාවෙන්න සදා ගැනීමට,பரிசோதனைக்கு தயாராக உள்ளேன்
-v2.navigation.REGISTERED,Ready to print label in navigation,Ready to print,මුද්‍රණය කිරීම සඳහා සූදාර්ථයක්,அசத்தல் அசைக்க வேண்டும்
-v2.print.certificate.button.confirmPrint,The text for print button,"Yes, print certificate","හරි, සහභාගී කොමසාරිය මුද්‍රණය කරන්න.","ஆம், சான்றிதழை அச்சிடுக"
-v2.print.certificate.button.makeCorrection,The label for correction button of print action,"No, make correction",නැවත සැසිල්ලීමක් කරන්න,"இல்லை, திருத்தம் செய்க"
-v2.print.certificate.onlineOnly,Print certificate online only message,Print certificate is an online only action. Please go online to print the certificate,සහභාගී ප්‍රතිස්ථාපය අන්තර්ගතයේ ප්‍රවේශ කිරීමට ප්‍රතිස්ථාපය මෙමින් ප්‍රවේශ කරන්න.,சான்றிதழை அச்சிடுவது ஆன்லைன் மட்டும் செயல். சான்றிதழை அச்சிட ஆன்லைன் செல்லுங்கள்.
-v2.print.certificate.review.modal.body.print,Print certificate modal body text,A Pdf of the certificate will open in a new tab for printing. The record will move to the ready-to-issue queue.,සහාය ප්‍රජාවේ ලිපියේ Pdf එක නව ටැබයේ විවෘත වේලාවට මුද්‍රණය කිරීම සඳහා විවෘත වේ. රාජ්‍ය කාර්යය සූදානම් කිරීම සඳහා රෙඩි-ටු-ඇස් වෙත ගෙන යනු ඇත.,ஒரு சான்றிதழின் பி.டி.எஃப் ஒன்று அச்சிடத்தில் திறக்கப்படும் மூலம் அச்சிடம் செய்யப்படும். பதிவு வெளியிட வரை அநுபாதிக்கு நகரும்.
-v2.print.certificate.review.modal.body.printAndIssue,Print certificate modal body text,A Pdf of the certificate will open in a new tab for printing and issuing.,සහාය ලද සහාය ප්‍රතිසාධනය සඳහා නව ටැබයේ ප්‍රවාහනයට විවෘත වේ.,ஒரு சான்றிதழின் பி.டி.எஃப் ஒன்று அச்சிடும் மற்றும் வெளியில் முதலில் திருத்துவதற்கு திறக்கும்.
-v2.print.certificate.review.printAndIssueModalTitle,Print and issue certificate modal title text,Print and issue certificate?,ප්‍රින්ට් කරන්න සහ සහය ලබාගන්නවාද?,சான்றிதழை அச்சிட்டு வெளியிடவும்?
-v2.print.certificate.review.printModalTitle,Print certificate modal title text,Print certificate?,සහතෝටිකය මුද්‍රණය කරන්නේ?,சான்றிதழை அச்சிடுக?
-v2.printAction.description,The description for print action,Please confirm that the informant has reviewed that the information on the certificate is correct and that it is ready to print.,කරුණාකර දැන්ම පිළිබඳව ප්‍රකාශකය බැලීමේ ප්‍රතිඵල නිවැරදි හා මුදා කිරීම සඳහා සූදානම් කරන්න.,தயவுசெய்து அறிக்கையாளர் சரியான தகவலை பரிசீலித்து அது அச்சிடக்கைக்கு தயாராக உள்ளது என்று உறுதிசெய்க.
-v2.printAction.title,The title for print action,Print certificate,සහතිකය මුද්‍රණය කරන්න,
-v2.regHome.issued,Label for workqueue tooltip,Empty message,අහෝද පණිවිඩය,காலியாக செயல்படுத்தப்பட்ட செய்தியை அனுப்பவில்லை
-v2.register.eventInfo.birth.title,Event information title for the birth,Introduce the birth registration process to the informant,නිවාස වාර්තා ස්ථානය {informant} හි ප්‍රවේශයට පත් කරන්න.,தகவல் வழங்குநருக்கு பிறப்பு பதிவு செய்ய பயன்படுத்தும் செயல்பாடுகளை அறியவும்.
-v2.register.form.modal.desc.deleteDeclarationConfirm,Description for delete declaration confirmation modal,Are you sure you want to delete this declaration?,ඔබට මෙම ප්‍රලේඛනය මකා දැමීමට සිදුවෙමිද?,இந்த அறிக்கையை நீக்க விரும்புகிறீர்களா?
-v2.register.form.modal.title.deleteDeclarationConfirm,Title for delete declaration confirmation modal,Delete draft?,කොටස් ඉවත් කරන්නේ ආයාතනයයි?,வரையறுக்கவும்?
-v2.register.selectInformant.newBirthRegistration,The title that appears for new birth registrations,New birth declaration,නව උපලේඛනය,புதிய பிறப்பு அறிக்கை
-v2.register.selectInformant.newDeathRegistration,The title that appears for new death registrations,New death declaration,නව මරණ ප්‍රලේඛනය,புதிய மரண அறிக்கை
-v2.register.selectInformant.newMarriageRegistration,The title that appears for new marriage registrations,New marriage declaration,නව විවේචනය ප්‍රකාශයක්,புதிய திருமண அறிக்கை
-v2.register.selectVitalEvent.errorMessage,Error Message to show when no event is being selected,Please select the type of event,කරුණාකර සිදුවීම් වර්ගය තෝරන්න.,நிகழ்வின் வகையைத் தேர்ந்தெடுக்கவும்.
-v2.register.selectVitalEvent.registerNewEventHeading,The section heading on the page,What type of event do you want to declare?,ඔබ කුමන විස්තරයක් දැක්වීමට කුමන විස්තරයක් අවශ්‍යයි?,நீங்கள் எதை அறிவிக்க விரும்புகிறீர்கள்?
-v2.register.selectVitalEvent.registerNewEventTitle,The title that appears on the select vital event page,New declaration,නව පවුලේදීම,புதிய அறிக்கை
+form.field.label.educationAttainmentISCED1,Option for form field: ISCED1 education,Primary,,
+form.field.label.educationAttainmentISCED4,Option for form field: ISCED4 education,Secondary,,
+form.field.label.educationAttainmentISCED5,Option for form field: ISCED5 education,Tertiary,,
+form.field.label.educationAttainmentNone,Option for form field: no education,No schooling,,
+form.field.label.healthInstitution,Select item for Health Institution,Health Institution,,
+form.field.label.iDTypeBRN,Option for form field: Type of ID,Birth Registration Number,,
+form.field.label.iDTypeNationalID,Option for form field: Type of ID,National ID,,
+form.field.label.iDTypeNone,Option for form field: Type of ID,None,,
+form.field.label.iDTypePassport,Option for form field: Type of ID,Passport,,
+form.field.label.informantRelation.brother,Label for option brother,Brother,,
+form.field.label.informantRelation.father,Label for option father,Father,,
+form.field.label.informantRelation.grandfather,Label for option Grandfather,Grandfather,,
+form.field.label.informantRelation.grandmother,Label for option Grandmother,Grandmother,,
+form.field.label.informantRelation.legalGuardian,Label for option Legal Guardian,Legal guardian,,
+form.field.label.informantRelation.mother,Label for option mother,Mother,,
+form.field.label.informantRelation.others,Label for option someone else,Someone else,,
+form.field.label.informantRelation.sister,Label for option Sister,Sister,,
+form.field.label.maritalStatusDivorced,Option for form field: Marital status,Divorced,,
+form.field.label.maritalStatusMarried,Option for form field: Marital status,Married,,
+form.field.label.maritalStatusNotStated,Option for form field: Marital status,Not stated,,
+form.field.label.maritalStatusSeparated,Option for form field: Marital status,Separated,,
+form.field.label.maritalStatusSingle,Option for form field: Marital status,Single,,
+form.field.label.maritalStatusWidowed,Option for form field: Marital status,Widowed,,
+form.field.label.otherInstitution,Select item for Other location,Other,,
+form.field.label.privateHome,Select item for Private Home,Residential address,,
+form.field.label.rural,,Rural,,
+form.field.label.sexFemale,Label for option female,Female,,
+form.field.label.sexMale,Label for option male,Male,,
+form.field.label.sexUnknown,Label for option unknown,Unknown,,
+form.field.label.urban,,Urban,,
+form.section.documents.title,Form section title for documents,Upload supporting documents,,
+form.section.father.title,Form section title for fathers details,Father's details,,
+form.section.informant.title,Form section title for informants details,Informant's details,,
+form.section.information.birth.bullet1,Form information for birth,I am going to help you make a declaration of birth.,,
+form.section.information.birth.bullet2,Form information for birth,As the legal Informant it is important that all the information provided by you is accurate.,,
+form.section.information.birth.bullet3,,Once the declaration is processed you will receive an email to tell you when to visit the office to collect the certificate - Take your ID with you.,,
+form.section.information.birth.bullet4,Form information for birth,"Make sure you collect the certificate. A birth certificate is critical for this child, especially to make their life easy later on. It will help to access health services, school examinations and government benefits.",,
+form.section.information.birth.bulletList.label,Label for the birth information bullet list,Birth Information,,
+form.section.mother.title,Form section title for mothers details,Mother's details,,
+messages.emptyString,Empty string, ,,
+navigation.CREATED,In progress label in navigation,In progress,,
+navigation.DECLARED,Ready for review label in navigation,Ready for review,,
+navigation.REGISTERED,Ready to print label in navigation,Ready to print,,
+print.certificate.button.confirmPrint,The text for print button,"Yes, print certificate",,
+print.certificate.button.makeCorrection,The label for correction button of print action,"No, make correction",,
+print.certificate.onlineOnly,Print certificate online only message,Print certificate is an online only action. Please go online to print the certificate,,
+print.certificate.review.modal.body.print,Print certificate modal body text,A Pdf of the certificate will open in a new tab for printing. The record will move to the ready-to-issue queue.,,
+print.certificate.review.modal.body.printAndIssue,Print certificate modal body text,A Pdf of the certificate will open in a new tab for printing and issuing.,,
+print.certificate.review.printAndIssueModalTitle,Print and issue certificate modal title text,Print and issue certificate?,,
+print.certificate.review.printModalTitle,Print certificate modal title text,Print certificate?,,
+printAction.description,The description for print action,Please confirm that the informant has reviewed that the information on the certificate is correct and that it is ready to print.,,
+printAction.title,The title for print action,Print certificate,,
+regHome.issued,Label for registration status issued,Issued,,
+register.eventInfo.birth.title,Event information title for the birth,Introduce the birth registration process to the informant,,
+register.form.modal.desc.deleteDeclarationConfirm,Description for delete declaration confirmation modal,"Are you certain you want to delete this draft declaration form? Please note, this action cant be undone.",,
+register.form.modal.title.deleteDeclarationConfirm,Title for delete declaration confirmation modal,Delete draft?,,
+register.selectInformant.newBirthRegistration,The title that appears for new birth registrations,New birth declaration,,
+register.selectInformant.newDeathRegistration,The title that appears for new death registrations,New death declaration,,
+register.selectInformant.newMarriageRegistration,The title that appears for new marriage registrations,New marriage declaration,,
+register.selectVitalEvent.errorMessage,Error Message to show when no event is being selected,Please select the type of event,,
+register.selectVitalEvent.registerNewEventHeading,The section heading on the page,Event type,,
+register.selectVitalEvent.registerNewEventTitle,The title that appears on the select vital event page,New declaration,,
 v2.registerAction.Declare,The label for declare button of register action,Register,ලියාපදිංචිය,பதிவு செய்க
 v2.registerAction.Reject,The label for reject button of register action,Reject,ප්‍රතිචාරයක්,நிராகரிக்கவும்
 v2.registerAction.description,The description for register action,"By clicking register, you confirm that the information entered is correct and the member can be registered.",ලියාපදිංචි කිරීමෙන් ඔබ ඇතුළත් කළ තොරතුරු නිවැරදි විය හැකිය යුතුයි හා මෙම සාමාජිකයා ලියාපදිංචි කළ හැකිය.,"பதிவு செய்வதன் மூலம், நீங்கள் உள்ளிடப்பட்ட தகவல்கள் சரியானவை என்று உறுதிசெய்கிறீர்கள் மற்றும் உறுதிப்படுத்தப்பட்ட உறுதிப்படுத்தப்பட்டவர் பதிவு செய்யப்படலாம்."
 v2.registerAction.incompleteForm,The label for warning of incomplete form,Please add mandatory information correctly before registering.,ලියාපදිංචි වන පෙර අනිර්මාත්ය විසින් අවශ්‍ය විස්තර නිවේදනය කරන්න.,பதிவு செய்வது முன்னதாக அவசியமான தகவல்களை சரியாக சேர்க்கவும்.
 v2.registerAction.title,The title for register action,Register member,දායකින්න මෙමගුරුකමට,உறுதிப்படுத்துக உறுதிப்படுத்துக {name}
-v2.rejectModal.archive,The label for archive button of reject modal,Archive,අත්සන් කරන්න,சேமிக்குக
-v2.rejectModal.cancel,The label for cancel button of reject modal,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.rejectModal.description,The description for reject modal,Please describe the updates required to this record for follow up action.,අපේක්ෂාව අනුව මෙම වාර්තාව සංස්කරණය කිරීම සඳහා අවශ්‍ය යාවත්කාලිකව වෙනස් කිරීම් විස්තර කරන්න.,"இந்த பதிவுக்கு தேவையான புதுப்பிப்புகளை விவரிக்கவும், பின்னர் செயல்படுத்த வேண்டிய நடவடிக்கைகளை விவரிக்கவும்."
-v2.rejectModal.markAsDuplicate,The label for mark as duplicate checkbox of reject modal,Mark as a duplicate,අනිකයක් ලබා දීමට ල඙්ඩකට ල඙්කරන්න,நகலாக குறிக்கவும்
-v2.rejectModal.sendForUpdate,The label for send For Update button of reject modal,Send For Update,යළි යවන්න යන්න.,புதுப்பிக்க அனுப்பவும்
-v2.rejectModal.title,The title for reject modal,Reason for rejection?,පරීක්ෂා හදාගැනීමේ හේතුව?,நிராகரணத்தின் காரணம்?
-v2.review.declare.confirm,The label for review action button when declaring,Send for review,සඳහන් කිරීම සඳහා යවන්න,மதிப்பீடுக்கு அனுப்பவும்
-v2.review.declare.confirmModal.cancel,The label for modal cancel button when declaring,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.review.declare.confirmModal.confirm,The label for modal confirm button when declaring,Confirm,තහවුරු කරන්න,உறுதிப்படுத்தவும்
-v2.review.declare.confirmModal.description,The description for review action modal when declaring,This declaration will be sent for review,මෙම ප්‍රකාශය සඳහා සබඳතා කිරීමට යවාදෙනවා,இந்த அறிக்கை மதிப்பீடுக்கு அனுப்பப்படும்.
-v2.review.declare.confirmModal.title,The title for review action modal when declaring,Send for review?,පාරිභාවයට යවන්නේ?,மதிப்பீடு செய்ய அனுப்பவும்?
-v2.review.declare.description.complete,The description for declare action when form is complete,The informant will receive an email with a registration number that they can use to collect the certificate,සොයාගැනීම් සහිතව ඊමේල් ලිපිට ලියාපදිංචි අංකය ලබා දෙනවා. එයට අපේක්ෂකයා ලබා ගැනීම සඳහා භාවිත කළ හැකිය.,தகவல் வழங்குநர் ஒரு பதிவு எண்ணுடன் மின்னஞ்சல் பெறும்; அவர்கள் சான்றிதழை பெற பயன்படுத்த முடியும்.
-v2.review.declare.description.incomplete,The description for declare action when form is complete,The informant will receive an email with a tracking ID that they can use to provide the additional mandatory information required for registration,සොයාගැනීමේ දැනුම්දේශය ලැයිස්තුවක් ලබා දෙන ඊමේල් එකක් ලෙස ලෙස භාවිතා කළ හැකි තරංග සහිත අත්පොත් ලැයිස්තුවක් ලබා ගත හැකිය.,தகவல் அறிக்கையாளர் பதிவுசெய்யப்பட்ட தகவலுக்கு தேடல் ஐடி உள்ள மின்னஞ்சல் பெறும். அவர்கள் பதிவுக்கு தேவையான கூடுதல் கட்டாய தகவலை வழங்க பயன்படுத்தலாம்.
-v2.review.declare.incomplete.confirmModal.cancel,The label for modal cancel button when declaring,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.review.declare.incomplete.confirmModal.confirm,The label for modal confirm button when declaring,Confirm,තහවුරු කරන්න,உறுதிப்படுத்தவும்
-v2.review.declare.incomplete.confirmModal.description,The description for review action modal when declaring incomplete,This incomplete declaration will be sent for review.,මෙම සම්පූර්ණ ප්‍රලේඛනය සඳහා සමාලෝචනයට යවාදෙනවා.,இந்த முடிவு மறுவிருப்புக்கு அனுப்பப்படும்.
-v2.review.declare.incomplete.confirmModal.title,The title for review action modal when declaring,Send for review?,පාරිභාවයට යවන්නේ?,மதிப்பீடு செய்ய அனுப்பவும்?
-v2.review.declare.title.complete,The title shown when reviewing an incomplete record to declare,Declaration complete,නිවේදනය සම්පූර්ණ විය,அறிக்கை முடிந்தது
-v2.review.declare.title.incomplete,The title shown when reviewing an incomplete record to declare,Declaration incomplete,ප්‍රකාශය සම්පූර්ණ නොවේ,அறிக்கை முடிவுற்றது
-v2.review.register.confirm,The label for register button of review action,Register,ලියාපදිංචිය,பதிவு செய்க
-v2.review.register.confirmModal.cancel,The label for modal cancel button when registering,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.review.register.confirmModal.confirm,The label for modal confirm button when registering,Register,ලියාපදිංචියට ලියන්න,பதிவு செய்க
-v2.review.register.confirmModal.description,The description for review action modal when registering,Review,review,review
-v2.review.register.confirmModal.title,The title for review action modal when registering,Register the {event}?,{event} ලියාපදිංචි කරන්නේ?,{event} ஐ பதிவு செய்யவும்?
-v2.review.register.description.complete,The description for registration action when form is complete,"By clicking register, you confirm that the information entered is correct and the event can be registered.",ලියාපදිංචි කිරීමෙන් ඔබ ඇතුළත් කළ තොරතුරු නිවැරදි විය හැකිය යුතුයි සහ සියලු සිදුවීම් ලියාපදිංචි කළ හැකිය.,"பதிவு செய்வதன் மூலம், நீங்கள் உள்ளிடப்பட்ட தகவல்கள் சரியானவை என்று உறுதிசெய்கிறீர்கள் மற்றும் நிகழ்வுக்கு பதிவு செய்ய முடியும் என்று உறுதிசெய்கிறீர்கள்."
-v2.review.register.reject,The label for reject button of review action,Reject,ප්‍රතිචාරයක්,நிராகரிக்கவும்
-v2.review.register.title,The title shown when reviewing a record to register,Register event,උපරිමයේ රෙජිස්ටර් කරන්න,நிகழ்ச்சியை பதிவு செய்க
-v2.review.validate.confirm,The label for review action button when validating,Send for approval,අනුමත කිරීම සඳහා යවන්න,அனுமோனத்தைக் கோருக.
-v2.review.validate.confirmModal.cancel,The label for modal cancel button when validating,Cancel,අවලංගු කරන්න,ரத்து செய்
-v2.review.validate.confirmModal.confirm,The label for modal confirm button when validating,Confirm,තහවුරු කරන්න,உறுதிப்படுத்தவும்
-v2.review.validate.confirmModal.description,The description for review action modal when validating,This declaration will be sent for approval prior to registration.,මෙම ප්‍රඳුනය ලියාපදිංචි කළ පෙර ලියාපදි සඳහා යවනු ඇත.,இந்த அறிக்கை பதிவுக்கு முன்னர் அங்கீகாரம் அனுப்பப்படும்.
-v2.review.validate.confirmModal.title,The title for review action modal when validating,Send for approval?,අනුමත කිරීම සඳහා යවන්නේ?,அனுமதிக்கலாமா?
-v2.review.validate.description.complete,The description for validate action when form is complete,The informant will receive an email with a registration number that they can use to collect the certificate,සොයාගැනීම් පිළිබඳ දැනුම්දෙනාට ලියාපදිංචි අංකය ලැබීමට ඉ-තැැපතක් ලැබේ එම අංකය භාවිත කළ හැකිය.,தகவல் வழங்குநர் ஒரு பதிவு எண்ணுடன் மின்னஞ்சல் பெறும்; அவர்கள் சான்றிதழை பெற பயன்படுத்த முடியும்.
-v2.review.validate.description.incomplete,The description for validate action when form is complete,Please add mandatory information before sending for approval,අනිවාර්ය තොරතුරු එක් කරන්නේ අනික් අනිවාර්ය තොරතුරු එකක් එවන්නේ අවසන් කිරීමට,அனுமதிக்குறிப்புக்கு அனுப்பும் முன்னணி தகவல்களை சேர்க்கவும்.
-v2.review.validate.reject,The label for reject button of review action,Reject,ප්‍රතිචාරයක්,நிராகரிக்கவும்
-v2.review.validate.title,The title shown when reviewing a record to validate,Send for approval,අනුමත කිරීම සඳහා යවන්න,அனுமோனத்தைப் பெறுங்கள்
+rejectModal.archive,The label for archive button of reject modal,Archive,,
+rejectModal.cancel,The label for cancel button of reject modal,Cancel,,
+rejectModal.description,The description for reject modal,Please describe the updates required to this record for follow up action.,,
+rejectModal.markAsDuplicate,The label for mark as duplicate checkbox of reject modal,Mark as a duplicate,,
+rejectModal.sendForUpdate,The label for send For Update button of reject modal,Send For Update,,
+rejectModal.title,The title for reject modal,Reason for rejection?,,
+review.declare.confirm,The label for review action button when declaring,Send for review,,
+review.declare.confirmModal.cancel,The label for modal cancel button when declaring,Cancel,,
+review.declare.confirmModal.confirm,The label for modal confirm button when declaring,Confirm,,
+review.declare.confirmModal.description,The description for review action modal when declaring,This declaration will be sent for review,,
+review.declare.confirmModal.title,The title for review action modal when declaring,Send for review?,,
+review.declare.description.complete,The description for declare action when form is complete,The informant will receive an email with a registration number that they can use to collect the certificate,,
+review.declare.description.incomplete,The description for declare action when form is complete,The informant will receive an email with a tracking ID that they can use to provide the additional mandatory information required for registration,,
+review.declare.incomplete.confirmModal.cancel,The label for modal cancel button when declaring,Cancel,,
+review.declare.incomplete.confirmModal.confirm,The label for modal confirm button when declaring,Confirm,,
+review.declare.incomplete.confirmModal.description,The description for review action modal when declaring incomplete,This incomplete declaration will be sent for review.,,
+review.declare.incomplete.confirmModal.title,The title for review action modal when declaring,Send for review?,,
+review.declare.title.complete,The title shown when reviewing an incomplete record to declare,Declaration complete,,
+review.declare.title.incomplete,The title shown when reviewing an incomplete record to declare,Declaration incomplete,,
+review.register.confirm,The label for register button of review action,Register,,
+review.register.confirmModal.cancel,The label for modal cancel button when registering,Cancel,,
+review.register.confirmModal.confirm,The label for modal confirm button when registering,Register,,
+review.register.confirmModal.description,The description for review action modal when registering,‎,,
+review.register.confirmModal.title,The title for review action modal when registering,Register the {event}?,,
+review.register.description.complete,The description for registration action when form is complete,"By clicking register, you confirm that the information entered is correct and the event can be registered.",,
+review.register.reject,The label for reject button of review action,Reject,,
+review.register.title,The title shown when reviewing a record to register,Register event,,
+review.validate.confirm,The label for review action button when validating,Send for approval,,
+review.validate.confirmModal.cancel,The label for modal cancel button when validating,Cancel,,
+review.validate.confirmModal.confirm,The label for modal confirm button when validating,Confirm,,
+review.validate.confirmModal.description,The description for review action modal when validating,This declaration will be sent for approval prior to registration.,,
+review.validate.confirmModal.title,The title for review action modal when validating,Send for approval?,,
+review.validate.description.complete,The description for validate action when form is complete,The informant will receive an email with a registration number that they can use to collect the certificate,,
+review.validate.description.incomplete,The description for validate action when form is complete,Please add mandatory information before sending for approval,,
+review.validate.reject,The label for reject button of review action,Reject,,
+review.validate.title,The title shown when reviewing a record to validate,Send for approval,,
 v2.reviewAction.Declare,The label for declare button of review action,Declare,නිවාඩු කරන්න,அறிக்கை
 v2.reviewAction.description,The description for review action,"By clicking declare, you confirm that the information entered is correct and the member can be declared.",ප්‍රතිඵල කිරීමෙන් ඔබ ඇතුළත් කළා ඇතුළත් කළ තැබූ තොරතුරු නිවැරදි විය හැකිය හැකි බවට තහවුරු කරයි හෝ සාමාන්‍යයෙන් ඇතුළත් කළ හැකිය.,"அறிக்கை கிளிக் செய்தால், உள்ளிடப்பட்ட தகவல்கள் சரியானவை என்று உறுதிசெய்கிறீர்கள் மற்றும் உறுதிசெய்யப்பட்டவர் அறிக்கை செய்யப்படலாம்."
 v2.reviewAction.incompleteForm,The label for warning of incomplete form,Please add mandatory information correctly before registering.,ලියාපදිංචි විට ලියාපදිංචි කිරීමට පෙර අවශ්‍ය විස්තර නිවැරදියි.,பதிவு செய்வது முன்னதாக அவசியமான தகவல்களை சரியாக சேர்க்கவும்.
-v2.reviewAction.register.description.incomplete,The description for registration action when form is incomplete,Please add mandatory information before registering,ලියාපදිංචි වන පෙර අනියම් තොරතුරු එකතු කරන්න.,பதிவு செய்வது முன்னதாக அவசியமான தகவல்களை சேர்க்கவும்.
+reviewAction.register.description.incomplete,The description for registration action when form is incomplete,Please add mandatory information before registering,,
 v2.reviewAction.reject,The label for reject button of review action,Reject,ප්‍රතිචාරයක්,நிராகரிக்கவும்
 v2.reviewAction.title,The title for review action,Declare member,සාමාජිකයක් ප්‍රකාශකරන්න,உறுதிப்படுத்துகிறேன்
-v2.saveAndExit.desc.saveDeclarationConfirm,Description for save declaration confirmation modal,All inputted data will be kept secure for future editing. Are you ready to save any changes to this declaration form?,"සියලුම ආදායම් දත්ත අතිරික් කළ හැකිය හැකි අතර ස්ථාපනය කිරීමට අවශ්‍ය නම්, මෙම ප්‍රකාශ පරාසය සුරක්ෂිත කිරීමට ඔබ කැමතිද?",அனைத்து உள்ளீட்டு தரவுகளும் எதிர்கால திருத்தம் சேமிக்கப்படும். இந்த அறிக்கை படிவத்தில் எந்த மாற்றங்களையும் சேமிக்க உங்களுக்கு தயாரா?
-v2.saveAndExit.title.saveDeclarationConfirm,Title for save declaration confirmation modal,Save & exit?,සුරක්ෂිතම් & පිවිසීම?,சேமி & வெளியேறுக?
-v2.search.noResult,The no result text,No results,ප්‍රතිලාභ නොමැත,எந்த முடிவுகளும் இல்லை
-v2.signature.upload.modal.title,Title for the signature upload modal,Upload Signature,අත්සන් කිරීම උඩුගත කරන්න,கையொப்பம் பதிவேற்றுக
+saveAndExit.desc.saveDeclarationConfirm,Description for save declaration confirmation modal,All inputted data will be kept secure for future editing. Are you ready to save any changes to this declaration form?,,
+saveAndExit.title.saveDeclarationConfirm,Title for save declaration confirmation modal,Save & exit?,,
+search.noResult,The no result text,No result,,
+signature.upload.modal.title,Title for the signature upload modal,Upload Signature,,
 v2.validateAction.Declare,The label for declare button of validate action,Send for approval,අනුමත කිරීම සඳහා යවන්න,அனுமோனத்தைக் கோருக.
 v2.validateAction.Reject,The label for reject button of validate action,Reject,ප්‍රතිචාරයක්,நிராகரிக்கவும்
 v2.validateAction.description,The description for validate action,The informant will receive an email with a registration number that they can use to collect the certificate,සොයාගැනීම් සහිතව එක් දැනුම්දීමක් ලබා දෙනවා එක් ලියාපදිංචි අංකයක් සහිතව එක් ලියාපදිංචිය ලබා ගැනීම සඳහා භාවිතා කළ හැකිය.,தகவல் வழங்குநர் ஒரு பதிவு எண்ணுடன் மின்னஞ்சல் பெறும்; அவர்கள் சான்றிதழை பெற பயன்படுத்த முடியும்.
 v2.validateAction.incompleteForm,The description for warning of incomplete form,Please add mandatory information before sending for approval,අනිවාර්ය තොරතුරු එක් එකිනෙකට යවා පිළිගන්නේ කරුණාකාරකයාට එක් කරන්න.,அனுமதிக்கு அனுப்பும் முன் கட்டாய தகவலை சேர்க்கவும்.
 v2.validateAction.title,The title for validate action,Send for approval,අනුමත කිරීම සඳහා යවන්න,அனுமோனத்தைப் பெறுங்கள்
 v2.view.record,Label for view record,View record,නිවාස දර්ශනීයයි,பதிவை காண்க
-v2.wq.noRecords.CREATED,No records messages for empty draft tab,No records in progress,කාලසීමාවලින් කිසිවක් නොපවතියි,செயல்பாடுகளில் பதிவுகள் இல்லை
-v2.wq.noRecords.DECLARED,No records messages for ready for review tab,No records ready for review,"සමාවන්න, සටහන් සදහා ලියාපදිංචි නොවූ වාර්තාවන්ද.",பரிசோதனைக்கு பதில்கள் கிடைக்கவில்லை
-v2.wq.noRecords.REGISTERED,No records messages for ready to print tab,No records ready to print,මුල් දත්ත මුද්‍රණය කිරීම සදහා නිවැරදි වාර්තා නොමැත,அச்சத்தில் அட்டவணைகள் அச்சிட தயார் இல்லை.
+wq.noRecords.CREATED,No records messages for empty draft tab,No records in progress,,
+wq.noRecords.DECLARED,No records messages for ready for review tab,No records ready for review,,
+wq.noRecords.REGISTERED,No records messages for ready to print tab,No records ready to print,,
 validate.complete.declaration.action.description,,The informant will receive an with a registration number that they can use to collect the certificate.,සොයාගැනීමෙන් පසු අයිතිකරුගේ නම්බරය ලබා ගන්නා අංකය සහිත ඊමේල් ලබාගතේ.,தகவல் பரிந்துரையாளர் ஒரு பதிவு எண்ணுடன் ஒரு மின்னஞ்சல் பெறும்; அவர்கள் அதைப் பயன்படுத்தி சான்றியம் பெற முடியும்.
 validate.complete.declaration.action.title,,Declaration complete,නිවාඩුව සම්පූර්ණ විය,அறிக்கை முடிந்தது
 validate.declaration.action.modal.description,,This declaration will be sent for approval prior to registration.,මෙම ප්‍රඳාරය ලියාපදිංචි කළ පෙර ලියාපදි සඳහා යවනු ඇත.,இந்த அறிக்கை பதிவுக்கு முன்னர் அங்கீகாரம் அனுப்பப்படும்.
@@ -2981,3 +2981,314 @@ wq.noRecords.readyToPrint,No records messages for ready to print tab,No records 
 wq.noRecords.requiresUpdate,No records messages for require updates tab,No records require updates,අයිතිය වෙනස් අවශ්‍ය නොවේ,பதிவுகளில் புதுப்பிப்புகள் தேவையில்லை.
 wq.noRecords.sentForApproval,No records messages for sent for approval tab,No records sent for approval,අන්තර්ගත කිරීම සමාන කරන ලදියි,அனுமதிக்கு அனுப்பப்பட்ட பதிவுகள் இல்லை
 wq.noRecords.sentForReview,No records messages for sent for review tab,No records sent for review,ප්‍රථිපල සඳහා කාලසීමාවක් යොමු කර නොමැත,பரிசோதனைக்கு பதிவுகள் அனுப்பப்படவில்லை
+action.view.record,Label for view record,View,බලන්න,காண்க
+actionModal.confirm,The label for confirm button of action modal,Confirm,තහවුරු කරන්න,உறுதிப்படுத்தவும்
+advancedSearch.form.recordStatusArchived,Option for form field: status of record,Archived,අතිරික්කුවක්,பதிவுசீராக்கப்பட்டுள்ளது
+advancedSearch.form.recordStatusDeclared,Option for form field: status of record,Declared,ප්‍රකාශිත,அறிவிக்கப்பட்டது
+advancedSearch.form.recordStatusNotified,Option for form field: status of record,Notified,දැනුම් දෙන ලද,அறிவிக்கப்பட்டது
+advancedSearch.registeredAt,Label for date of registration field,Date of registration,ලියාපදිංචි දිනය,பதிவு தேதி
+advancedSearch.registeredAtLocation,Label for place of registration field,Place of registration,ලියාපදිංචි ස්ථානය,பதிவு இடம்
+advancedSearch.registeredAtLocation.helperText,Helper text for place of registration field,"Search for a province, district or registration office","පළාත, දිස්ත්‍රික්කය හෝ ලියාපදිංචි කාර්යාලය සොයන්න","மாகாணம், மாவட்டம் அல்லது பதிவு அலுவலகத்தை தேடுங்கள்"
+advancedSearch.registrationNumber,Label for registration number field,Registration number,ලියාපදිංචි අංකය,பதிவு எண்
+advancedSearch.status,Label for status field,Status of record,වාර්තාවේ තත්ත්වය,பதிவின் நிலை
+advancedSearch.trackingId,Label for tracking ID field,Tracking ID,ට්‍රැකිං හැඳුනුම්පත,கண்காணிப்பு ID
+advancedSearch.updatedAt,Label for date of update field,Time period,කාල සීමාව,காலகட்டம்
+advancedSearch.updatedAt.helperText,Helper text for date of update field,Period of time since the record status changed,වාර්තාවේ තත්ත්වය වෙනස් වූ දිනට පසු කාල සීමාව,பதிவின் நிலை மாறியதிலிருந்து கால அளவு
+birth.search.criteria.label.prefix.child,Child prefix,Child's,දරුවාගේ,குழந்தையின்
+birth.search.criteria.label.prefix.father,Father prefix,Father's,පියාගේ,தந்தையின்
+birth.search.criteria.label.prefix.informant,Informant prefix,Informant's,තොරතුරු දෙන්නාගේ,தகவல் அளிப்பவரின்
+birth.search.criteria.label.prefix.mother,Mother prefix,Mother's,මාතාගේ,தாயின்
+buttons.correctRecord,Rectord correction button text,Correct record,වාර්තාව නිවැරදි කරන්න,பதிவை சரிசெய்யவும்
+buttons.submitCorrectionRequest,Submit correction request button text,Submit correction request,නිවැරදි කිරීමේ ඉල්ලීම ඉදිරිපත් කරන්න,திருத்தக் கோரிக்கையை சமர்ப்பிக்கவும்
+certificates.birth.printedCertificateCount,Number of printed copies, Copy #{copiesPrintedForTemplate},පිටපත #{copiesPrintedForTemplate},நகல் #{copiesPrintedForTemplate}
+configuration.timeField.outputFormat,Default output format for time fields,hh:mm a,hh:mm a,hh:mm a
+constants.communityLeader,The description for Community Leader type,Community Leader,ප්‍රජා නායකයා,சமூக தலைவர்
+correction.correctionReject.reason,Correction request rejection reason,Reason for rejection,ප්‍රතික්ෂේප කිරීමේ හේතුව,நிராகரிப்பதற்கான காரணம்
+correction.correctionRequest,Correction request text,Correction request,නිවැරදි කිරීමේ ඉල්ලීම,திருத்தக் கோரிக்கை
+correction.label.verifyIdentity.cancel,Label for cancellation of identity verificationin correction request,No,නැත,இல்லை
+correction.label.verifyIdentity.confirm,Label for verification of identity in correction request,Yes,ඔව්,ஆம்
+correction.requesterOffice,Correction requester office label,Office,කාර්යාලය,அலுவலகம்
+correction.submittedBy,Correction submitted by label,Submitter,ඉදිරිපත් කළේ,சமர்ப்பித்தவர்
+correction.submittedOn,Correction submitted on label,Submitted on,ඉදිරිපත් කළ දිනය,சமர்ப்பிக்கப்பட்ட தேதி
+correction.summary.change,Change link label,Change,වෙනස් කරන්න,மாற்றவும்
+correction.summary.section.title,Corrections section title,Request correction(s),නිවැරදි කිරීම් ඉල්ලන්න,திருத்தங்களை கோருங்கள்
+dashboard.completenessTitle,Completeness title,Completeness Dashboard,සම්පූර්ණත්වය උපකරණ පුවරුව,முழுமை டாஷ்போர்டு
+dashboard.registrationsTitle,Registrations title,Registrations Dashboard,ලියාපදිංචි කිරීම් උපකරණ පුවරුව,பதிவுகள் டாஷ்போர்டு
+dashboard.registryTitle,Registry title,Registry,රෙජිස්ට්‍රි,பதிவேடு
+duplicates.content.registeredAt,Registered at label for duplicates comparison,Registered at,ලියාපදිංචි ස්ථානය,பதிவு இடம்
+duplicates.content.registeredBy,Registered by label for duplicates comparison,Registered by,ලියාපදිංචි කළේ,பதிவு செய்தவர்
+error.pdf,PDF load Error,Failed to load PDF,PDF පූරණය කිරීමට අසමත් විය,PDF ஏற்றுவதில் தோல்வி
+error.searchParamCountError,Error message when the search parameters are less than two,You must select a minimum of 2 search criteria,ඔබ අවම වශයෙන් සෙවුම් නිර්ණායක 2ක් තෝරාගත යුතුය,நீங்கள் குறைந்தபட்சம் 2 தேடல் நிபந்தனைகளை தேர்ந்தெடுக்க வேண்டும்
+errors.notAssigned,User not assigned error toast message,You've been unassigned from the event,ඔබව සිදුවීමෙන් ඉවත් කර ඇත,நீங்கள் நிகழ்விலிருந்து நீக்கப்பட்டீர்கள்
+errors.somethingWentWrong,Error toast message for general errors,Something went wrong. Please try again,යමක් වැරදී ඇත. කරුණාකර නැවත උත්සාහ කරන්න,ஏதோ தவறு நடந்தது. மீண்டும் முயற்சிக்கவும்
+event.action.declare.form.section.person.field.age.error,Error message for invalid age,Age must be between 12 and 120,වයස 12 සහ 120 අතර විය යුතුය,வயது 12 மற்றும் 120 க்கு இடையில் இருக்க வேண்டும்
+event.action.notAvailableForEvent,Shown when user tries to perform an action that is not available for the event,The action you're trying to perform is not available for this event anymore,ඔබ සිදු කිරීමට උත්සාහ කරන ක්‍රියාව මෙම සිදුවීම සඳහා තවදුරටත් ලබා ගත නොහැකිය,நீங்கள் செய்ய முயற்சிக்கும் செயல் இனி இந்த நிகழ்வுக்கு கிடைக்கவில்லை
+event.action.outbox-retry.label,Label for retry button for outbox,Retry,නැවත උත්සාහ කරන්න,மீண்டும் முயற்சிக்கவும்
+event.action.review-correction.label,Label for review correction button in dropdown menu,Review,සමීක්ෂා කරන්න,மதிப்பாய்வு
+event.birth.action.archive.label,Label for archive record button in dropdown menu,Archive,සංරක්ෂණය කරන්න,காப்பகப்படுத்தவும்
+event.birth.action.certificate.form.section.collectPayment.data.label,Title for the data section,Payment details,ගෙවීම් විස්තර,கட்டண விவரங்கள்
+event.birth.action.certificate.form.section.collectPayment.fee.label,Title for the data entry,Fee,ගාස්තු,கட்டணம்
+event.birth.action.certificate.form.section.collectPayment.service.label,Title for the data entry,Service,සේවාව,சேவை
+event.birth.action.certificate.form.section.collectPayment.service.label.afterLateRegistrationTarget,Birth registration after 365 days of date of birth,Birth registration after 365 days of date of birth,උපත් ලියාපදිංචිය - උපන් දිනයෙන් දින 365කට පසු,பிறந்த தேதியிலிருந்து 365 நாட்களுக்கு பிறகு பிறப்பு பதிவு
+event.birth.action.certificate.form.section.collectPayment.service.label.beforeRegistrationTarget,Birth registration before 30 days of date of birth,Birth registration before 30 days of date of birth,උපත් ලියාපදිංචිය - උපන් දිනයෙන් දින 30 ට පෙර,பிறந்த தேதியிலிருந்து 30 நாட்களுக்கு முன்பு பிறப்பு பதிவு
+event.birth.action.certificate.form.section.collectPayment.service.label.inBetweenRegistrationTargets,Birth registration after 30 days but before 365 days of date of birth,Birth registration after 30 days but before 365 days of date of birth,උපත් ලියාපදිංචිය - උපන් දිනයෙන් දින 30 ට පසු නමුත් දින 365 ට පෙර,பிறந்த தேதியிலிருந்து 30 நாட்களுக்கு பிறகு ஆனால் 365 நாட்களுக்கு முன்பு பிறப்பு பதிவு
+event.birth.action.certificate.form.section.verifyIdentity.data.label,Label for identity verification data block,Identity details,හැඳුනුම් විස්තර,அடையாள விவரங்கள்
+event.birth.action.collect-certificate.label,This is shown as the action name anywhere the user can trigger the action from,Print,මුද්‍රණය කරන්න,அச்சிடுக
+event.birth.action.correction.form.section.requester.identity.verify.title,This is the title of the section,Verify their identity,ඔවුන්ගේ හැඳුනුම්පත තහවුරු කරන්න,அவர்களின் அடையாளத்தை சரிபார்க்கவும்
+event.birth.action.declare.form.section.child.field.name.label,This is the label for the field,Child's name,දරුවාගේ නම,குழந்தையின் பெயர்
+event.birth.action.declare.form.section.father.field.name.label,This is the label for the field,Father's name,පියාගේ නම,தந்தையின் பெயர்
+event.birth.action.declare.form.section.informant.field.name.label,This is the label for the field,Informant's name,තොරතුරු දෙන්නාගේ නම,தகவல் அளிப்பவரின் பெயர்
+event.birth.action.declare.form.section.mother.field.name.label,This is the label for the field,Mother's name,මාතාගේ නම,தாயின் பெயர்
+event.birth.action.delete.label,Label for delete button in dropdown menu,Delete,මකා දමන්න,நீக்கவும்
+event.birth.action.form.section.collector.other.field.name.label,This is the label for the name field of OTHER collector,Collector's name,එකතු කරන්නාගේ නම,சேகரிப்பாளரின் பெயர்
+event.birth.action.mark-as-duplicate.label,Label for review potential duplicate button in dropdown menu,Review,සමීක්ෂා කරන්න,மதிப்பாய்வு
+event.birth.action.register.label,Label for review record button in dropdown menu,Review,සමීක්ෂා කරන්න,மதிப்பாய்வு
+event.birth.action.request-correction.label,This is shown as the action name anywhere the user can trigger the action from,Correct record,වාර්තාව නිවැරදි කරන්න,பதிவை சரிசெய்யவும்
+event.birth.action.validate.label,This is shown as the action name anywhere the user can trigger the action from,Review,සමීක්ෂා කරන්න,மதிப்பாய்வு
+event.birth.title,This is the title of the summary,{child.name.firstname} {child.name.surname},{child.name.firstname} {child.name.surname},{child.name.firstname} {child.name.surname}
+event.death.action.Read.label,This is shown as the action name anywhere the user can trigger the action from,Read,කියවන්න,படிக்கவும்
+event.death.action.certificate.form.cancel,This is the label for the verification cancellation button,Identity does not match,හැඳුනුම්පත ගැළපෙන්නේ නැත,அடையாளம் பொருந்தவில்லை
+event.death.action.certificate.form.cancel.confirmation.body,This is the body for the verification cancellation modal,"Please be aware that if you proceed, you will be responsible for issuing a certificate without the necessary proof of ID from the collector","කරුණාකර සලකන්න, ඔබ ඉදිරියට ගියහොත් සංග්‍රාහකයාගෙන් අවශ්‍ය හැඳුනුම් සාක්ෂිය නොමැතිව සහතිකයක් නිකුත් කිරීමේ වගකීම ඔබට ඇත",தொகுப்பவரிடமிருந்து தேவையான அடையாள சான்று இல்லாமல் சான்றிதழை வழங்குவதற்கு நீங்கள் பொறுப்பாவீர்கள் என்பதை தயவுசெய்து கவனிக்கவும்
+event.death.action.certificate.form.cancel.confirmation.title,This is the title for the verification cancellation modal,Print without proof of ID?,හැඳුනුම් සාක්ෂිය නොමැතිව මුද්‍රණය කරන්නද?,அடையாள சான்று இல்லாமல் அச்சிடவா?
+event.death.action.certificate.form.label,This is what this form is referred as in the system,Death certificate collector,මරණ සහතිකය එකතු කරන්නා,மரண சான்றிதழ் சேகரிப்பாளர்
+event.death.action.certificate.form.section.collectPayment.data.label,Title for the data section,Payment details,ගෙවීම් විස්තර,கட்டண விவரங்கள்
+event.death.action.certificate.form.section.collectPayment.fee.label,Title for the data entry,Fee,ගාස්තු,கட்டணம்
+event.death.action.certificate.form.section.collectPayment.service.label,Title for the data entry,Service,සේවාව,சேவை
+event.death.action.certificate.form.section.collectPayment.service.label.afterRegistrationTarget,Death registration after 45 days of date of death message,Death registration after 45 days of date of death,මරණ ලියාපදිංචිය - මරණ දිනයෙන් දින 45කට පසු,மரண தேதியிலிருந்து 45 நாட்களுக்கு பிறகு மரண பதிவு
+event.death.action.certificate.form.section.collectPayment.service.label.beforeRegistrationTarget,Death registration before 45 days of date of death message,Death registration before 45 days of date of death,මරණ ලියාපදිංචිය - මරණ දිනයෙන් දින 45 ට පෙර,மரண தேதியிலிருந்து 45 நாட்களுக்கு முன்பு மரண பதிவு
+event.death.action.certificate.form.section.requester.label,This is the label for the field,Requester,ඉල්ලුම්කරු,கோரிக்கையாளர்
+event.death.action.certificate.form.section.requester.other.label,This is the label for the field,Print and issue to someone else,වෙනත් කෙනෙකුට මුද්‍රණය කර නිකුත් කරන්න,வேறு ஒருவருக்கு அச்சிட்டு வழங்கவும்
+event.death.action.certificate.form.section.requester.printInAdvance.label,This is the label for the field,Print in advance,කලින් මුද්‍රණය කරන්න,முன்கூட்டியே அச்சிடவும்
+event.death.action.certificate.form.section.requester.spouse.label,This is the label for the field,Print and issue to Spouse,කලත්‍රයාට මුද්‍රණය කර නිකුත් කරන්න,வாழ்க்கைத்துணைக்கு அச்சிட்டு வழங்கவும்
+event.death.action.certificate.form.section.verifyIdentity.data.label,Label for identity verification data block,Identity details,හැඳුනුම් විස්තර,அடையாள விவரங்கள்
+event.death.action.certificate.form.section.who.title,This is the title of the section,Certify record,වාර්තාව සහතික කරන්න,பதிவை சான்றளிக்கவும்
+event.death.action.certificate.form.verify,This is the label for the verification button,Verified,සත්‍යාපිත,சரிபார்க்கப்பட்டது
+event.death.action.collect-certificate.label,This is shown as the action name anywhere the user can trigger the action from,Print certificate,සහතිකය මුද්‍රණය කරන්න,சான்றிதழை அச்சிடுக
+event.death.action.correction.documents.supportingDocs.affidavit.label,Label for the affidavit option,Affidavit,දිවුරුම් ප්‍රකාශය,பிரமாண பத்திரம்
+event.death.action.correction.documents.supportingDocs.courtDocument.label,Label for the court document option,Court Document,අධිකරණ ලේඛනය,நீதிமன்ற ஆவணம்
+event.death.action.correction.documents.supportingDocs.label,Label for the supporting documents field,Supporting documents,සහාය ලේඛන,ஆதரவு ஆவணங்கள்
+event.death.action.correction.documents.supportingDocs.other.label,Label for the other option,Other,වෙනත්,மற்றவை
+event.death.action.correction.fees.amount.label,Label for the amount field,Fee total,ගාස්තු එකතුව,கட்டண மொத்தம்
+event.death.action.correction.fees.amount.prefix,Prefix for the amount field,$,$,$
+event.death.action.correction.form.cancel,This is the label for the verification cancellation button,Identity does not match,හැඳුනුම්පත ගැළපෙන්නේ නැත,அடையாளம் பொருந்தவில்லை
+event.death.action.correction.form.cancel.confirmation.body,This is the body for the verification cancellation modal,"Please be aware that if you proceed, you will be responsible for making a change to this record without the necessary proof of identification","කරුණාකර සලකන්න, ඔබ ඉදිරියට ගියහොත් අවශ්‍ය හැඳුනුම් සාක්ෂිය නොමැතිව මෙම වාර්තාවට වෙනස්කම් කිරීමේ වගකීම ඔබට ඇත",தேவையான அடையாள சான்று இல்லாமல் இந்த பதிவில் மாற்றம் செய்வதற்கு நீங்கள் பொறுப்பாவீர்கள் என்பதை தயவுசெய்து கவனிக்கவும்
+event.death.action.correction.form.cancel.confirmation.title,This is the title for the verification cancellation modal,Correct without proof of ID?,හැඳුනුම් සාක්ෂිය නොමැතිව නිවැරදි කරන්නද?,அடையாள சான்று இல்லாமல் சரிசெய்யவா?
+event.death.action.correction.form.label,This is the label for the death correction form,Correct record,වාර්තාව නිවැරදි කරන්න,பதிவை சரிசெய்யவும்
+event.death.action.correction.form.requester.type.daughter,This is the label for the correction requester field,Daughter,දියණිය,மகள்
+event.death.action.correction.form.requester.type.daughterInLaw,This is the label for the correction requester field,Daughter-in-law,ලේලිය,மருமகள்
+event.death.action.correction.form.requester.type.father,This is the label for the correction requester field,Father,පියා,தந்தை
+event.death.action.correction.form.requester.type.granddaughter,This is the label for the correction requester field,Granddaughter,මිණිබිරිය,பேத்தி
+event.death.action.correction.form.requester.type.grandson,This is the label for the correction requester field,Grandson,මිනිබිරා,பேரன்
+event.death.action.correction.form.requester.type.mother,This is the label for the correction requester field,Mother,මව,தாய்
+event.death.action.correction.form.requester.type.other,This is the label for the correction requester field,Other,වෙනත්,மற்றவை
+event.death.action.correction.form.requester.type.son,This is the label for the correction requester field,Son,පුත්‍රයා,மகன்
+event.death.action.correction.form.requester.type.sonInLaw,This is the label for the correction requester field,Son-in-law,බෑනා,மருமகன்
+event.death.action.correction.form.requester.type.spouse,This is the label for the correction requester field,Spouse,කලත්‍රයා,வாழ்க்கைத்துணை
+event.death.action.correction.form.section.details.divider.label,This is the title of the section,,TODO,TODO
+event.death.action.correction.form.section.details.title,This is the title of the section,Correction details,නිවැරදි කිරීමේ විස්තර,திருத்த விவரங்கள்
+event.death.action.correction.form.section.fees.title,This is the title of the section,Collect fees,ගාස්තු එකතු කරන්න,கட்டணங்களை வசூலிக்கவும்
+event.death.action.correction.form.section.reason.title,This is the title of the section,Reason for correction,නිවැරදි කිරීමේ හේතුව,திருத்தத்திற்கான காரணம்
+event.death.action.correction.form.section.requester.brn.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.correction.form.section.requester.father.label,This is the label for the field,Father,පියා,தந்தை
+event.death.action.correction.form.section.requester.idType.label,This is the label for the field,Type of ID,හැඳුනුම් වර්ගය,அடையாள வகை
+event.death.action.correction.form.section.requester.identity.verify.title,This is the title of the section,Verify their identity,ඔවුන්ගේ හැඳුනුම්පත තහවුරු කරන්න,அவர்களின் அடையாளத்தை சரிபார்க்கவும்
+event.death.action.correction.form.section.requester.label,This is the label for the field,Requester,ඉල්ලුම්කරු,கோரிக்கையாளர்
+event.death.action.correction.form.section.requester.mother.label,This is the label for the field,Mother,මව,தாய்
+event.death.action.correction.form.section.requester.name.label,This is the label for the field,Name,නම,பெயர்
+event.death.action.correction.form.section.requester.nid.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.correction.form.section.requester.passport.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.correction.form.section.requester.relationship.label,This is the label for the field,Relationship to child,දරුවා සමඟ සම්බන්ධතාවය,குழந்தையுடனான உறவு
+event.death.action.correction.form.section.requester.relationship.placeholder,This is the placeholder for the field,eg. Grandmother,උදා: ආච්චි,எ.கா. பாட்டி
+event.death.action.correction.form.section.supporting-documents.title,This is the title of the section,Upload supporting documents,සහාය ලේඛන උඩුගත කරන්න,ஆதரவு ஆவணங்களை பதிவேற்றவும்
+event.death.action.correction.form.section.verifyIdentity.data.label,Title for the data section,,TODO,TODO
+event.death.action.correction.form.verify,This is the label for the verification button,Verified,සත්‍යාපිත,சரிபார்க்கப்பட்டது
+event.death.action.correction.reason.option.clericalError.label,Label for the clerical error option,Myself or an agent made a mistake (Clerical error),මා හෝ නියෝජිතයෙකු වැරැද්දක් කළේය (ලිපිකාර දෝෂය),நான் அல்லது ஒரு முகவர் தவறு செய்தோம் (எழுத்தர் பிழை)
+event.death.action.correction.reason.option.judicialOrder.label,Label for the judicial order option,Requested to do so by the court (Judicial order),අධිකරණය විසින් ඉල්ලා ඇත (අධිකරණ නියෝගය),நீதிமன்றத்தால் கோரப்பட்டது (நீதித்துறை உத்தரவு)
+event.death.action.correction.reason.option.materialError.label,Label for the material error option,Informant provided incorrect information (Material error),තොරතුරු ලබාදෙන්නා වැරදි තොරතුරු ලබා දුන්නේය (ද්‍රව්‍ය දෝෂය),தகவல் அளிப்பவர் தவறான தகவலை வழங்கினார் (பொருள் பிழை)
+event.death.action.correction.reason.option.materialOmission.label,Label for the material omission option,Informant did not provide this information (Material omission),තොරතුරු ලබාදෙන්නා මෙම තොරතුරු ලබා දුන්නේ නැත (ද්‍රව්‍ය අත්හැරීම),தகவல் அளிப்பவர் இந்த தகவலை வழங்கவில்லை (பொருள் தவிர்ப்பு)
+event.death.action.correction.reason.option.other.label,Label for the other option,Other,වෙනත්,மற்றவை
+event.death.action.correction.reason.other.label,Label for the reason,Specify reason,හේතුව සඳහන් කරන්න,காரணத்தை குறிப்பிடவும்
+event.death.action.declare.form.label,This is what this form is referred as in the system,Death declaration form,මරණ ප්‍රකාශ පෝරමය,மரண அறிவிப்பு படிவம்
+event.death.action.declare.form.nid.unique,This is the error message for non-unique ID Number,National id must be unique,ජාතික හැඳුනුම්පත අනන්‍ය විය යුතුය,தேசிய அடையாள அட்டை தனித்துவமாக இருக்க வேண்டும்
+event.death.action.declare.form.review.comment.label,Label for the comment field in the review section,Comment,අදහස,கருத்து
+event.death.action.declare.form.review.signature.label,Label for the signature field in the review section,Signature of informant,තොරතුරු දෙන්නාගේ අත්සන,தகவல் அளிப்பவரின் கையொப்பம்
+event.death.action.declare.form.review.title,Title of the form to show in review page,"{deceased.name.firstname, select, __EMPTY__ {{deceased.name.surname, select, __EMPTY__ {Death declaration} other {Death declaration for {deceased.name.surname}}}} other {{deceased.name.surname, select, __EMPTY__ {Death declaration for {deceased.name.firstname}} other {Death declaration for {deceased.name.firstname} {deceased.name.surname}}}}}","{deceased.name.firstname, select, __EMPTY__ {{deceased.name.surname, select, __EMPTY__ {මරණ ප්‍රකාශය} other {මරණ ප්‍රකාශය - {deceased.name.surname}}}} other {{deceased.name.surname, select, __EMPTY__ {මරණ ප්‍රකාශය - {deceased.name.firstname}} other {මරණ ප්‍රකාශය - {deceased.name.firstname} {deceased.name.surname}}}}}","{deceased.name.firstname, select, __EMPTY__ {{deceased.name.surname, select, __EMPTY__ {மரண அறிவிப்பு} other {மரண அறிவிப்பு - {deceased.name.surname}}}} other {{deceased.name.surname, select, __EMPTY__ {மரண அறிவிப்பு - {deceased.name.firstname}} other {மரண அறிவிப்பு - {deceased.name.firstname} {deceased.name.surname}}}}}"
+event.death.action.declare.form.section.deceased.field.address.label,This is the label for the field,Usual place of residence,සාමාන්‍ය පදිංචි ස්ථානය,வழக்கமான வசிப்பிடம்
+event.death.action.declare.form.section.deceased.field.addressHelper.label,This is the label for the field,Usual place of residence,සාමාන්‍ය පදිංචි ස්ථානය,வழக்கமான வசிப்பிடம்
+event.death.action.declare.form.section.deceased.field.age.checkbox.label,This is the label for the field,Exact date of birth unknown,නිශ්චිත උපන් දිනය නොදනී,சரியான பிறந்த தேதி தெரியவில்லை
+event.death.action.declare.form.section.deceased.field.age.error,Error message for invalid age,Age must be between 0 and 120,වයස 0 සහ 120 අතර විය යුතුය,வயது 0 மற்றும் 120 க்கு இடையில் இருக்க வேண்டும்
+event.death.action.declare.form.section.deceased.field.age.label,This is the label for the field,Age of deceased (at the time of event),මියගිය පුද්ගලයාගේ වයස (සිදුවීමේ වේලාවේ),மரணித்தவரின் வயது (நிகழ்வின் போது)
+event.death.action.declare.form.section.deceased.field.age.postfix,This is the postfix for age field,years,වසර,ஆண்டுகள்
+event.death.action.declare.form.section.deceased.field.deathLocation.label,This is the label for the field,Health Institution,සෞඛ්‍ය ආයතනය,சுகாதார நிறுவனம்
+event.death.action.declare.form.section.deceased.field.deathLocationOther.label,This is the label for the field,Death location address,මරණ ස්ථාන ලිපිනය,மரண இட முகவரி
+event.death.action.declare.form.section.deceased.field.dob.error,This is the error message for invalid date,Must be a valid Birthdate,වලංගු උපන් දිනයක් විය යුතුය,செல்லுபடியான பிறந்த தேதியாக இருக்க வேண்டும்
+event.death.action.declare.form.section.deceased.field.dob.error.laterThanDeath,This is the error message for date of birth later than date of death,Date of birth must be before the date of death,උපන් දිනය මරණ දිනයට පෙර විය යුතුය,பிறந்த தேதி மரண தேதிக்கு முன்பு இருக்க வேண்டும்
+event.death.action.declare.form.section.deceased.field.dob.label,This is the label for the field,Date of birth,උපන් දිනය,பிறந்த தேதி
+event.death.action.declare.form.section.deceased.field.gender.label,This is the label for the field,Sex,ස්ත්‍රී පුරුෂ භාවය,பாலினம்
+event.death.action.declare.form.section.deceased.field.maritalStatus.label,This is the label for the field,Marital Status,විවාහ තත්ත්වය,திருமண நிலை
+event.death.action.declare.form.section.deceased.field.name.label,This is the label for the field,Deceased's name,මියගිය පුද්ගලයාගේ නම,மரணித்தவரின் பெயர்
+event.death.action.declare.form.section.deceased.field.numberOfDependants.label,This is the label for the field,No. of dependants,යැපෙන්නන්ගේ සංඛ්‍යාව,சார்ந்தோரின் எண்ணிக்கை
+event.death.action.declare.form.section.deceased.field.placeOfDeath.label,This is the label for the field,Place of death,මරණ ස්ථානය,மரண இடம்
+event.death.action.declare.form.section.documents.field.proofOfCauseOfDeath.label,This is the label for the field,Proof of cause of death,මරණ හේතුවේ සාක්ෂිය,மரண காரணத்தின் சான்று
+event.death.action.declare.form.section.documents.field.proofOfDeath.label,This is the label for the field,Proof of death of deceased,මියගිය පුද්ගලයාගේ මරණ සාක්ෂිය,மரணித்தவரின் மரண சான்று
+event.death.action.declare.form.section.documents.field.proofOfDeceased.label,This is the label for the field,Proof of deceased's ID,මියගිය පුද්ගලයාගේ හැඳුනුම් සාක්ෂිය,மரணித்தவரின் அடையாள சான்று
+event.death.action.declare.form.section.documents.field.proofOfInformant.label,This is the label for the field,Proof of informant's ID,තොරතුරු දෙන්නාගේ හැඳුනුම් සාක්ෂිය,தகவல் அளிப்பவரின் அடையாள சான்று
+event.death.action.declare.form.section.event.field.addressHelper.label,This is the label for the field,Place of death,මරණ ස්ථානය,மரண இடம்
+event.death.action.declare.form.section.event.field.causeOfDeath.label,This is the label for the field,Cause of death has been established,මරණ හේතුව තහවුරු කර ඇත,மரண காரணம் நிறுவப்பட்டுள்ளது
+event.death.action.declare.form.section.event.field.date.error,This is the error message for invalid date,Must be a valid date,වලංගු දිනයක් විය යුතුය,செல்லுபடியான தேதியாக இருக்க வேண்டும்
+event.death.action.declare.form.section.event.field.date.error.beforeBirth,This is the error message for date of death before date of birth,Date of death must be after the deceased's birth date,මරණ දිනය මියගිය පුද්ගලයාගේ උපන් දිනයෙන් පසු විය යුතුය,மரண தேதி மரணித்தவரின் பிறந்த தேதிக்கு பிறகு இருக்க வேண்டும்
+event.death.action.declare.form.section.event.field.date.label,This is the label for the field,Date of death,මරණ දිනය,மரண தேதி
+event.death.action.declare.form.section.event.field.description.label,Description of cause of death by lay person or verbal autopsy,Description,විස්තරය,விளக்கம்
+event.death.action.declare.form.section.event.field.manner.label,This is the label for the field,Manner of death,මරණ ආකාරය,மரண முறை
+event.death.action.declare.form.section.event.field.reason.label,This is the label for the field,Reason for late registration,ප්‍රමාද ලියාපදිංචිය සඳහා හේතුව,தாமதமான பதிவுக்கான காரணம்
+event.death.action.declare.form.section.event.field.sourceCauseDeath.label,This is the label for the field,Source of cause of death,මරණ හේතුවේ මූලාශ්‍රය,மரண காரணத்தின் மூலம்
+event.death.action.declare.form.section.informant.field.address.addressSameAs.label,This is the label for the field,Same as deceased's usual place of residence?,මියගිය පුද්ගලයාගේ සාමාන්‍ය පදිංචි ස්ථානයට සමාන ද?,மரணித்தவரின் வழக்கமான வசிப்பிடம் போன்றதா?
+event.death.action.declare.form.section.informant.field.address.label,This is the label for the field,Usual place of residence,සාමාන්‍ය පදිංචි ස්ථානය,வழக்கமான வசிப்பிடம்
+event.death.action.declare.form.section.informant.field.addressHelper.label,This is the label for the field,Usual place of residence,සාමාන්‍ය පදිංචි ස්ථානය,வழக்கமான வசிப்பிடம்
+event.death.action.declare.form.section.informant.field.age.checkbox.label,This is the label for the field,Exact date of birth unknown,නිශ්චිත උපන් දිනය නොදනී,சரியான பிறந்த தேதி தெரியவில்லை
+event.death.action.declare.form.section.informant.field.age.label,This is the label for the field,Age of informant (at the time of event),තොරතුරු දෙන්නාගේ වයස (සිදුවීමේ වේලාවේ),தகவல் அளிப்பவரின் வயது (நிகழ்வின் போது)
+event.death.action.declare.form.section.informant.field.age.postfix,This is the postfix for age field,years,වසර,ஆண்டுகள்
+event.death.action.declare.form.section.informant.field.brn.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.declare.form.section.informant.field.dob.error,This is the error message for invalid date,Must be a valid Birthdate,වලංගු උපන් දිනයක් විය යුතුය,செல்லுபடியான பிறந்த தேதியாக இருக்க வேண்டும்
+event.death.action.declare.form.section.informant.field.dob.label,This is the label for the field,Date of birth,උපන් දිනය,பிறந்த தேதி
+event.death.action.declare.form.section.informant.field.email.label,This is the label for the field,Email,ඊමේල්,மின்னஞ்சல்
+event.death.action.declare.form.section.informant.field.idType.label,This is the label for the field,Type of ID,හැඳුනුම් වර්ගය,அடையாள வகை
+event.death.action.declare.form.section.informant.field.name.label,This is the label for the field,Informant's name,තොරතුරු දෙන්නාගේ නම,தகவல் அளிப்பவரின் பெயர்
+event.death.action.declare.form.section.informant.field.nationality.label,This is the label for the field,Nationality,ජාතිකත්වය,தேசியம்
+event.death.action.declare.form.section.informant.field.nid.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.declare.form.section.informant.field.other.relation.label,This is the label for the field,Relationship to deceased,මියගිය පුද්ගලයා සමඟ සම්බන්ධතාවය,மரணித்தவருடனான உறவு
+event.death.action.declare.form.section.informant.field.passport.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.declare.form.section.informant.field.phoneNo.error,The error message that appears on phone numbers where the first two characters must be 07 or 09 and length must be 10,Must be a valid 10 digit number that starts with 0(7|9),07 හෝ 09 දෙකකින් ආරම්භ වන ඉලක්කම් 10ක් විය යුතුය,07 அல்லது 09 இல் தொடங்கும் 10 இலக்க எண்ணாக இருக்க வேண்டும்
+event.death.action.declare.form.section.informant.field.phoneNo.label,This is the label for the field,Phone number,දුරකථන අංකය,தொலைபேசி எண்
+event.death.action.declare.form.section.informant.field.relation.label,This is the label for the field,Informant type,තොරතුරු දෙන්නාගේ වර්ගය,தகவல் அளிப்பவர் வகை
+event.death.action.declare.form.section.person.field.brn.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையාள எண்
+event.death.action.declare.form.section.person.field.idType.label,This is the label for the field,Type of ID,හැඳුනුම් වර්ගය,அடையாள வகை
+event.death.action.declare.form.section.person.field.nationality.label,This is the label for the field,Nationality,ජාතිකත්වය,தேசியம்
+event.death.action.declare.form.section.person.field.nid.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.declare.form.section.person.field.passport.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.declare.form.section.spouse.field.address.addressSameAs.label,This is the label for the field,Same as deceased's usual place of residence?,මියගිය පුද්ගලයාගේ සාමාන්‍ය පදිංචි ස්ථානයට සමාන ද?,மரணித்தவரின் வழக்கமான வசிப்பிடம் போன்றதா?
+event.death.action.declare.form.section.spouse.field.address.label,This is the label for the field,Usual place of residence,සාමාන්‍ය පදිංචි ස්ථානය,வழக்கமான வசிப்பிடம்
+event.death.action.declare.form.section.spouse.field.addressHelper.label,This is the label for the field,Usual place of residence,සාමාන්‍ය පදිංචි ස්ථානය,வழக்கமான வசிப்பிடம்
+event.death.action.declare.form.section.spouse.field.age.checkbox.label,This is the label for the field,Exact date of birth unknown,නිශ්චිත උපන් දිනය නොදනී,சரியான பிறந்த தேதி தெரியவில்லை
+event.death.action.declare.form.section.spouse.field.age.label,This is the label for the field,Age of spouse (at the time of event),කලත්‍රයාගේ වයස (සිදුවීමේ වේලාවේ),வாழ்க்கைத்துணையின் வயது (நிகழ்வின் போது)
+event.death.action.declare.form.section.spouse.field.age.postfix,This is the postfix for age field,years,වසර,ஆண்டுகள்
+event.death.action.declare.form.section.spouse.field.brn.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.declare.form.section.spouse.field.detailsNotAvailable.label,This is the label for the field,Spouse's details are not available,කලත්‍රයාගේ තොරතුරු නොමැත,வாழ்க்கைத்துணையின் விவரங்கள் கிடைக்கவில்லை
+event.death.action.declare.form.section.spouse.field.dob.error,This is the error message for invalid date,Must be a valid Birthdate,වලංගු උපන් දිනයක් විය යුතුය,செல்லுபடியான பிறந்த தேதியாக இருக்க வேண்டும்
+event.death.action.declare.form.section.spouse.field.dob.label,This is the label for the field,Date of birth,උපන් දිනය,பிறந்த தேதி
+event.death.action.declare.form.section.spouse.field.idType.label,This is the label for the field,Type of ID,හැඳුනුම් වර්ගය,அடையாள வகை
+event.death.action.declare.form.section.spouse.field.name.label,This is the label for the field,Spouse's name,කලත්‍රයාගේ නම,வாழ்க்கைத்துணையின் பெயர்
+event.death.action.declare.form.section.spouse.field.nationality.label,This is the label for the field,Nationality,ජාතිකත්වය,தேசியம்
+event.death.action.declare.form.section.spouse.field.nid.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.declare.form.section.spouse.field.passport.label,This is the label for the field,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.declare.form.section.spouse.field.reason.label,This is the label for the field,Reason,හේතුව,காரணம்
+event.death.action.declare.label,This is shown as the action name anywhere the user can trigger the action from,Declare,ප්‍රකාශයක් කරන්න,அறிக்கை
+event.death.action.form.section.alienNumberDetails.label,Field for entering Alien Number details,Alien Number,විදේශිකයාගේ අංකය,அன்னியர் எண்
+event.death.action.form.section.brn.label,Field for entering Birth Registration Number,Birth Registration Number,උපත් ලියාපදිංචි අංකය,பிறப்பு பதிவு எண்
+event.death.action.form.section.collector.other.field.name.label,This is the label for the name field of OTHER collector,Collector's name,එකතු කරන්නාගේ නම,சேகரிப்பாளரின் பெயர்
+event.death.action.form.section.drivingLicenseDetails.label,Field for entering Driving License details,Drivers License,රිය පැදවීමේ බලපත්‍රය,ஓட்டுநர் உரிமம்
+event.death.action.form.section.idNumberOther.label,Field for entering ID Number if Other is selected,ID Number,හැඳුනුම් අංකය,அடையாள எண்
+event.death.action.form.section.idType.alienNumber.label,Option for selecting Alien Number as the ID type,Alien Number,විදේශිකයාගේ අංකය,அன்னியர் எண்
+event.death.action.form.section.idType.brn.label,Option for selecting Birth Registration Number as the ID type,Birth Registration Number,උපත් ලියාපදිංචි අංකය,பிறப்பு பதிவு எண்
+event.death.action.form.section.idType.drivingLicense.label,Option for selecting Driving License as the ID type,Drivers License,රිය පැදවීමේ බලපත්‍රය,ஓட்டுநர் உரிமம்
+event.death.action.form.section.idType.label,This is the label for selecting the type of ID,Type of ID,හැඳුනුම් වර්ගය,அடையாள வகை
+event.death.action.form.section.idType.nid.label,Option for selecting National ID as the ID type,National ID,ජාතික හැඳුනුම්පත,தேசிய அடையாள அட்டை
+event.death.action.form.section.idType.noId.label,Option for selecting No ID as the ID type,No ID available,හැඳුනුම් නොමැත,அடையாளம் இல்லை
+event.death.action.form.section.idType.other.label,Option for selecting Other as the ID type,Other,වෙනත්,மற்றவை
+event.death.action.form.section.idType.passport.label,Option for selecting Passport as the ID type,Passport,ගමන් බලපත්‍රය,கடவுச்சீட்டு
+event.death.action.form.section.idType.refugeeNumber.label,Option for selecting Refugee Number as the ID type,Refugee Number,සරණාගත අංකය,அகதி எண்
+event.death.action.form.section.idTypeOther.label,Field for entering ID type if Other is selected,Other type of ID,හැඳුනුම්පතේ වෙනත් වර්ගය,மற்ற அடையாள வகை
+event.death.action.form.section.nid.label,Field for entering ID Number,National ID,ජාතික හැඳුනුම්පත,தேசிய அடையாள அட்டை
+event.death.action.form.section.passportDetails.label,Field for entering Passport details,Passport,ගමන් බලපත්‍රය,கடவுச்சீட்டு
+event.death.action.form.section.refugeeNumberDetails.label,Field for entering Refugee Number details,Refugee Number,සරණාගත අංකය,அகதி எண்
+event.death.action.form.section.relationshipToDeceased.label,This is the label for the relationship to deceased field,Relationship to deceased,මියගිය පුද්ගලයා සමඟ සම්බන්ධතාවය,மரணித்தவருடனான உறவு
+event.death.action.form.section.signedAffidavit.fileName,This is the label for the file name,Signed Affidavit,අත්සන් කළ දිවුරුම් ප්‍රකාශය,கையொப்பமிட்ட பிரமாண பத்திரம்
+event.death.action.form.section.signedAffidavit.label,This is the label for uploading a signed affidavit,Signed Affidavit (Optional),අත්සන් කළ දිවුරුම් ප්‍රකාශය (ඇතුළත් කිරීම ඔප්ෂනල්),கையொப்பமிட்ட பிரமாண பத்திரம் (விருப்பமானது)
+event.death.action.register.label,This is shown as the action name anywhere the user can trigger the action from,Register,ලියාපදිංචි කරන්න,பதிவு செய்யவும்
+event.death.action.request-correction.label,This is shown as the action name anywhere the user can trigger the action from,Correct record,වාර්තාව නිවැරදි කරන්න,பதிவை சரிசெய்யவும்
+event.death.action.validate.label,This is shown as the action name anywhere the user can trigger the action from,Validate,වලංගු කරන්න,சரிபார்க்கவும்
+event.death.label,This is what this event is referred as in the system,Death,මරණය,மரணம்
+event.death.summary.eventDetails.date.empty,This is shown when there is no date of death information,No date of death,මරණ දිනය නොමැත,மரண தேதி இல்லை
+event.death.summary.eventDetails.deathLocation.empty,This is shown when there is no death location information,No place of death,මරණ ස්ථානය නොමැත,மரண இடம் இல்லை
+event.death.summary.eventDetails.deathLocation.label,Label for place of death,Place of death,මරණ ස්ථානය,மரண இடம்
+event.death.summary.eventDetails.placeOfDeath.empty,This is shown when there is no place of death information,No place of death,මරණ ස්ථානය නොමැත,மரண இடம் இல்லை
+event.death.summary.eventDetails.placeOfDeath.label,Label for place of death,Place of death,මරණ ස්ථානය,மரண இடம்
+event.death.summary.informant.contact.empty,This is shown when there is no informant information,No contact details provided,සම්බන්ධ කර ගැනීමේ විස්තර ලබා දී නොමැත,தொடர்பு விவரங்கள் வழங்கப்படவில்லை
+event.death.summary.informant.contact.label,This is the label for the informant information,Contact,සම්බන්ධතා,தொடர்பு
+event.death.summary.informant.contact.value,This is the contact value of the informant,{informant.phoneNo} {informant.email},{informant.phoneNo} {informant.email},{informant.phoneNo} {informant.email}
+event.death.title,This is the title of the summary,{deceased.name.firstname} {deceased.name.surname},{deceased.name.firstname} {deceased.name.surname},{deceased.name.firstname} {deceased.name.surname}
+event.default.action.certificate.template.type.notFound,Select certificate template options not found,"No template available for this event, contact Admin",මෙම සිදුවීම සඳහා සහතිකයක් නොමැත - පරිපාලකයා සම්බන්ධ කර ගන්න,இந்த நிகழ்வுக்கு வார்ப்புரு இல்லை - நிர்வாகியை தொடர்பு கொள்ளுங்கள்
+event.history.system,Name for system initiated actions in the event history,System,පද්ධතිය,அமைப்பு
+event.history.systemDefaultName,Fallback for system integration name in the event history,System integration,පද්ධති ඒකාබද්ධතාවය,கணினி ஒருங்கிணைப்பு
+event.not.downloaded,Shown when user tries to perform an action on event that is not available,Please ensure the event is first assigned and downloaded to the browser.,කරුණාකර සිදුවීම කලින් පවරා බ්‍රව්සරයට බාගත කර ඇති බව සහතික කරන්න.,நிகழ்வை முதலில் ஒதுக்கி உலாவியில் பதிவிறக்கம் செய்துள்ளீர்கள் என்பதை உறுதிசெய்யுங்கள்.
+event.summary.assignedTo.empty,Not assigned message,Not assigned,පවරා නොමැත,ஒதுக்கப்படவில்லை
+event.summary.assignedTo.label,Assigned to label,Assigned to,පවරා ඇත,ஒதுக்கப்பட்டவர்
+event.summary.assignedTo.value,Assigned to value,{event.assignedTo},{event.assignedTo},{event.assignedTo}
+event.summary.flags.label,Flags of the event,Flags,කොඩි,கொடிகள்
+event.summary.flags.placeholder,Message when no flags are present,No flags,කොඩි නොමැත,கொடிகள் இல்லை
+event.tennis-club-membership.action.declare.form.section.who.field.name.label,This is the title for the name field,Name of applicant,අයදුම්කරුගේ නම,விண்ணப்பதாரரின் பெயர்
+event.tennis-club-membership.search.applicants,Applicant details search field section title,Applicant's details,අයදුම්කරුගේ තොරතුරු,விண்ணப்பதாரரின் விவரங்கள்
+event.tennis-club-membership.search.recommender,Recommender details search field section title,Recommender's details,නිර්දේශකයාගේ තොරතුරු,பரிந்துரைப்பவரின் விவரங்கள்
+events.outbox.processingAction,Message in outbox when processing action,"{action, select, DECLARE {Sending} REGISTER {Registering} VALIDATE {Sending for approval} NOTIFY {Sending} REJECT {Sending for updates} ARCHIVE {Archiving} PRINT_CERTIFICATE {Certifying} REQUEST_CORRECTION {Requesting correction} APPROVE_CORRECTION {Approving correction} REJECT_CORRECTION {Rejecting correction} ASSIGN {Assigning} UNASSIGN {Unassigning} other {processing action}}","{action, select, DECLARE {යවමින්} REGISTER {ලියාපදිංචි කරමින්} VALIDATE {අනුමැතිය සඳහා යවමින්} NOTIFY {යවමින්} REJECT {යාවත්කාලීන කිරීම් සඳහා යවමින්} ARCHIVE {සංරක්ෂණය කරමින්} PRINT_CERTIFICATE {සහතික කරමින්} REQUEST_CORRECTION {නිවැරදි කිරීම ඉල්ලමින්} APPROVE_CORRECTION {නිවැරදි කිරීම අනුමත කරමින්} REJECT_CORRECTION {නිවැරදි කිරීම ප්‍රතික්ෂේප කරමින්} ASSIGN {පවරමින්} UNASSIGN {ඉවත් කරමින්} other {ක්‍රියාව සකසමින්}}","{action, select, DECLARE {அனுப்புகிறது} REGISTER {பதிவு செய்கிறது} VALIDATE {ஒப்புதலுக்காக அனுப்புகிறது} NOTIFY {அனுப்புகிறது} REJECT {புதுப்பிப்புகளுக்காக அனுப்புகிறது} ARCHIVE {காப்பகப்படுத்துகிறது} PRINT_CERTIFICATE {சான்றளிக்கிறது} REQUEST_CORRECTION {திருத்தம் கோருகிறது} APPROVE_CORRECTION {திருத்தத்தை ஒப்புகிறது} REJECT_CORRECTION {திருத்தத்தை நிராகரிக்கிறது} ASSIGN {ஒதுக்குகிறது} UNASSIGN {நீக்குகிறது} other {செயல் செயலாக்கப்படுகிறது}}"
+events.outbox.waitingForAction,Message in outbox when waiting for action,"Waiting to {action, select, DECLARE {send} CREATE {send} REGISTER {register} VALIDATE {send for approval} NOTIFY {send} REJECT {send for updates} ARCHIVE {archive} PRINT_CERTIFICATE {certify} REQUEST_CORRECTION {request correction} APPROVE_CORRECTION {approve correction} REJECT_CORRECTION {reject correction} ASSIGN {assign} UNASSIGN {unassign} other {action}}","{action, select, DECLARE {යැවීමට} CREATE {යැවීමට} REGISTER {ලියාපදිංචි කිරීමට} VALIDATE {අනුමැතිය සඳහා යැවීමට} NOTIFY {යැවීමට} REJECT {යාවත්කාලීන කිරීම් සඳහා යැවීමට} ARCHIVE {සංරක්ෂණය කිරීමට} PRINT_CERTIFICATE {සහතික කිරීමට} REQUEST_CORRECTION {නිවැරදි කිරීම ඉල්ලීමට} APPROVE_CORRECTION {නිවැරදි කිරීම අනුමත කිරීමට} REJECT_CORRECTION {නිවැරදි කිරීම ප්‍රතික්ෂේප කිරීමට} ASSIGN {පැවරීමට} UNASSIGN {ඉවත් කිරීමට} other {ක්‍රියාව}} බලාගෙන සිටී","{action, select, DECLARE {அனுப்பக்} CREATE {அனுப்பக்} REGISTER {பதிவு செய்யக்} VALIDATE {ஒப்புதலுக்காக அனுப்பக்} NOTIFY {அனுப்பக்} REJECT {புதுப்பிப்புகளுக்காக அனுப்பக்} ARCHIVE {காப்பகப்படுத்தக்} PRINT_CERTIFICATE {சான்றளிக்கக்} REQUEST_CORRECTION {திருத்தம் கோரக்} APPROVE_CORRECTION {திருத்தத்தை ஒப்பக்} REJECT_CORRECTION {திருத்தத்தை நிராகரிக்கக்} ASSIGN {ஒதுக்கக்} UNASSIGN {நீக்கக்} other {செயல் செய்யக்}} காத்திருக்கிறது"
+field.name.firstname.label,This is the label for the firstname field,First name(s),පළමු නම(ය),முதல் பெயர்(கள்)
+field.name.middlename.label,This is the label for the middleName field,Middle name,මැද නම,நடு பெயர்
+field.name.surname.label,This is the label for the surname field,Last name,වාසගම,கடைசி பெயர்
+flags.builtin.correction-requested.label,Label for flag,Correction requested,නිවැරදි කිරීම ඉල්ලා ඇත,திருத்தம் கோரப்பட்டது
+flags.builtin.incomplete.label,Label for flag,Incomplete,අසම්පූර්ණ,முழுமையற்றது
+flags.builtin.pending-certification.label,Label for flag,Pending certification,සහතික කිරීම අපේක்ෂාවෙන්,சான்றிதழ் நிலுவையில் உள்ளது
+flags.builtin.potential-duplicate.label,Label for flag,Potential duplicate,හැකි අනුපිටපතක්,சாத்தியமான நகல்
+flags.builtin.rejected.label,Label for flag,Rejected,ප්‍රතික්ෂේප කළ,நிராகரிக்கப்பட்டது
+form.field.label.cityUrbanOption,Label for City,Town,නගරය,நகரம்
+form.field.label.fullHonorificName,,Full Honorific Name,සම්පූර්ණ ගෞරවනීය නම,முழு மரியாதை பெயர்
+form.field.label.middleName,,Middle name,මැද නම,நடு பெயர்
+form.section.information.birth.bullet3.sms,Form information for birth,Once the declaration is processed you will receive an SMS to tell you when to visit the office to collect the certificate - Take your ID with you.,ප්‍රකාශය සකස් කළ පසු ඔබට SMS ලැබෙනු ඇත - සහතිකය ලබා ගැනීමට කාර්යාලයට යාමේදී ඔබේ හැඳුනුම්පත රැගෙන යන්න.,அறிவிப்பு செயலாக்கப்பட்டதும் உங்களுக்கு SMS வரும் - சான்றிதழை சேகரிக்க அலுவலகம் செல்லும்போது உங்கள் அடையாள அட்டையை கொண்டு செல்லுங்கள்.
+home.header.searchTool.placeholder,Search tool placeholder,"Search for a tracking ID, name, registration number, national ID, phone number or email","ට්‍රැකිං හැඳුනුම්පතක්, නමක්, ලියාපදිංචි අංකයක්, ජාතික හැඳුනුම්පතක්, දුරකථන අංකයක් හෝ ඊමේල් ලිපිනයක් සොයන්න","ஒரு கண்காணிப்பு ID, பெயர், பதிவு எண், தேசிய அடையாள அட்டை, தொலைபேசி எண் அல்லது மின்னஞ்சலை தேடுங்கள்"
+integrations.type.import,Label for import type system,Import,ආයාත කිරීම,இறக்குமதி
+integrations.type.importExport,Label for import export type system,Import/Export,ආයාත/අපනයන,இறக்குமதி/ஏற்றுமதி
+loading.records,Loading indicator while fetching records,Loading records...,වාර්තා පූරණය වෙමින්...,பதிவுகள் ஏற்றப்படுகின்றன...
+modal.approveCorrection,The title for approve correction modal,Approve correction?,නිවැරදි කිරීම අනුමත කරන්නද?,திருத்தத்தை ஒப்புகிறீர்களா?
+modal.rejectCorrection,The title for reject correction modal,Reject correction?,නිවැරදි කිරීම ප්‍රතික්ෂේප කරන්නද?,திருத்தத்தை நிராகரிக்கிறீர்களா?
+print.certificate,label for the print button used in the offline flow,Print,මුද්‍රණය කරන්න,அச்சிடுக
+record-corrected.summary.section.title,Corrections section title,Correction(s),නිවැරදි කිරීම(ය),திருத்தம்(கள்)
+regHome.outbox.statusWaitingToRequestCorrection,Label for declaration status waiting for request correction,Waiting to correct,නිවැරදි කිරීමට බලාසිටී,சரிசெய்ய காத்திருக்கிறது
+register.form.modal.description.deleteDeclarationConfirm,Description for delete declaration confirmation modal,Are you sure you want to delete this declaration?,ඔබට මෙම ප්‍රකාශය මකා දැමීමට අවශ්‍ය ද?,இந்த அறிவிப்பை நீக்க விரும்புகிறீர்களா?
+register.selectVitalEvent.registerNewEventHeader,The section heading on the page,What type of event do you want to declare?,ඔබට ප්‍රකාශ කිරීමට අවශ්‍ය සිදුවීමේ වර්ගය කුමක්ද?,நீங்கள் எந்த வகையான நிகழ்வை அறிவிக்க விரும்புகிறீர்கள்?
+review.form.title,Review form label for update action,Review form,පෝරමය සමීක්ෂා කරන්න,படிவத்தை மதிப்பாய்வு செய்யவும்
+search.advancedSearch.result.title,Advanced search result title,Search results ({count}),සෙවුම් ප්‍රතිඵල ({count}),தேடல் முடிவுகள் ({count})
+search.noRecord,The no record text,"No records {slug, select, draft {in my drafts} outbox {require processing} other {{title}}}","No records {slug, select, draft {in my drafts} outbox {require processing} other {{title}}}","No records {slug, select, draft {in my drafts} outbox {require processing} other {{title}}}"
+search.noResultForSearchTerm,The no result text,No results for “{searchTerm}”,“{searchTerm}“ සඳහා ප්‍රතිඵල නොමැත,“{searchTerm}“ க்கு முடிவுகள் இல்லை
+search.quickSearch.result.title,Quick search result title,Search result for “{searchTerm}”,“{searchTerm}“ සඳහා සෙවුම් ප්‍රතිඵලය,“{searchTerm}“ க்கான தேடல் முடிவு
+searchField.indicators.clearButton,Clear button text,Clear,මකන්න,அழிக்கவும்
+searchField.indicators.clearModal.cancel,Cancel button for clear confirmation modal,Cancel,අවලංගු කරන්න,ரத்துசெய்க
+searchField.indicators.clearModal.confirm,Confirm button for clear confirmation modal,Confirm,තහවුරු කරන්න,உறுதிப்படுத்தவும்
+searchField.indicators.clearModal.description,Description for the clear confirmation modal,This will remove the current search results.,මෙය වර්තමාන සෙවුම් ප්‍රතිඵල ඉවත් කරනු ඇත.,இது தற்போதைய தேடல் முடிவுகளை நீக்கும்.
+searchField.indicators.clearModal.title,Title for the clear confirmation modal,Clear search results?,සෙවුම් ප්‍රතිඵල හිස් කරන්නද?,தேடல் முடிவுகளை அழிக்கவா?
+searchField.indicators.confirmButton,Confirm button text,Search,සොයන්න,தேடுக
+searchField.indicators.httpError,HTTP error indicator,"{statusCode, select, 408{Timed out} other{An error occurred while fetching data}}","{statusCode, select, 408{කාල ඉකුත් විය} other{දත්ත ලබා ගැනීමේදී දෝෂයක් ඇතිවිය}}","{statusCode, select, 408{நேரம் முடிந்தது} other{தரவு பெறும்போது பிழை ஏற்பட்டது}}"
+searchField.indicators.loading,Loading indicator,Searching...,සොයමින්...,தேடுகிறது...
+searchField.indicators.noResultsError,No results found indicator,No record found,වාර්තාවක් හමු නොවීය,பதிவு கிடைக்கவில்லை
+searchField.indicators.offline,Offline indicator,Search is unavailable while offline,ඔෆ්ලයින් සිටියදී සෙවීම නොමැත,ஆஃப்லைனில் தேடல் கிடைக்கவில்லை
+searchField.indicators.ok,OK button text,Found {count} results,ප්‍රතිඵල {count}ක් හමු විය,{count} முடிவுகள் கண்டுபிடிக்கப்பட்டன
+serviceWorker.cacheKey.WorkBoxRuntime.error.button.logout,Button label for logging out when WorkBox runtime cache key is missing,Log out,පිටවන්න,வெளியேறுக
+serviceWorker.cacheKey.WorkBoxRuntime.error.button.reload,Button label for logging out when WorkBox runtime cache key is missing,Reload,නැවුම් කරන්න,மீண்டும் ஏற்றவும்
+serviceWorker.cacheKey.WorkBoxRuntime.error.content,Content shown when WorkBox runtime cache key is missing,"Something went wrong with loading the app. Reload this page, or log out and log back in to continue.","යෙදුම පූරණය කිරීමේ ගැටළුවක් ඇතිවිය. මෙම පිටුව නැවුම් කරන්න, නැතහොත් ඉදිරියට ගෙනයාමට ගිණුමෙන් ඉවත් වී නැවතත් ලොග් වන්න.","பயன்பாட்டை ஏற்றுவதில் சிக்கல் ஏற்பட்டது. இந்த பக்கத்தை மீண்டும் ஏற்றவும், அல்லது தொடர வெளியேறி மீண்டும் உள்நுழையவும்."
+serviceWorker.cacheKey.WorkBoxRuntime.error.header,Header shown when WorkBox runtime cache key is missing,⚠️ Application Cache Error,⚠️ Application Cache Error,⚠️ Application Cache Error
+userRole.communityLeader,Name for user role Community Leader,Community Leader,ප්‍රජා නායකයා,சமூக தலைவர்
+userRole.hospitalClerk,Name for user role Hospital Clerk,Hospital Clerk,රෝහල් ලිපිකාරිනී,மருத்துவமனை எழுத்தர்
+verified,This is the label for the verification field,Verified,සත්‍යාපිත,சரிபார்க்கப்பட்டது
+workqueues.dateOfEvent,Label for workqueue column: dateOfEvent,Date of Event,සිදුවීමේ දිනය,நிகழ்வு தேதி
+workqueues.draft.title,Title of draft workqueue,My drafts,මගේ කෙටුම්පත්,என் வரைவுகள்
+workqueues.outbox.title,Title of outbox workqueue,Outbox,අවතැන් පෙட්ටිය,வெளியே செல்லும் பெட்டி
+imageEditorModal.title,Title for the image editor modal,Crop & resize image,රූපය කෙටෙන් කර ප්‍රමාණය වෙනස් කරන්න,படத்தை வெட்டி அளவை மாற்றவும்
+imageEditorModal.description,Description for the image editor modal,Resize and position the chosen image,තෝරාගත් රූපය ප්‍රමාණ ගත කර ස්ථානගත කරන්න,தேர்ந்தெடுக்கப்பட்ட படத்தை மறுஅளவிடவும் மற்றும் நிலைநிறுத்தவும்
+workqueues.assignedToYou.title,Title of assigned to you workqueue,Assigned to you,ඔබට පවරා ඇත,உங்களுக்கு ஒதுக்கப்பட்டது
+workqueues.recent.title,Title of recent workqueue,Recent,මෑත,சமீபத்தியவை
+workqueues.notifications.title,Title of notifications workqueue,Notifications,දැනුම්දීම්,அறிவிப்புகள்
+workqueues.sentForReview.title,Title of sent for review workqueue,Sent for review,සමීක්ෂාව සඳහා යවා ඇත,மதிப்பாய்விற்கு அனுப்பப்பட்டது
+workqueues.inReview.title,Title of in review workqueue,In review,සමීක்ෂා කරමින්,மதிப்பாய்வில் உள்ளது
+workqueues.inReviewAll.title,Title of in review all workqueue,In review (all),සමීக්ෂා කරමින් (සියල්ල),மதிப்பாய்வில் உள்ளது (அனைத்தும்)
+workqueues.requiresUpdates.title,Title of requires updates workqueue,Requires updates,යාවත්කාලීන කිරීම් අවශ්‍ය,புதுப்பிப்புகள் தேவை
+workqueues.sentForApproval.title,Title of sent for approval workqueue,Sent for approval,අනුමැතිය සඳහා යවා ඇත,ஒப்புதலுக்கு அனுப்பப்பட்டது
+workqueues.inExternalValidation.title,Title of in external validation workqueue,In external validation,බාහිර වලංගු කිරීමේදී,வெளிப்புற சரிபார்ப்பில் உள்ளது
+workqueues.readyToPrint.title,Title of ready to print workqueue,Ready to print,මුද්‍රණය සඳහා සූදානම්,அச்சிட தயார்
