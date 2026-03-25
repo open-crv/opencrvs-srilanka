@@ -17,6 +17,11 @@ all:
           - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhoiMxKjhH5VjpGMo0Bf0NJHjbEpS8Xdtad6afIQvjW provision@open-crv-poc.asia-southeast1-c.c.research-team-403006.internal
         state: present
         sudoer: true
+      - name: barry
+        ssh_keys:
+          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICw4vvV33xxrTzxAiPoRhuwyWUzmgrP5NPo2n4bmKx7P
+        state: present
+        sudoer: true
     enable_backups: false
 docker-manager-first:
   hosts:
@@ -26,4 +31,3 @@ docker-manager-first:
 
 # Development servers are not configured to use workers.
 docker-workers: {}
-
