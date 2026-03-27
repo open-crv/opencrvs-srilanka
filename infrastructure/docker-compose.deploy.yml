@@ -11,7 +11,7 @@ services:
   # Note: these published port will override UFW rules as Docker manages it's own iptables
   # Only publish the exact ports that are required for OpenCRVS to work
   traefik:
-    image: 'traefik:v2.10'
+    image: 'traefik:v2.11'
     ports:
       - target: 80
         published: 80
@@ -25,7 +25,6 @@ services:
       - /data/traefik/certs:/etc/certs
       - /opt/opencrvs/infrastructure/traefik/certs.yaml:/etc/traefik/certs.yaml
 
-      
     command:
       # - --tls.certificates.certfile=/etc/certs/cert.crt
       # - --tls.certificates.keyfile=/etc/certs/cert.key
@@ -79,8 +78,8 @@ services:
     configs:
       - source: filebeat.{{ts}}
         target: /usr/share/filebeat/filebeat.yml
-      - source: beat-rollover-policy.{{ts}}
-        target: /usr/share/filebeat/rollover-policy.json
+      - source: filebeat-rollover-policy.{{ts}}
+        target: /usr/share/filebeat/filebeat-rollover-policy.json
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/lib/docker/containers/:/var/lib/docker/containers/:ro
@@ -127,7 +126,7 @@ services:
     configs:
       - source: metricbeat-conf.{{ts}}
         target: /usr/share/metricbeat/metricbeat.yml
-      - source: beat-rollover-policy.{{ts}}
+      - source: metricbeat-rollover-policy.{{ts}}
         target: /usr/share/metricbeat/rollover-policy.json
     logging:
       driver: gelf
@@ -147,7 +146,7 @@ services:
         '-H',
         'kbn-xsrf: true',
         '--form',
-        'file=@/config.ndjson'
+        'file=@/config.ndjson',
       ]
     restart: on-failure
     volumes:
@@ -265,6 +264,13 @@ services:
         tag: 'mongo-on-update'
   # Configure redis
   redis:
+    command: ['redis-server', '/usr/local/etc/redis/redis.conf']
+    secrets:
+      - source: redis-acl.{{ts}}
+        target: /usr/local/etc/redis/users.acl
+    configs:
+      - source: redis-conf.{{ts}}
+        target: /usr/local/etc/redis/redis.conf
     networks:
       - overlay_net
     deploy:
@@ -347,7 +353,7 @@ services:
       - overlay_net
 
   minio-mc:
-    image: minio/mc:RELEASE.2023-09-13T23-08-58Z
+    image: minio/mc:RELEASE.2025-05-21T01-59-54Z
     entrypoint: >
       /bin/sh -c "
       /usr/bin/mc admin trace --path ocrvs/* minio
@@ -470,7 +476,7 @@ services:
         '-E',
         'kibana.username=${KIBANA_USERNAME}',
         '-E',
-        'kibana.password=${KIBANA_PASSWORD}'
+        'kibana.password=${KIBANA_PASSWORD}',
       ]
     configs:
       - source: apm.{{ts}}
@@ -515,7 +521,7 @@ services:
         - 'traefik.http.routers.client.rule=Host(`register.{{hostname}}`,`{{hostname}}`)'
         - 'traefik.http.routers.client.middlewares=test-replacepathregex,gzip-compression'
         - 'traefik.http.routers.client.service=client'
-        - 'traefik.http.services.client.loadbalancer.server.port=80'
+        - 'traefik.http.services.client.loadbalancer.server.port=3000'
         - 'traefik.http.routers.client.tls=true'
         - 'traefik.http.routers.client.tls.certresolver=certResolver'
         - 'traefik.http.routers.client.entrypoints=web,websecure'
@@ -544,7 +550,7 @@ services:
     deploy:
       labels:
         - 'traefik.enable=true'
-        - 'traefik.http.routers.countryconfig.rule=Host(`countryconfig.{{hostname}}`) && !Path(`/email`) && !Path(`/notification`) && !Path(`/dashboards/queries.json`)'
+        - 'traefik.http.routers.countryconfig.rule=Host(`countryconfig.{{hostname}}`) && !Path(`/reindex`) && !Path(`/email`) && !Path(`/notification`) && !Path(`/dashboards/queries.json`)'
         - 'traefik.http.services.countryconfig.loadbalancer.server.port=3040'
         - 'traefik.http.routers.countryconfig.tls=true'
         - 'traefik.http.routers.countryconfig.tls.certresolver=certResolver'
@@ -562,6 +568,8 @@ services:
         - 'traefik.http.middlewares.block-internal-routes.ipwhitelist.sourcerange=255.255.255.255'
         - 'traefik.http.routers.block-email.rule=Host(`countryconfig.{{hostname}}`) && Path(`/email`)'
         - 'traefik.http.routers.block-email.middlewares=block-internal-routes'
+        - 'traefik.http.routers.block-reindex.rule=Host(`countryconfig.{{hostname}}`) && Path(`/reindex`)'
+        - 'traefik.http.routers.block-reindex.middlewares=block-internal-routes'
         - 'traefik.http.routers.block-notification.rule=Host(`countryconfig.{{hostname}}`) && Path(`/notification`)'
         - 'traefik.http.routers.block-notification.middlewares=block-internal-routes'
         - 'traefik.http.routers.block-dashboard-queries.rule=Host(`countryconfig.{{hostname}}`) && Path(`/dashboards/queries.json`)'
@@ -593,10 +601,11 @@ services:
       - INFOBIP_API_KEY=${INFOBIP_API_KEY:-}
       - INFOBIP_SENDER_ID=${INFOBIP_SENDER_ID:-}
       - DOMAIN={{hostname}}
-      - ESIGNET_REDIRECT_URL=https://esignet.sdec.mosip.net/authorize
-      - OPENID_PROVIDER_CLIENT_ID=sEsO96Y6DddaZ4QNv3OKXP35DIB4LNtuvlYN-Abrino
-      - OPENID_PROVIDER_CLAIMS=name,family_name,given_name,middle_name,birthdate,address
-      - MOSIP_API_USERINFO_URL=https://mosip-api.{{hostname}}/esignet/get-oidp-user-info
+      - ANALYTICS_DATABASE_URL=postgres://events_analytics:${ANALYTICS_POSTGRES_PASSWORD}@postgres/events
+      - ESIGNET_REDIRECT_URL=${ESIGNET_REDIRECT_URL}
+      - OPENID_PROVIDER_CLIENT_ID=${OPENID_PROVIDER_CLIENT_ID:-}
+      - OPENID_PROVIDER_CLAIMS=${OPENID_PROVIDER_CLAIMS:-}
+      - MOSIP_API_USERINFO_URL=${MOSIP_API_USERINFO_URL:-}
       - LOCALE=en
     networks:
       - overlay_net
@@ -613,7 +622,7 @@ services:
       labels:
         - 'traefik.enable=true'
         - 'traefik.http.routers.login.rule=Host(`login.{{hostname}}`)'
-        - 'traefik.http.services.login.loadbalancer.server.port=80'
+        - 'traefik.http.services.login.loadbalancer.server.port=3020'
         - 'traefik.http.routers.login.tls=true'
         - 'traefik.http.routers.login.tls.certresolver=certResolver'
         - 'traefik.http.routers.login.entrypoints=web,websecure'
@@ -645,9 +654,11 @@ services:
       - CERT_PRIVATE_KEY_PATH=/run/secrets/jwt-private-key.{{ts}}
       - CERT_PUBLIC_KEY_PATH=/run/secrets/jwt-public-key.{{ts}}
       - LOGIN_URL=https://login.{{hostname}}
-      - COUNTRY_CONFIG_URL=https://countryconfig.{{hostname}}
+      - COUNTRY_CONFIG_URL_EXTERNAL=https://countryconfig.{{hostname}}
       - CLIENT_APP_URL=https://register.{{hostname}}
       - DOMAIN={{hostname}}
+      - REDIS_USERNAME=${AUTH_REDIS_USERNAME}
+      - REDIS_PASSWORD=${AUTH_REDIS_PASSWORD}
     deploy:
       labels:
         - 'traefik.enable=true'
@@ -697,9 +708,11 @@ services:
       - jwt-public-key.{{ts}}
     environment:
       - NODE_ENV=production
+      - APN_SERVICE_URL=http://apm-server:8200
       - EVENTS_MONGO_URL=mongodb://events:${EVENTS_MONGODB_PASSWORD}@mongo1/events?replicaSet=rs0
       - USER_MGNT_MONGO_URL=mongodb://user-mgnt:${USER_MGNT_MONGODB_PASSWORD}@mongo1/user-mgnt?replicaSet=rs0
       - ES_URL=http://search-user:${ROTATING_SEARCH_ELASTIC_PASSWORD}@elasticsearch:9200
+      - EVENTS_POSTGRES_URL=postgres://events_app:${EVENTS_APP_POSTGRES_PASSWORD}@postgres/events
     deploy:
       labels:
         - 'traefik.enable=false'
@@ -745,6 +758,8 @@ services:
       - CLIENT_APP_URL=https://register.{{hostname}}
       - DOMAIN={{hostname}}
       - COUNTRY=${COUNTRY:-FAR}
+      - REDIS_USERNAME=${GATEWAY_REDIS_USERNAME}
+      - REDIS_PASSWORD=${GATEWAY_REDIS_PASSWORD}
     deploy:
       labels:
         - 'traefik.enable=true'
@@ -778,6 +793,8 @@ services:
       - SENTRY_DSN=${SENTRY_DSN:-}
       - APN_SERVICE_URL=http://apm-server:8200
       - CERT_PUBLIC_KEY_PATH=/run/secrets/jwt-public-key.{{ts}}
+      - REDIS_USERNAME=${WORKFLOW_REDIS_USERNAME}
+      - REDIS_PASSWORD=${WORKFLOW_REDIS_PASSWORD}
     deploy:
       labels:
         - 'traefik.enable=false'
@@ -920,6 +937,7 @@ services:
       - HEARTH_MONGO_URL=mongodb://hearth:${HEARTH_MONGODB_PASSWORD}@mongo1/hearth-dev?replicaSet=rs0
       - EVENTS_MONGO_URL=mongodb://events:${EVENTS_MONGODB_PASSWORD}@mongo1/events?replicaSet=rs0
       - OPENHIM_MONGO_URL=mongodb://openhim:${OPENHIM_MONGODB_PASSWORD}@mongo1/openhim-dev?replicaSet=rs0
+      - EVENTS_POSTGRES_URL=postgres://events_migrator:${EVENTS_MIGRATOR_POSTGRES_PASSWORD}@postgres/events
       - ES_HOST=search-user:${ROTATING_SEARCH_ELASTIC_PASSWORD}@elasticsearch:9200
       - MINIO_ACCESS_KEY=${MINIO_ROOT_USER}
       - MINIO_SECRET_KEY=${MINIO_ROOT_PASSWORD}
@@ -964,6 +982,51 @@ services:
         gelf-address: 'udp://127.0.0.1:12201'
         tag: 'hearth'
 
+  postgres:
+    image: postgres:17.6
+    networks:
+      - overlay_net
+    restart: unless-stopped
+    volumes:
+      - /data/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    deploy:
+      replicas: 1
+      labels:
+        - 'traefik.enable=false'
+      placement:
+        constraints:
+          - node.labels.data1 == true
+
+  postgres-on-update:
+    image: postgres:17.6
+    command: ['bash', '-c', 'bash /on-deploy.sh && bash /setup-analytics.sh']
+    configs:
+      - source: postgres-on-deploy.{{ts}}
+        target: /on-deploy.sh
+      - source: postgres-analytics-on-deploy.{{ts}}
+        target: /setup-analytics.sh
+    deploy:
+      labels:
+        - traefik.enable=false
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - ANALYTICS_POSTGRES_USER=events_analytics
+      - ANALYTICS_POSTGRES_PASSWORD=${ANALYTICS_POSTGRES_PASSWORD}
+      - EVENTS_APP_POSTGRES_PASSWORD=${EVENTS_APP_POSTGRES_PASSWORD}
+      - EVENTS_MIGRATOR_POSTGRES_PASSWORD=${EVENTS_MIGRATOR_POSTGRES_PASSWORD}
+      - KEEP_ALIVE_SECONDS=10
+    networks:
+      - overlay_net
+
   webhooks:
     secrets:
       - jwt-public-key.{{ts}}
@@ -973,6 +1036,8 @@ services:
       - APN_SERVICE_URL=http://apm-server:8200
       - MONGO_URL=mongodb://webhooks:${WEBHOOKS_MONGODB_PASSWORD}@mongo1/webhooks?replicaSet=rs0
       - CERT_PUBLIC_KEY_PATH=/run/secrets/jwt-public-key.{{ts}}
+      - REDIS_USERNAME=${WEBHOOKS_REDIS_USERNAME}
+      - REDIS_PASSWORD=${WEBHOOKS_REDIS_PASSWORD}
     deploy:
       labels:
         - 'traefik.enable=true'
@@ -998,18 +1063,26 @@ services:
         tag: 'webhooks'
 
   dashboards:
+    image: metabase/metabase:v0.56.4
     volumes:
       # Exceed Docker config file 500 kb file limit, thus a volume mount
       - /opt/opencrvs/infrastructure/metabase/metabase.init.db.sql:/metabase.init.db.sql
+      - /opt/opencrvs/infrastructure/metabase/run.sh:/run.sh
+      - /opt/opencrvs/infrastructure/metabase/initialize-database.sh:/initialize-database.sh
+      - /opt/opencrvs/infrastructure/metabase/update-database.sh:/update-database.sh
+      - /opt/opencrvs/infrastructure/metabase/environment-configuration.sql:/environment-configuration.sql
+    entrypoint: ['/bin/sh', '/run.sh']
     networks:
       - overlay_net
     environment:
-      # Note that only mongo1 is used here on purpose for all environments
-      # https://discourse.metabase.com/t/solved-add-mongodb-replicaset-database/7404/2
-      - OPENCRVS_METABASE_DB_HOST=mongo1
-      - OPENCRVS_METABASE_DB_USER=performance
-      - OPENCRVS_METABASE_DB_PASS=${PERFORMANCE_MONGODB_PASSWORD}
-      - OPENCRVS_METABASE_DB_AUTH_DB=performance
+      # Database credentials for PostgreSQL connection
+      - METABASE_DATABASE_SSL=${METABASE_DATABASE_SSL:-false}
+      - METABASE_DATABASE_HOST=${METABASE_DATABASE_HOST:-postgres}
+      - METABASE_DATABASE_PORT=${METABASE_DATABASE_PORT:-5432}
+      - METABASE_DATABASE_NAME=${METABASE_DATABASE_NAME:-events}
+      - METABASE_DATABASE_USER=${METABASE_DATABASE_USER:-events_analytics}
+      - METABASE_DATABASE_PASSWORD=${ANALYTICS_POSTGRES_PASSWORD}
+
       - OPENCRVS_METABASE_SITE_NAME=OpenCRVS Dashboards
       - OPENCRVS_METABASE_SITE_URL=http://metabase.{{hostname}}
       - OPENCRVS_METABASE_MAP_NAME=SriLanka
@@ -1018,6 +1091,11 @@ services:
       - OPENCRVS_METABASE_MAP_REGION_NAME=State
       - OPENCRVS_METABASE_ADMIN_EMAIL=${OPENCRVS_METABASE_ADMIN_EMAIL}
       - OPENCRVS_METABASE_ADMIN_PASSWORD=${OPENCRVS_METABASE_ADMIN_PASSWORD}
+      - METABASE_JAR=/app/metabase.jar
+      - MB_DB_INIT_SQL_FILE=/metabase.init.db.sql
+      - MB_DB_FILE=/data/metabase/metabase.mv.db
+      - OPENCRVS_ENVIRONMENT_CONFIGURATION_SQL_FILE=/environment-configuration.sql
+
     deploy:
       labels:
         - 'traefik.enable=true'
@@ -1041,12 +1119,12 @@ services:
   mosip-api:
     volumes:
       - '/data/sqlite:/data/sqlite'
-    image: ghcr.io/opencrvs/mosip-api:1.8.0
+    image: ghcr.io/opencrvs/mosip-api:$1.9.1
     environment:
       - NODE_ENV=production
       - MOSIP_BIRTH_WEBHOOK_URL=https://api-internal.sdec.mosip.net/webhooks/opencrvs/birth
       - MOSIP_DEATH_WEBHOOK_URL=https://api-internal.sdec.mosip.net/webhooks/opencrvs/death
-      - OPENCRVS_GRAPHQL_GATEWAY_URL=http://gateway:7070/graphql
+      - OPENCRVS_GATEWAY_URL=http://gateway:7070
       - OPENCRVS_PUBLIC_KEY_URL=http://auth:4040/.well-known
       - LOCALE=en
       - ESIGNET_USERINFO_URL=https://esignet.sdec.mosip.net/oidc/userinfo
@@ -1057,7 +1135,6 @@ services:
       - DECRYPT_P12_FILE_PATH=/certs/keystore.p12
       - DECRYPT_P12_FILE_PASSWORD=mosip123
       - ENCRYPT_CERT_PATH=/certs/ida-partner.crt
-
 
       - IDA_AUTH_DOMAIN_URI=https://api-internal.sdec.mosip.net/
       - IDA_AUTH_URL=https://api-internal.sdec.mosip.net/idauthentication/v1/auth
@@ -1110,6 +1187,8 @@ services:
         tag: 'mosip-api'
 
 secrets:
+  redis-acl.{{ts}}:
+    external: true
   jwt-public-key.{{ts}}:
     external: true
   jwt-private-key.{{ts}}:
@@ -1120,13 +1199,19 @@ configs:
   hearth-queryparam-extensions-conf.{{ts}}:
     file: /opt/opencrvs/infrastructure/hearth-queryparam-extensions.json
   metricbeat-conf.{{ts}}:
-    file: /opt/opencrvs/infrastructure/monitoring/beats/metricbeat.yml
+    file: /opt/opencrvs/infrastructure/monitoring/metricbeat/metricbeat.yml
   filebeat.{{ts}}:
     file: /opt/opencrvs/infrastructure/monitoring/filebeat/filebeat.yml
   mongo-on-deploy.{{ts}}:
     file: /opt/opencrvs/infrastructure/mongodb/on-deploy.sh
-  beat-rollover-policy.{{ts}}:
-    file: /opt/opencrvs/infrastructure/monitoring/beats/rollover-policy.json
+  postgres-on-deploy.{{ts}}:
+    file: /opt/opencrvs/infrastructure/postgres/on-deploy.sh
+  postgres-analytics-on-deploy.{{ts}}:
+    file: /opt/opencrvs/infrastructure/postgres/setup-analytics.sh
+  filebeat-rollover-policy.{{ts}}:
+    file: /opt/opencrvs/infrastructure/monitoring/filebeat/filebeat-rollover-policy.json
+  metricbeat-rollover-policy.{{ts}}:
+    file: /opt/opencrvs/infrastructure/monitoring/metricbeat/metricbeat-rollover-policy.json
   kibana.{{ts}}:
     file: /opt/opencrvs/infrastructure/monitoring/kibana/kibana.yml
   apm.{{ts}}:
@@ -1141,6 +1226,8 @@ configs:
     file: /opt/opencrvs/infrastructure/elasticsearch/jvm.options
   minio-mc-config.{{ts}}:
     file: /opt/opencrvs/infrastructure/mc-config/config.json
+  redis-conf.{{ts}}:
+    file: /opt/opencrvs/infrastructure/redis/redis.conf
 networks:
   overlay_net:
     driver: overlay

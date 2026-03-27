@@ -23,7 +23,13 @@ export const roles: Role[] = [
       SCOPES.RECORD_SUBMIT_FOR_REVIEW,
       SCOPES.SEARCH_BIRTH,
       SCOPES.SEARCH_DEATH,
-      SCOPES.SEARCH_MARRIAGE
+      SCOPES.SEARCH_MARRIAGE,
+      'search[event=birth,access=all]',
+      'search[event=death,access=my-jurisdiction]',
+      'workqueue[id=assigned-to-you|recent|requires-updates-self|sent-for-review]',
+      `record.create[event=birth|death]`,
+      'record.declare[event=birth|death]',
+      'record.notify[event=birth|death]'
     ]
   },
   {
@@ -41,7 +47,12 @@ export const roles: Role[] = [
       SCOPES.RECORD_SUBMIT_FOR_REVIEW,
       SCOPES.SEARCH_BIRTH,
       SCOPES.SEARCH_DEATH,
-      SCOPES.SEARCH_MARRIAGE
+      SCOPES.SEARCH_MARRIAGE,
+      'search[event=birth,access=all]',
+      'search[event=death,access=all]',
+      `record.create[event=birth|death]`,
+      'record.declare[event=birth|death]',
+      'record.notify[event=birth|death]'
     ]
   },
   {
@@ -59,7 +70,13 @@ export const roles: Role[] = [
       SCOPES.RECORD_SUBMIT_FOR_REVIEW,
       SCOPES.SEARCH_BIRTH,
       SCOPES.SEARCH_DEATH,
-      SCOPES.SEARCH_MARRIAGE
+      SCOPES.SEARCH_MARRIAGE,
+      'search[event=birth,access=all]',
+      'search[event=death,access=all]',
+      'workqueue[id=assigned-to-you|recent|requires-updates-self|sent-for-review]',
+      `record.create[event=birth|death]`,
+      'record.declare[event=birth|death]',
+      'record.notify[event=birth|death]'
     ]
   },
   {
@@ -77,7 +94,12 @@ export const roles: Role[] = [
       SCOPES.RECORD_SUBMIT_FOR_REVIEW,
       SCOPES.SEARCH_BIRTH,
       SCOPES.SEARCH_DEATH,
-      SCOPES.SEARCH_MARRIAGE
+      SCOPES.SEARCH_MARRIAGE,
+      'search[event=birth,access=all]',
+      'search[event=death,access=all]',
+      `record.create[event=birth|death]`,
+      'record.declare[event=birth|death]',
+      'record.notify[event=birth|death]'
     ]
   },
   {
@@ -93,9 +115,19 @@ export const roles: Role[] = [
       SCOPES.RECORD_DECLARE_MARRIAGE,
       SCOPES.RECORD_SUBMIT_INCOMPLETE,
       SCOPES.RECORD_SUBMIT_FOR_REVIEW,
+      SCOPES.RECORD_PRINT_ISSUE_CERTIFIED_COPIES,
       SCOPES.SEARCH_BIRTH,
       SCOPES.SEARCH_DEATH,
-      SCOPES.SEARCH_MARRIAGE
+      SCOPES.SEARCH_MARRIAGE,
+      SCOPES.USER_READ_ONLY_MY_AUDIT,
+      'search[event=birth,access=all]',
+      'search[event=death,access=all]',
+      'workqueue[id=assigned-to-you|recent|sent-for-review|ready-to-print]',
+      'record.create[event=birth|death]',
+      'record.read[event=birth|death]',
+      'record.declare[event=birth|death]',
+      'record.notify[event=birth|death]',
+      'record.registered.print-certified-copies[event=birth|death]'
     ]
   },
   {
@@ -113,18 +145,30 @@ export const roles: Role[] = [
       SCOPES.RECORD_DECLARATION_EDIT,
       SCOPES.RECORD_SUBMIT_FOR_APPROVAL,
       SCOPES.RECORD_SUBMIT_FOR_UPDATES,
+      SCOPES.RECORD_REVIEW_DUPLICATES,
       SCOPES.RECORD_DECLARATION_ARCHIVE,
       SCOPES.RECORD_DECLARATION_REINSTATE,
       SCOPES.RECORD_REGISTRATION_REQUEST_CORRECTION,
-      SCOPES.RECORD_PRINT_RECORDS_SUPPORTING_DOCUMENTS,
-      SCOPES.RECORD_EXPORT_RECORDS,
       SCOPES.RECORD_PRINT_ISSUE_CERTIFIED_COPIES,
       SCOPES.PERFORMANCE_READ,
       SCOPES.PERFORMANCE_READ_DASHBOARDS,
       SCOPES.ORGANISATION_READ_LOCATIONS_MY_OFFICE,
+      SCOPES.USER_READ_ONLY_MY_AUDIT,
       SCOPES.SEARCH_BIRTH,
       SCOPES.SEARCH_DEATH,
-      SCOPES.SEARCH_MARRIAGE
+      SCOPES.SEARCH_MARRIAGE,
+      'search[event=birth,access=all]',
+      'search[event=death,access=all]',
+      'workqueue[id=assigned-to-you|recent|requires-completion|requires-updates-office|in-review|sent-for-approval|in-external-validation|ready-to-print|ready-to-issue]',
+      'record.create[event=birth|death]',
+      'record.read[event=birth|death]',
+      'record.declare[event=birth|death]',
+      'record.declared.validate[event=birth|death]',
+      'record.declared.reject[event=birth|death]',
+      'record.declared.archive[event=birth|death]',
+      'record.declared.review-duplicates[event=birth|death]',
+      'record.registered.print-certified-copies[event=birth|death]',
+      'record.registered.request-correction[event=birth|death]'
     ]
   },
   {
@@ -146,8 +190,6 @@ export const roles: Role[] = [
       SCOPES.RECORD_DECLARATION_REINSTATE,
       SCOPES.RECORD_REGISTER,
       SCOPES.RECORD_REGISTRATION_CORRECT,
-      SCOPES.RECORD_PRINT_RECORDS_SUPPORTING_DOCUMENTS,
-      SCOPES.RECORD_EXPORT_RECORDS,
       SCOPES.RECORD_UNASSIGN_OTHERS,
       SCOPES.RECORD_PRINT_ISSUE_CERTIFIED_COPIES,
       SCOPES.RECORD_CONFIRM_REGISTRATION,
@@ -155,10 +197,24 @@ export const roles: Role[] = [
       SCOPES.PERFORMANCE_READ,
       SCOPES.PERFORMANCE_READ_DASHBOARDS,
       SCOPES.PROFILE_ELECTRONIC_SIGNATURE,
+      SCOPES.USER_READ_ONLY_MY_AUDIT,
       SCOPES.ORGANISATION_READ_LOCATIONS_MY_OFFICE,
       SCOPES.SEARCH_BIRTH,
       SCOPES.SEARCH_DEATH,
-      SCOPES.SEARCH_MARRIAGE
+      SCOPES.SEARCH_MARRIAGE,
+      'search[event=birth,access=all]',
+      'search[event=death,access=all]',
+      'workqueue[id=assigned-to-you|recent|requires-completion|requires-updates-office|in-review-all|in-external-validation|ready-to-print|ready-to-issue]',
+      'record.create[event=birth|death]',
+      'record.read[event=birth|death]',
+      'record.declare[event=birth|death]',
+      'record.declared.reject[event=birth|death]',
+      'record.declared.archive[event=birth|death]',
+      'record.declared.review-duplicates[event=birth|death]',
+      'record.register[event=birth|death]',
+      'record.registered.print-certified-copies[event=birth|death]',
+      'record.registered.correct[event=birth|death]',
+      'record.unassign-others[event=birth|death]'
     ]
   },
   {
@@ -197,6 +253,7 @@ export const roles: Role[] = [
       SCOPES.PERFORMANCE_READ,
       SCOPES.PERFORMANCE_READ_DASHBOARDS,
       SCOPES.PERFORMANCE_EXPORT_VITAL_STATISTICS,
+      SCOPES.RECORD_REINDEX,
       SCOPES.CONFIG_UPDATE_ALL
     ]
   },
@@ -210,7 +267,8 @@ export const roles: Role[] = [
     scopes: [
       SCOPES.PERFORMANCE_READ,
       SCOPES.PERFORMANCE_READ_DASHBOARDS,
-      SCOPES.PERFORMANCE_EXPORT_VITAL_STATISTICS
+      SCOPES.PERFORMANCE_EXPORT_VITAL_STATISTICS,
+      SCOPES.ORGANISATION_READ_LOCATIONS
     ]
   },
   {
@@ -225,15 +283,12 @@ export const roles: Role[] = [
       SCOPES.RECORD_DECLARE_BIRTH,
       SCOPES.RECORD_DECLARE_DEATH,
       SCOPES.RECORD_DECLARE_MARRIAGE,
-      SCOPES.RECORD_DECLARATION_EDIT,
       SCOPES.RECORD_SUBMIT_FOR_UPDATES,
       SCOPES.RECORD_REVIEW_DUPLICATES,
       SCOPES.RECORD_DECLARATION_ARCHIVE,
       SCOPES.RECORD_DECLARATION_REINSTATE,
       SCOPES.RECORD_REGISTER,
       SCOPES.RECORD_REGISTRATION_CORRECT,
-      SCOPES.RECORD_PRINT_RECORDS_SUPPORTING_DOCUMENTS,
-      SCOPES.RECORD_EXPORT_RECORDS,
       SCOPES.RECORD_UNASSIGN_OTHERS,
       SCOPES.RECORD_PRINT_ISSUE_CERTIFIED_COPIES,
       SCOPES.RECORD_CONFIRM_REGISTRATION,
@@ -241,12 +296,26 @@ export const roles: Role[] = [
       SCOPES.PERFORMANCE_READ,
       SCOPES.PERFORMANCE_READ_DASHBOARDS,
       SCOPES.PERFORMANCE_EXPORT_VITAL_STATISTICS,
+      SCOPES.USER_READ_ONLY_MY_AUDIT,
       SCOPES.PROFILE_ELECTRONIC_SIGNATURE,
       SCOPES.ORGANISATION_READ_LOCATIONS_MY_OFFICE,
       SCOPES.USER_READ_MY_OFFICE,
       SCOPES.SEARCH_BIRTH,
       SCOPES.SEARCH_DEATH,
-      SCOPES.SEARCH_MARRIAGE
+      SCOPES.SEARCH_MARRIAGE,
+      'search[event=birth,access=all]',
+      'search[event=death,access=all]',
+      'workqueue[id=assigned-to-you|recent|requires-completion|requires-updates-office|in-review-all|in-external-validation|ready-to-print|ready-to-issue]',
+      'record.create[event=birth|death]',
+      'record.read[event=birth|death]',
+      'record.declare[event=birth|death]',
+      'record.declared.reject[event=birth|death]',
+      'record.declared.archive[event=birth|death]',
+      'record.declared.review-duplicates[event=birth|death]',
+      'record.register[event=birth|death]',
+      'record.registered.print-certified-copies[event=birth|death]',
+      'record.registered.correct[event=birth|death]',
+      'record.unassign-others[event=birth|death]'
     ]
   }
 ]
